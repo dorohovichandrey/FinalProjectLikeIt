@@ -1,0 +1,58 @@
+<gems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://www.example.com/gems"
+          xsi:schemaLocation="http://www.example.com/gems gem.xsd">
+    <precious-gem gem-id="p1">
+        <name>Andradit</name>
+        <origin>
+            <country>Belarus</country>
+            <city>Soligorsk</city>
+        </origin>
+        <visual-parameters>
+            <colour>Black</colour>
+            <transparency-in-percents>100</transparency-in-percents>
+            <number-of-verges>12</number-of-verges>
+        </visual-parameters>
+        <value-in-carat>3</value-in-carat>
+        <selling-only-on-auction>true</selling-only-on-auction>
+    </precious-gem>
+    <precious-gem gem-id="p2">
+        <name>Diamond</name>
+        <origin>
+            <country>Belarus</country>
+            <city>Polotsk</city>
+        </origin>
+        <visual-parameters>
+            <colour>White</colour>
+            <transparency-in-percents>15</transparency-in-percents>
+            <number-of-verges>5</number-of-verges>
+        </visual-parameters>
+        <value-in-carat>30</value-in-carat>
+        <selling-only-on-auction>false</selling-only-on-auction>
+    </precious-gem>
+    <semiprecious-gem gem-id="sp1" rarity="rare">
+        <name>Topas</name>
+        <origin>
+            <country>Russia</country>
+            <city>Chelybinsk</city>
+        </origin>
+        <visual-parameters>
+            <colour>Black</colour>
+            <transparency-in-percents>20</transparency-in-percents>
+            <number-of-verges>12</number-of-verges>
+        </visual-parameters>
+        <value-in-carat>3</value-in-carat>
+    </semiprecious-gem>
+    <semiprecious-gem gem-id="sp2">
+        <name>Rubin</name>
+        <origin>
+            <country>Russia</country>
+            <city>Chelybinsk</city>
+        </origin>
+        <visual-parameters>
+            <colour>Black</colour>
+            <transparency-in-percents>25</transparency-in-percents>
+            <number-of-verges>9</number-of-verges>
+        </visual-parameters>
+        <value-in-carat>3</value-in-carat>
+    </semiprecious-gem>
+</gems>

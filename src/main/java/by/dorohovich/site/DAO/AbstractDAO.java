@@ -1,0 +1,26 @@
+package by.dorohovich.site.DAO;
+
+import by.dorohovich.site.entity.Entity;
+import by.dorohovich.site.exception.ConnectionProducerException;
+import by.dorohovich.site.exception.DAOException;
+import by.dorohovich.site.pool.ProxyConnection;
+
+import java.util.List;
+
+/**
+ * Created by User on 28.12.2016.
+ */
+public abstract class AbstractDAO<K,T extends Entity> {
+
+    protected ProxyConnection connection;
+
+    public AbstractDAO(ProxyConnection connection) {
+        this.connection = connection;
+    }
+
+
+    public abstract List<T> findAll() throws DAOException;
+    public abstract T findEntityById(K id);
+    public abstract boolean create(T entity) throws DAOException;
+    public abstract T update(T entity);
+}

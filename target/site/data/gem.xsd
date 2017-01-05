@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/gems"
+        xmlns:tns="http://www.example.com/gems"
+        elementFormDefault="qualified">
+    <element name="gem" type="tns:Gem" abstract="true"></element>
+    <element name="precious-gem" type="tns:PreciousGem" substitutionGroup="tns:gem"></element>
+    <element name="semiprecious-gem" type="tns:SemipreciousGem" substitutionGroup="tns:gem"></element>
+
+    <element name="gems">
+        <complexType>
+            <sequence>
+                <element ref="tns:gem" minOccurs="2" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="Gem">
+        <sequence>
+            <element name="name" type="string" />
+            <element name="origin" type="tns:Origin"/>
+            <element name="visual-parameters" type="tns:VisualParameters" />
+            <element name="value-in-carat">
+                <simpleType>
+                    <restriction base="positiveInteger">
+                        <maxInclusive value="150"></maxInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    <attribute name="gem-id" type="tns:GemId" use="required" />
+    </complexType>
+
+    <simpleType name="GemId">
+        <restriction base="ID">
+            <pattern value="([a-zA-Z])[a-zA-Z0-9]{1,19}"/>
+        </restriction>
+    </simpleType>
+
+
+    <complexType name="Origin">
+        <sequence>
+            <element name="country" type="string"/>
+            <element name="city" type="string" />
+        </sequence>
+    </complexType>
+
+    <complexType name="VisualParameters">
+        <sequence>
+            <element name="colour" type="string" />
+            <element name="transparency-in-percents">
+                <simpleType>
+                    <restriction base="nonNegativeInteger">
+                        <maxInclusive value="100"></maxInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="number-of-verges">
+                <simpleType>
+                    <restriction base="positiveInteger">
+                        <minInclusive value="4"></minInclusive>
+                        <maxInclusive value="15"></maxInclusive>
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+    </complexType>
+
+
+    <complexType name="PreciousGem">
+        <complexContent>
+            <extension base="tns:Gem">
+                <sequence>
+                    <element name="selling-only-on-auction" type="boolean"></element>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="SemipreciousGem">
+        <complexContent>
+            <extension base="tns:Gem">
+                <attribute name="rarity" use="optional" default="normal">
+                    <simpleType>
+                        <restriction base="string">
+                            <enumeration value="frequent"></enumeration>
+                            <enumeration value="normal"></enumeration>
+                            <enumeration value="rare"></enumeration>
+                        </restriction>
+                    </simpleType>
+                </attribute>
+           </extension>
+       </complexContent>
+   </complexType>
+
+
+
+
+
+
+
+
+
+
+
+</schema>
