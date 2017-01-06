@@ -2,7 +2,7 @@ package by.dorohovich.site.command;
 
 
 
-import by.dorohovich.site.utility.ConfigurationManager;
+import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -27,7 +27,7 @@ public class EmptyCommand implements ActionCommand {
         session.setAttribute(PARAM_PAGE, PARAM_INDEX);*/
         request.setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);
 
-        return ConfigurationManager.getProperty(PARAM_INDEX);
+        return MappingManager.getProperty(PARAM_INDEX);
     }
 }
 

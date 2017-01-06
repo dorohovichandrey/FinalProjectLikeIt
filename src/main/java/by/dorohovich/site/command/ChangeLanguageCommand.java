@@ -1,6 +1,6 @@
 package by.dorohovich.site.command;
 
-import by.dorohovich.site.utility.ConfigurationManager;
+import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -18,8 +18,6 @@ public class ChangeLanguageCommand implements ActionCommand {
     public String execute(HttpServletRequest request) {
         String lang = request.getParameter(PARAM_LANG);
         HttpSession session = request.getSession(true);
-        PageContext context;
-
 
         if(lang.isEmpty()){
             session.setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);
@@ -34,6 +32,6 @@ public class ChangeLanguageCommand implements ActionCommand {
         if(currPage == null){
             currPage = PARAM_INDEX;
         }
-        return ConfigurationManager.getProperty(currPage);
+        return MappingManager.getProperty(currPage);
     }
 }

@@ -5,6 +5,7 @@ import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.ConnectionPoolException;
 import by.dorohovich.site.exception.ConnectionProducerException;
 import by.dorohovich.site.exception.DAOException;
+import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.pool.ConnectionPool;
 import by.dorohovich.site.pool.ProxyConnection;
 import org.apache.logging.log4j.LogManager;
@@ -19,28 +20,48 @@ public class UserService extends AbstractService<Integer, User>{
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public void register(String login, String password, String email) throws ConnectionPoolException, DAOException{
-        try (ProxyConnection connection= ConnectionPool.getInstance().takeConnection();) {
-
+    public boolean register(String login, String password, String email) throws ServiceException{
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
 
             UserDAO userDAO = new UserDAO(connection);
+            boolean isRegistered = userDAO.create(new User(login, password));
 
-            userDAO.create(new User(login, password));
-
-
+            //testS
             List<User> lst = userDAO.findAll();
             if (lst.size() > 0) {
                 LOGGER.info(lst);
             } else {
                 LOGGER.info("Not found");
             }
+            //testE
 
+            return isRegistered;
 
+        }
+        catch (ConnectionPoolException e){
+            LOGGER.error("Problem with getting connection", e);
+            throw new ServiceException(e);
+        }
+        catch (DAOException e){
+            LOGGER.error("Problem with UserDAO", e);
+            throw new ServiceException(e);
         }
     }
 
-    public User findUserByLogin(String Login){
+    public boolean isLoginFree(String login) throws ServiceException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
 
-        return null;
+            UserDAO userDAO = new UserDAO(connection);
+            return userDAO.findUserByLogin(login) == null;
+        }
+        catch (ConnectionPoolException e){
+            LOGGER.error("Problem with getting connection", e);
+            throw new ServiceException(e);
+        }
+        catch (DAOException e){
+            LOGGER.error("Problem with UserDAO", e);
+            throw new ServiceException(e);
+        }
+
     }
 }

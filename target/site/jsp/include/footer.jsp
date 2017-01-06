@@ -4,7 +4,8 @@
 <%@ taglib prefix="ctg" uri="customtags" %>
 <fmt:setLocale value="${locale}"/>
 <fmt:setBundle basename="i18n.text"/>
-<nav class="navbar navbar-default navbar-fixed-bottom" id="navbar">
+
+<nav class="navbar navbar-default navbar-fixed-bottom" id="footer">
   <div class="container-fluid">
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

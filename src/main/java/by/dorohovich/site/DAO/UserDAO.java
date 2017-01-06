@@ -72,14 +72,13 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         return null;
     }
 
-    public boolean findUserByLogin(String login) throws DAOException {
+    public User findUserByLogin(String login) throws DAOException {
         try(PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
             preparedSt.setString(1, login);
             ResultSet rs=preparedSt.executeQuery();
 
             List<User> list = createUserList(rs);
-
-            return list.size() == 1;
+            return list.size() == 1 ? list.get(0) : null;
 
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO", e);

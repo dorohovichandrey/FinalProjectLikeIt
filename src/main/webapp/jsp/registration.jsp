@@ -18,7 +18,10 @@
   <title>JS Bin</title>
 </head>
 <body>
+<div>
+
 <jsp:include page="/jsp/include/navbar.jsp" />
+
 <form role="form" id="registrationForm" action="${pageContext.request.contextPath}/controller" method="POST">
  <input type="hidden" name="command" value="registration" />
  <div class="form-group">
@@ -41,11 +44,32 @@
  </div>
 <input type="button" name="submitButton"  class="btn btn-success" onclick="validate(document.getElementById('registrationForm'))" value="Регистрация">
 </form>
-<jsp:include page="/jsp/include/footer.jsp" />
-<c:if test="${empty login}">
+
+ <jsp:include page="/jsp/include/footer.jsp" />
+
+
+<c:if test="${not empty param.login}">
+
     <script>
-        document.getElementById("login").value = "newLogin";
+
+     var elems = document.getElementById("registrationForm").elements;
+     var container = elems.login.parentNode;
+     //container.className = 'form-group has-error';
+     var msgElem = document.createElement('div');
+     msgElem.className = "alert alert-danger";
+     msgElem.role = "alert";
+     msgElem.innerHTML = "Login \""+"${param.login}"+"\" is in use, dream up another one";
+     container.appendChild(msgElem);
+
+        document.getElementById("login").value = "${param.login}";
+        document.getElementById("pass").value = "${param.password}";
+        document.getElementById("passConfirm").value = "${param.passwordConfirmation}";
+        document.getElementById("email").value = "${param.emailAddr}"
+
+
+
     </script>
 </c:if>
+ </div>
 </body>
 </html>

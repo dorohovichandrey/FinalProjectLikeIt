@@ -4,7 +4,7 @@ import by.dorohovich.site.entityGem.Gem;
 import by.dorohovich.site.entityGem.PreciousGem;
 import by.dorohovich.site.logic.parsing.AbstractGemsParser;
 import by.dorohovich.site.logic.parsing.ParserFactory;
-import by.dorohovich.site.utility.ConfigurationManager;
+import by.dorohovich.site.utility.MappingManager;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +20,7 @@ public class ParsingCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request) {
-        String page = ConfigurationManager.getProperty("path.page.result");
+        String page = MappingManager.getProperty("path.page.result");
         ParserFactory parserFactory=new ParserFactory();
         String parserType=request.getParameter(PARSER_TYPE_PARAM);
         AbstractGemsParser parser=parserFactory.createParser(parserType);

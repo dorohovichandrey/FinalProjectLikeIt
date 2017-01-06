@@ -5,10 +5,10 @@ import java.util.ResourceBundle;
 /**
  * Created by User on 26.11.2016.
  */
-public class ConfigurationManager {
+public class MappingManager {
     private final static ResourceBundle resourceBundle = ResourceBundle.getBundle("mapping.config");
 
-    private ConfigurationManager() { }
+    private MappingManager() { }
     public static String getProperty(String key) {
         return resourceBundle.getString(key);
     }

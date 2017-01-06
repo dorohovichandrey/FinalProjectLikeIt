@@ -1,15 +1,19 @@
 package by.dorohovich.site.command;
 
 import by.dorohovich.site.DAO.UserDAO;
+import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ConnectionPoolException;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.ConnectionProducerException;
+import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.pool.ConnectionPool;
 import by.dorohovich.site.pool.ProxyConnection;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+import by.dorohovich.site.service.UserService;
+import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 /**
@@ -26,9 +30,9 @@ public class RegistrationCommand  implements ActionCommand {
 
 
     @Override
-    public String execute(HttpServletRequest request) {
+    public String execute(HttpServletRequest request) throws CommandException {
 
-        try (  ProxyConnection connection=ConnectionPool.getInstance().takeConnection();){
+       /* try (  ProxyConnection connection=ConnectionPool.getInstance().takeConnection();){
 
 
 
@@ -55,7 +59,35 @@ public class RegistrationCommand  implements ActionCommand {
         }
 
 
-        return null;
+        return null;*/
+
+        try {
+            String login = request.getParameter(LOGIN);
+            String password = request.getParameter(PASSWORD);
+            String email = request.getParameter(EMAIL_ADDR);
+
+            UserService userService = new UserService();
+            String page;
+            if(userService.isLoginFree(login)){
+                if(!userService.register(login, password, email)) {
+                    throw new CommandException("User was not registered");
+                }
+                LOGGER.info("User with login = \"" + login + "\" was registered");
+                page = MappingManager.getProperty("page.index");
+            } else {
+                page = MappingManager.getProperty("page.registration");
+            }
+
+
+            return page;
+        }
+        catch (ServiceException e)
+        {
+            LOGGER.error("Problem with UserService", e);
+            throw new CommandException(e);
+        }
     }
+
+
 
 }

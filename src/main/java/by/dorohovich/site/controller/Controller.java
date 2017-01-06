@@ -3,8 +3,11 @@ package by.dorohovich.site.controller;
 
 import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.command.ActionFactory;
+import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.pool.ConnectionPool;
-import by.dorohovich.site.utility.ConfigurationManager;
+import by.dorohovich.site.utility.MappingManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -17,6 +20,8 @@ import java.io.IOException;
 
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
+
+    private static final Logger LOGGER = LogManager.getLogger();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -31,23 +36,26 @@ public class Controller extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String page = null;
+        try {
+            String page = null;
 
-        ActionFactory client = new ActionFactory();
-        ActionCommand command = client.defineCommand(request);
+            ActionFactory client = new ActionFactory();
+            ActionCommand command = client.defineCommand(request);
 
-        page = command.execute(request);
+            page = command.execute(request);
 
-        if (page != null) {
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
+            if (page != null) {
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
 
-            dispatcher.forward(request, response);
-        } else {
-            page = ConfigurationManager.getProperty("path.page.index");
+                dispatcher.forward(request, response);
+            } else {
+                page = MappingManager.getProperty("path.page.index");
 
-            response.sendRedirect(request.getContextPath() + page);
+                response.sendRedirect(request.getContextPath() + page);
+            }
+        } catch (CommandException e){
+            LOGGER.error("Command was not executed correct", e);
         }
-
     }
 
     @Override
