@@ -1,5 +1,6 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.impl;
 
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.entityGem.Gem;
 import by.dorohovich.site.entityGem.PreciousGem;
 import by.dorohovich.site.logic.parsing.AbstractGemsParser;

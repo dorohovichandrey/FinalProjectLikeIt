@@ -1,10 +1,10 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.impl;
 
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import javax.servlet.jsp.PageContext;
 
 /**
  * Created by User on 01.12.2016.
@@ -14,7 +14,7 @@ public class ChangeLanguageCommand implements ActionCommand {
     private static final String PARAM_LOCALE = "locale";
     private static final String DEFAULT_LOCALE = "ru";
     private static final String PARAM_PAGE = "page";
-    private static final String PARAM_INDEX = "path.page.index";
+    private static final String PARAM_INDEX = "page.logIn";
     public String execute(HttpServletRequest request) {
         String lang = request.getParameter(PARAM_LANG);
         HttpSession session = request.getSession(true);

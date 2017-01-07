@@ -64,4 +64,25 @@ public class UserService extends AbstractService<Integer, User>{
         }
 
     }
+
+    public User logIn(String login, String password) throws ServiceException
+    {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+
+            UserDAO userDAO = new UserDAO(connection);
+            User user = userDAO.findUserByLogin(login);
+            if(user == null) {
+                return null;
+            }
+            return (password.equals(user.getPassword())) ? user : null;
+        }
+        catch (ConnectionPoolException e){
+            LOGGER.error("Problem with getting connection", e);
+            throw new ServiceException(e);
+        }
+        catch (DAOException e){
+            LOGGER.error("Problem with UserDAO", e);
+            throw new ServiceException(e);
+        }
+    }
 }

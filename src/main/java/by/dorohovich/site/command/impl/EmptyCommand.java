@@ -1,7 +1,8 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.impl;
 
 
 
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;

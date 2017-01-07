@@ -335,324 +335,224 @@
 22:27:12.646 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
 22:27:12.706 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
 22:27:12.715 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-22:27:12.718 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-22:27:12.719 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-22:27:12.720 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-22:27:12.721 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-22:27:12.721 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-23:12:00.929 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-23:12:01.223 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-23:12:01.345 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-23:12:01.531 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-23:12:01.624 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-23:12:01.646 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-23:12:01.648 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-23:12:01.649 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-23:12:01.650 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-23:12:01.652 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-01:47:25.189 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-01:47:25.309 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-01:47:25.362 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-01:47:25.383 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-01:47:25.400 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-01:47:25.401 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-01:47:26.291 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-01:47:26.292 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-01:47:26.623 [http-nio-8080-exec-8] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}]
-01:47:26.627 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-01:47:26.628 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.RegistrationCommand execute - User with login = "KobeBryant" was registered
-01:50:39.559 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-01:50:39.829 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-01:52:25.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-01:52:25.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-01:52:25.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-01:52:25.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-01:52:25.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-02:19:25.470 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:19:25.694 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:19:25.737 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:19:25.778 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:19:25.791 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:19:25.792 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:19:25.967 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:21:09.851 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-02:21:09.855 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-02:21:09.859 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-02:21:09.863 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-02:21:09.864 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-02:28:55.942 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:28:56.051 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:28:56.089 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:28:56.132 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:28:56.160 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:28:56.161 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:28:56.251 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:31:15.488 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-02:31:15.490 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-02:31:15.492 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-02:31:15.495 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-02:31:15.501 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-02:33:12.813 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:33:12.896 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:33:12.911 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:33:12.945 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:33:13.008 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:33:13.009 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:33:13.073 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:38:55.872 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-02:38:55.874 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-02:38:55.876 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-02:38:55.883 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-02:38:55.886 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-02:43:29.017 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:43:29.093 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:43:29.107 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:43:29.143 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:43:29.154 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:43:29.154 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:43:29.192 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:49:57.975 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-02:49:57.980 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-02:49:57.986 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-02:49:57.989 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-02:49:57.993 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-02:52:42.169 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:52:42.336 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:52:42.390 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:52:42.433 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:52:42.475 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-02:52:42.475 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:52:43.555 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:52:43.556 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:52:44.307 [http-nio-8080-exec-6] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}]
-02:52:44.312 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:52:44.313 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.RegistrationCommand execute - User with login = "Ronny" was registered
-02:53:01.727 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-02:53:01.850 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-02:59:40.980 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-02:59:40.982 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-02:59:40.985 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-02:59:40.986 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-02:59:40.987 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:01:35.166 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:01:35.238 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:01:35.257 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:01:35.275 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:01:35.298 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:01:35.299 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:01:35.335 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:01:54.359 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:01:54.361 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:01:54.363 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:01:54.366 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:01:54.371 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:07:13.412 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:07:13.492 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:07:13.526 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:07:13.603 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:07:13.720 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:07:13.726 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:07:13.779 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:10:12.317 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:10:12.322 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:10:12.324 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:10:12.330 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:10:12.332 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:15:33.478 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:15:33.673 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:15:33.701 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:15:33.761 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:15:33.791 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:15:33.792 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:15:33.960 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:15:53.212 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:15:53.214 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:15:53.216 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:15:53.218 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:15:53.221 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:23:49.442 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:23:49.561 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:23:49.595 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:23:49.651 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:23:49.694 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:23:49.697 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:23:49.768 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:27:04.948 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:27:04.950 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:27:04.952 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:27:04.955 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:27:04.958 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:28:58.293 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:28:58.395 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:28:58.424 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:28:58.437 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:28:58.447 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:28:58.448 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:28:58.488 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:35:10.348 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:35:10.354 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:35:10.360 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:35:10.367 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:35:10.369 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:44:04.385 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:44:04.485 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:44:04.573 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:44:04.631 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:44:04.683 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:44:04.684 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:44:04.721 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:45:36.877 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:45:36.882 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:45:36.884 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:45:36.888 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:45:36.892 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:47:28.985 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:47:29.049 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:47:29.070 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:47:29.095 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:47:29.121 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:47:29.122 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:47:29.159 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:49:41.964 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:49:41.969 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:49:41.972 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:49:41.975 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:49:41.978 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-03:51:50.661 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:51:50.768 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:51:50.797 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:51:50.825 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:51:50.843 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-03:51:50.844 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:51:51.500 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:52:03.056 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:52:03.066 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:52:17.051 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:52:17.550 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:52:17.552 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-03:52:18.480 [http-nio-8080-exec-8] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}]
-03:52:18.628 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-03:52:18.629 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.RegistrationCommand execute - User with login = "Ronny2" was registered
-03:55:16.103 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-03:55:16.105 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-03:55:16.106 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-03:55:16.107 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-03:55:16.109 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:02:04.231 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:02:04.341 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:02:04.386 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:02:04.413 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:02:04.443 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:02:04.443 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:02:04.820 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:02:20.749 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:02:20.902 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:02:32.183 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:02:32.394 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:03:19.004 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:03:19.009 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:03:24.441 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:03:24.461 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:03:28.770 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:03:28.772 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:03:37.322 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:03:37.325 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:04:02.706 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:04:02.716 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:04:02.717 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:04:02.993 [http-nio-8080-exec-7] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}]
-04:04:02.996 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:04:02.996 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.RegistrationCommand execute - User with login = "KobeBryant25" was registered
-04:04:30.728 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:04:30.728 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:04:30.728 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:04:30.728 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:04:30.728 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:12:40.824 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:12:40.923 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:12:40.969 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:12:41.063 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:12:41.092 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:12:41.093 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:12:41.245 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:13:07.697 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:13:07.705 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:13:07.707 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:13:07.709 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:13:07.745 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:18:32.316 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:18:32.404 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:18:32.438 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:18:32.484 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:18:32.512 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:18:32.513 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:18:32.620 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:30:00.258 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:30:00.330 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:30:00.334 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:30:00.340 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:30:00.358 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:40:35.632 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:40:35.846 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:40:35.920 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:40:35.974 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:40:36.067 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:40:36.068 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:40:36.174 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:41:22.420 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:41:22.422 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:41:22.423 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:41:22.426 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:41:22.429 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:44:08.090 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:44:08.341 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:44:08.459 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:44:08.501 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:44:08.615 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:44:08.617 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:44:08.767 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:50:53.687 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:50:53.691 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:50:53.694 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:50:53.696 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:50:53.699 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:54:17.591 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:54:17.692 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:54:17.723 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:54:17.753 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:54:17.783 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:54:17.784 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:54:18.721 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-04:57:18.715 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-04:57:18.720 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-04:57:18.726 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-04:57:18.732 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-04:57:18.734 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-04:59:09.338 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:59:09.463 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:59:09.521 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:59:09.550 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:59:09.574 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-04:59:09.574 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-04:59:09.623 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-05:00:32.569 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-05:00:32.581 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-05:00:32.584 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-05:00:32.586 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-05:00:32.589 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
-05:05:25.539 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-05:05:25.672 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-05:05:25.739 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-05:05:25.762 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-05:05:25.800 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
-05:05:25.801 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-05:05:25.929 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-05:05:35.398 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-05:05:35.443 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-05:05:48.000 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
-05:05:48.775 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
-05:12:38.187 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
-05:12:38.238 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
-05:12:38.328 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
-05:12:38.329 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
-05:12:38.330 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+20:22:46.345 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:22:46.602 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:22:46.664 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:22:46.734 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:22:46.785 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:22:46.785 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:22:47.539 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:25:54.027 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+20:25:54.029 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+20:25:54.033 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+20:25:54.036 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+20:25:54.038 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+20:31:11.532 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:31:11.631 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:31:11.689 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:31:11.719 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:31:11.752 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:31:11.753 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:31:11.797 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:07.373 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:33:07.422 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:12.146 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:33:12.402 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:12.403 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:33:12.982 [http-nio-8080-exec-4] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', ROLE=USER, rating=0}]
+20:33:12.987 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:12.988 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.impl.RegistrationCommand execute - User with login = "Ronny3" was registered
+20:33:25.287 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:33:25.599 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:25.599 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:33:25.725 [http-nio-8080-exec-7] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', ROLE=USER, rating=0}]
+20:33:25.738 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:33:25.739 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.impl.RegistrationCommand execute - User with login = "Andrey" was registered
+20:34:38.932 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:34:39.040 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:34:52.951 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+20:34:52.953 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+20:34:52.956 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+20:34:52.958 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+20:34:52.961 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+20:48:40.331 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:48:40.458 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:48:40.487 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:48:40.513 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:48:40.556 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:48:40.557 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:48:40.675 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:50:51.470 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+20:50:51.473 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+20:50:51.474 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+20:50:51.475 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+20:50:51.476 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+20:57:04.926 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+20:57:05.686 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:57:05.741 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:57:05.758 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:57:05.789 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:57:05.807 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+20:57:05.808 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:57:05.869 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:57:05.870 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+20:57:24.636 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+20:57:24.637 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:57:24.643 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:57:24.643 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+20:57:27.321 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+20:57:27.323 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:57:27.328 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:57:27.329 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+20:57:28.155 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+20:57:28.156 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:57:28.159 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:57:28.160 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+20:57:29.273 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+20:57:29.274 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+20:57:29.277 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+20:57:29.277 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+20:59:31.719 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+20:59:31.723 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+20:59:31.726 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+20:59:31.727 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+20:59:31.729 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+21:01:45.681 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+21:01:46.455 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+21:01:46.467 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+21:01:46.499 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+21:01:46.537 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+21:01:46.548 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+21:01:46.548 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:01:46.585 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:01:46.585 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+21:09:07.898 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+21:09:07.900 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:09:08.625 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:09:08.625 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+21:09:55.955 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+21:09:55.955 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:09:56.037 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:09:56.037 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+21:10:26.515 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: registration
+21:10:26.516 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:10:26.624 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:10:26.626 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:10:27.874 [http-nio-8080-exec-3] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', ROLE=USER, rating=0}, User{id=25, login='Ronny9', password='1234Qwe', ROLE=USER, rating=0}]
+21:10:27.900 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:10:27.900 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.impl.RegistrationCommand execute - User with login = "Ronny9" was registered
+21:16:29.892 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: registration
+21:16:29.892 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:16:30.358 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:16:30.359 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:16:30.421 [http-nio-8080-exec-8] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', ROLE=USER, rating=0}, User{id=25, login='Ronny9', password='1234Qwe', ROLE=USER, rating=0}, User{id=26, login='Zidane', password='1234Qwe', ROLE=USER, rating=0}]
+21:16:30.424 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:16:30.425 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.impl.RegistrationCommand execute - User with login = "Zidane" was registered
+21:16:51.059 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: registration
+21:16:51.059 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:16:51.158 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:16:58.486 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: registration
+21:16:58.488 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:16:58.494 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:16:58.494 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+21:16:58.659 [http-nio-8080-exec-1] INFO  by.dorohovich.site.service.UserService register - [User{id=1, login='Admin1', password='admin', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', ROLE=USER, rating=0}, User{id=25, login='Ronny9', password='1234Qwe', ROLE=USER, rating=0}, User{id=26, login='Zidane', password='1234Qwe', ROLE=USER, rating=0}, User{id=27, login='Zidane5', password='1234Qwe', ROLE=USER, rating=0}]
+21:16:58.661 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+21:16:58.662 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.impl.RegistrationCommand execute - User with login = "Zidane5" was registered
+21:19:41.026 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+21:19:41.029 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+21:19:41.030 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+21:19:41.034 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+21:19:41.035 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+00:39:48.688 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+00:39:53.006 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:39:53.128 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:39:53.213 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:39:53.284 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:39:53.353 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:39:53.354 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+00:39:54.017 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+00:39:54.018 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+00:41:56.524 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+00:41:56.529 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+00:41:56.533 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+00:41:56.540 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+00:41:56.543 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+00:50:59.929 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+00:51:01.060 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:51:01.207 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:51:01.229 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:51:01.299 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:51:01.341 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+00:51:01.341 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+00:51:01.409 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+00:51:01.410 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+00:51:12.644 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:51:28.633 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+00:51:28.634 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+00:51:28.637 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+00:51:28.638 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+00:54:43.310 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+00:54:43.311 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+00:54:43.418 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+00:54:43.418 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.impl.LogInCommand execute - Log in was failed
+00:55:56.524 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+00:55:56.524 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+00:55:56.575 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+00:55:56.576 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+00:56:08.947 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:56:17.137 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:56:28.073 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:57:07.148 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:57:08.324 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:57:08.880 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+00:57:09.241 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logOut
+01:03:14.754 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: logIn
+01:03:14.754 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:03:14.840 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:03:14.841 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.impl.LogInCommand execute - User{id=19, login='Ronny', password='1234Qwe', ROLE=USER, rating=0} logged in
+01:56:01.663 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+01:56:02.343 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+01:56:02.412 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+01:56:02.490 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+01:56:02.515 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+02:02:08.284 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:02:08.463 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:20:59.738 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:20:59.851 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:20:59.932 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:20:59.991 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:21:00.094 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:21:00.097 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+02:21:00.098 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+02:21:00.099 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+02:21:00.099 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+02:21:00.100 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+02:34:57.417 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:34:59.704 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:00.881 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:01.623 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:02.276 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:03.006 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:04.413 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+02:35:24.452 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:35:24.618 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:35:24.659 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:35:24.723 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:35:24.788 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:35:24.791 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+02:35:24.792 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+02:35:24.792 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+02:35:24.793 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+02:35:24.794 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+03:39:07.629 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+03:39:28.913 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.ActionFactory defineCommand - Command: language
+03:40:38.956 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+03:40:39.152 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+03:40:39.271 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+03:40:39.321 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+03:40:39.395 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+03:40:39.398 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+03:40:39.399 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+03:40:39.399 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+03:40:39.401 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+03:40:39.403 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)

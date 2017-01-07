@@ -3,7 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <fmt:setLocale value="${locale}"/>
-<fmt:setBundle basename="i18n.text"/>
+<fmt:bundle basename="i18n.text">
 
 
 <nav class="navbar navbar-default navbar-inverse" id="navbar">
@@ -49,24 +49,24 @@
           <ul class="dropdown-menu">
             <li><a href="#">Забаненные пользователи <span class="badge">5</span></a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#"></i>Жалобы и предложения <span class="badge">21</span></a></li>
+            <li><a href="#">Жалобы и предложения <span class="badge">21</span></a></li>
           </ul>
         </li>
         <c:choose>
           <c:when test="${empty user}">
-            <li><a href="#">Зарегистрироваться</a></li>
-            <li><a href="#"><i class="glyphicon glyphicon-log-in"></i> Войти</a></li>
+            <li><a href="/LikeIt/jsp/registration.jsp">Зарегистрироваться</a></li>
+            <li><a href="/LikeIt/jsp/logIn.jsp"><i class="glyphicon glyphicon-log-in"></i> Войти</a></li>
           </c:when>
           <c:otherwise>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> user<span class="caret">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> ${user.login}<span class="caret">
           </span></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Ваш профиль</a></li>
                 <li><a href="#">Ваши вопросы <span class="badge">11</span></a></li>
                 <li><a href="#">Ваши ответы <span class="badge">5</span></a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#"><i class="glyphicon glyphicon-log-out"></i> Выйти</a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=logOut"><i class="glyphicon glyphicon-log-out"></i> Выйти</a></li>
               </ul>
             </li>
           </c:otherwise>
@@ -77,3 +77,4 @@
 
 
 </nav>
+</fmt:bundle>

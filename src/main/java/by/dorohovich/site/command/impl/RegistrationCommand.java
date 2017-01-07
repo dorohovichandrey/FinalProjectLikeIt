@@ -1,16 +1,10 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.DAO.UserDAO;
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.exception.CommandException;
-import by.dorohovich.site.exception.ConnectionPoolException;
-import by.dorohovich.site.entity.User;
-import by.dorohovich.site.exception.ConnectionProducerException;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.pool.ConnectionPool;
-import by.dorohovich.site.pool.ProxyConnection;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 import by.dorohovich.site.service.UserService;
 import by.dorohovich.site.utility.MappingManager;
@@ -73,7 +67,7 @@ public class RegistrationCommand  implements ActionCommand {
                     throw new CommandException("User was not registered");
                 }
                 LOGGER.info("User with login = \"" + login + "\" was registered");
-                page = MappingManager.getProperty("page.index");
+                page = MappingManager.getProperty("page.logIn");
             } else {
                 page = MappingManager.getProperty("page.registration");
             }
