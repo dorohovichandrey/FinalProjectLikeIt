@@ -22,6 +22,8 @@ import java.io.IOException;
 public class Controller extends HttpServlet {
 
     private static final Logger LOGGER = LogManager.getLogger();
+
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -46,7 +48,6 @@ public class Controller extends HttpServlet {
 
             if (page != null) {
                 RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-
                 dispatcher.forward(request, response);
             } else {
                 page = MappingManager.getProperty("path.page.index");

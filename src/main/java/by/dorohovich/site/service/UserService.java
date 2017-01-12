@@ -3,7 +3,6 @@ package by.dorohovich.site.service;
 import by.dorohovich.site.DAO.UserDAO;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.ConnectionPoolException;
-import by.dorohovich.site.exception.ConnectionProducerException;
 import by.dorohovich.site.exception.DAOException;
 import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.pool.ConnectionPool;
@@ -16,15 +15,27 @@ import java.util.List;
 /**
  * Created by User on 04.01.2017.
  */
-public class UserService extends AbstractService<Integer, User>{
+public class UserService extends AbstractService<Integer, User> {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public boolean register(String login, String password, String email) throws ServiceException{
-        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+    public void register(String login, String password, String email) throws ServiceException {
+        try {
+            tryRegister(login, password, email);
+        } catch (ConnectionPoolException e) {
+            LOGGER.error("Problem with getting connection, while trying to register", e);
+            throw new ServiceException(e);
+        }  catch (DAOException e) {
+            LOGGER.error("Problem with UserDAO, while trying to register", e);
+            throw new ServiceException(e);
+        }
+    }
 
+    private void tryRegister(String login, String password, String email) throws DAOException, ConnectionPoolException{
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             UserDAO userDAO = new UserDAO(connection);
-            boolean isRegistered = userDAO.create(new User(login, password));
+            User user = new User(login, password, email);
+            userDAO.create(user);
 
             //testS
             List<User> lst = userDAO.findAll();
@@ -35,54 +46,50 @@ public class UserService extends AbstractService<Integer, User>{
             }
             //testE
 
-            return isRegistered;
-
-        }
-        catch (ConnectionPoolException e){
-            LOGGER.error("Problem with getting connection", e);
-            throw new ServiceException(e);
-        }
-        catch (DAOException e){
-            LOGGER.error("Problem with UserDAO", e);
-            throw new ServiceException(e);
         }
     }
 
-    public boolean isLoginFree(String login) throws ServiceException {
-        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
-
-            UserDAO userDAO = new UserDAO(connection);
-            return userDAO.findUserByLogin(login) == null;
-        }
-        catch (ConnectionPoolException e){
-            LOGGER.error("Problem with getting connection", e);
+    public boolean checkIsLoginFree(String login) throws ServiceException {
+        try {
+            return tryCheckIsLoginFree(login);
+        } catch (ConnectionPoolException e) {
+            LOGGER.error("Problem with getting connection, while trying to check is login free", e);
             throw new ServiceException(e);
-        }
-        catch (DAOException e){
-            LOGGER.error("Problem with UserDAO", e);
+        } catch (DAOException e) {
+            LOGGER.error("Problem with UserDAO, while trying to check is login free", e);
             throw new ServiceException(e);
         }
 
     }
 
-    public User logIn(String login, String password) throws ServiceException
-    {
+    private boolean tryCheckIsLoginFree(String login) throws ConnectionPoolException, DAOException{
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
-
             UserDAO userDAO = new UserDAO(connection);
             User user = userDAO.findUserByLogin(login);
-            if(user == null) {
-                return null;
-            }
-            return (password.equals(user.getPassword())) ? user : null;
+            return user == null;
         }
-        catch (ConnectionPoolException e){
+    }
+
+    public User logIn(String login, String password) throws ServiceException {
+        try {
+            return tryLogIn(login, password);
+        } catch (ConnectionPoolException e) {
             LOGGER.error("Problem with getting connection", e);
             throw new ServiceException(e);
-        }
-        catch (DAOException e){
+        } catch (DAOException e) {
             LOGGER.error("Problem with UserDAO", e);
             throw new ServiceException(e);
+        }
+    }
+
+    private User tryLogIn(String login, String password) throws DAOException, ConnectionPoolException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            UserDAO userDAO = new UserDAO(connection);
+            User user = userDAO.findUserByLogin(login);
+            if (user == null) {
+                return null;
+            }
+            return (user.getPassword().equals(password)) ? user : null;
         }
     }
 }

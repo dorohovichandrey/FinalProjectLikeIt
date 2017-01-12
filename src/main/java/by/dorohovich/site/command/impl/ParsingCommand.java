@@ -21,7 +21,7 @@ public class ParsingCommand implements ActionCommand {
 
     @Override
     public String execute(HttpServletRequest request) {
-        String page = MappingManager.getProperty("path.page.result");
+        String page = MappingManager.getProperty("page.result");
         ParserFactory parserFactory=new ParserFactory();
         String parserType=request.getParameter(PARSER_TYPE_PARAM);
         AbstractGemsParser parser=parserFactory.createParser(parserType);

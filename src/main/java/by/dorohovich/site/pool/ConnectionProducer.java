@@ -49,7 +49,8 @@ public class ConnectionProducer {
     ProxyConnection produce() throws ConnectionProducerException {
         try {
             Connection connection = DriverManager.getConnection(URL, configProp);
-            return new ProxyConnection(connection);
+            ProxyConnection proxyConnection = new ProxyConnection(connection);
+            return proxyConnection;
         } catch (SQLException e) {
             throw new ConnectionProducerException("Connection was not produced", e);
         }

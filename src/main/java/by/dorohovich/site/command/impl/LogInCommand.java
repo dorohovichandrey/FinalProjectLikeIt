@@ -21,39 +21,48 @@ public class LogInCommand implements ActionCommand {
     private static final String LOGIN = "login";
     private static final String PASSWORD = "password";
 
-
     private static final String USER_ATR= "user";
     private static final String LOG_IN_FAILED = "logInFailed";
+
+    private UserService userService = new UserService();
 
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
         try {
-            String login = request.getParameter(LOGIN);
-            String password = request.getParameter(PASSWORD);
-
-
-            UserService userService = new UserService();
-            String page;
-            User user = userService.logIn(login, password);
-            if( user != null){
-                HttpSession session = request.getSession(true);
-                session.setAttribute(USER_ATR, user);
-                LOGGER.info(user+" logged in");
-                page = MappingManager.getProperty("page.index");
-            } else {
-                request.setAttribute(LOG_IN_FAILED, true);
-                LOGGER.info("Log in was failed");
-                page = MappingManager.getProperty("page.logIn");
-            }
-
-
-            return page;
-        }
-        catch (ServiceException e)
-        {
-            LOGGER.error("Problem with UserService", e);
+            return tryExecute(request);
+        } catch (ServiceException e) {
+            LOGGER.error("Problem with UserService, while trying to logIn", e);
             throw new CommandException(e);
         }
+    }
+
+    private String tryExecute(HttpServletRequest request) throws ServiceException {
+        String login = request.getParameter(LOGIN);
+        String password = request.getParameter(PASSWORD);
+        User user = userService.logIn(login, password);
+        boolean isCommandFailed = (user == null);
+        packAttributes(login, password, user, isCommandFailed, request);
+        String page = choosePage(isCommandFailed);
+        return page;
+    }
+
+    private void packAttributes(String login, String password, User user, boolean isCommandFailed, HttpServletRequest request) {
+        HttpSession session = request.getSession(true);
+        if( !isCommandFailed){
+            session.setAttribute(USER_ATR, user);
+            LOGGER.info(user+" logged in");
+        } else {
+            session.setAttribute(LOG_IN_FAILED, isCommandFailed);
+            session.setAttribute(LOGIN, login);
+            session.setAttribute(PASSWORD, password);
+            LOGGER.info("Log in was failed");
+        }
+    }
+
+    private String choosePage(boolean isCommandFailed){
+        String key = isCommandFailed ? "page.logIn" : "page.index";
+        String page = MappingManager.getProperty(key);
+        return page;
     }
 }
 

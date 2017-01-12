@@ -3,7 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <fmt:setLocale value="${locale}"/>
-<fmt:setBundle basename="i18n.text"/>
+<fmt:bundle basename="text">
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,9 +15,11 @@
   <script src="${pageContext.servletContext.contextPath}/resource/js/lib/jquery-3.1.1.min.js"></script>
   <script src="${pageContext.servletContext.contextPath}/resource/bootstrap/js/bootstrap.min.js"></script>
   <script src="${pageContext.servletContext.contextPath}/resource/js/registration.js"></script>
-  <title>JS Bin</title>
+  <title><fmt:message key="text.registration.title"/></title>
 </head>
 <body>
+
+<%session.setAttribute("page","page.registration");%>
 <div>
 
 <jsp:include page="/jsp/include/navbar.jsp" />
@@ -25,30 +27,30 @@
 <form role="form" id="registrationForm" action="${pageContext.request.contextPath}/controller" method="POST">
  <input type="hidden" name="command" value="registration" />
  <div class="form-group">
-  <label for="login">Логин</label>
-  <input input name="login" type="text" class="form-control" id="login" placeholder="Введите логин">
-  <p class="help-block">Не менее 4 символов. Допустимые символы: буквы, цифры, нижнее подчеркивание.</p>
+  <label for="login"><fmt:message key="text.registration.login"/></label>
+  <input input name="login" type="text" class="form-control" id="login" placeholder="<fmt:message key="text.registration.loginPlaceholder"/>">
+  <p class="help-block"><fmt:message key="text.registration.loginInfo"/></p>
  </div>
  <div class="form-group">
-  <label for="pass">Пароль</label>
-  <input input name="password" type="password" class="form-control" id="pass" placeholder="Введите пароль">
-  <p class="help-block">Не меннее 6 символов. Хотя бы одну цифру и по букве в каждом регистре м имтииоиоиоотллть</p>
+  <label for="pass"><fmt:message key="text.registration.password"/></label>
+  <input input name="password" type="password" class="form-control" id="pass" placeholder="<fmt:message key="text.registration.passwordPlaceholder"/>">
+  <p class="help-block"><fmt:message key="text.registration.passwordInfo"/></p>
  </div>
  <div class="form-group">
-  <label for="pass">Подтверждение пароля</label>
-  <input name="passwordConfirmation" type="password" class="form-control" id="passConfirm" placeholder="Подтвердите пароль">
+  <label for="pass"><fmt:message key="text.registration.passwordConf"/></label>
+  <input name="passwordConfirmation" type="password" class="form-control" id="passConfirm" placeholder="<fmt:message key="text.registration.passwordConfPlaceholder"/>">
  </div>
   <div class="form-group">
-  <label for="email">Email</label>
-  <input input name="emailAddr" type="email" class="form-control" id="email" placeholder="Введите email">
+  <label for="email"><fmt:message key="text.registration.email"/></label>
+  <input input name="emailAddr" type="email" class="form-control" id="email" placeholder="<fmt:message key="text.registration.emailPlaceholder"/>">
  </div>
-<input type="button" name="submitButton"  class="btn btn-success" onclick="validate(document.getElementById('registrationForm'))" value="Регистрация">
+<input type="button" name="submitButton"  class="btn btn-success" onclick="validate(document.getElementById('registrationForm'))" value="<fmt:message key="text.registration.button"/>">
 </form>
 
  <jsp:include page="/jsp/include/footer.jsp" />
 
 
-<c:if test="${not empty param.login}">
+<c:if test="${not empty isLoginFree}">
 
     <script>
 
@@ -58,13 +60,13 @@
      var msgElem = document.createElement('div');
      msgElem.className = "alert alert-danger";
      msgElem.role = "alert";
-     msgElem.innerHTML = "Login \""+"${param.login}"+"\" is in use, dream up another one";
+     msgElem.innerHTML = "<fmt:message key="text.registration.error"/>";
      container.appendChild(msgElem);
 
-        document.getElementById("login").value = "${param.login}";
-        document.getElementById("pass").value = "${param.password}";
-        document.getElementById("passConfirm").value = "${param.passwordConfirmation}";
-        document.getElementById("email").value = "${param.emailAddr}"
+        document.getElementById("login").value = "${login}";
+        document.getElementById("pass").value = "${password}";
+        document.getElementById("passConfirm").value = "${passwordConfirmation}";
+        document.getElementById("email").value = "${emailAddr}"
 
 
 
@@ -73,3 +75,4 @@
  </div>
 </body>
 </html>
+ </fmt:bundle>

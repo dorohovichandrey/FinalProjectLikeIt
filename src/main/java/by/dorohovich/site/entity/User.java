@@ -7,6 +7,7 @@ public class User extends Entity<Integer> {
 
     private String login;
     private String password;
+    private String email;
     private Role role;
     private int rating;
 
@@ -18,9 +19,26 @@ public class User extends Entity<Integer> {
         this.rating = rating;
     }
 
+    public User(String login, String password, String email) {
+        this.login = login;
+        this.password = password;
+        this.email = email;
+        this.role = Role.USER;
+        this.rating = 0;
+    }
+
     public User(String login, String password, Role role, int rating) {
         this.login = login;
         this.password = password;
+        this.role = role;
+        this.rating = rating;
+    }
+
+    public User(Integer id, String login, String password, String email, Role role, int rating) {
+        super(id);
+        this.login = login;
+        this.password = password;
+        this.email = email;
         this.role = role;
         this.rating = rating;
     }
@@ -46,6 +64,14 @@ public class User extends Entity<Integer> {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Role getRole() {
@@ -75,6 +101,7 @@ public class User extends Entity<Integer> {
                 "id=" + getId() +
                 ", login='" + login + '\'' +
                 ", password='" + password + '\'' +
+                ", email'" + email + '\'' +
                 ", ROLE=" + role +
                 ", rating=" + rating +
                 '}';

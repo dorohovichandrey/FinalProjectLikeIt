@@ -3,7 +3,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="ctg" uri="customtags" %>
 <fmt:setLocale value="${locale}"/>
-<fmt:bundle basename="i18n.text">
+<fmt:bundle basename="text">
 
 
 <nav class="navbar navbar-default navbar-inverse" id="navbar">

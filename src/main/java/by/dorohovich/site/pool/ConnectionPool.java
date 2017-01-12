@@ -27,7 +27,7 @@ public class ConnectionPool {
     private ConnectionProducer connectionProducer;
 
     private static AtomicBoolean isInitialized = new AtomicBoolean(false);
-    private static Lock lock = new ReentrantLock();
+    private static Lock initializationLock = new ReentrantLock();
 
     private static ConnectionPool instance;
 
@@ -59,15 +59,16 @@ public class ConnectionPool {
     }
 
     public static ConnectionPool getInstance() {
-        if (!isInitialized.get()) {
-            lock.lock();
+        //if (!isInitialized.get()) {
+        if (isInitialized.compareAndSet(false, true)) {
+            initializationLock.lock();
             try {
                 if (instance == null) {
                     instance = new ConnectionPool();
-                    isInitialized.set(true);
+                    //isInitialized.set(true);
                 }
             } finally {
-                lock.unlock();
+                initializationLock.unlock();
             }
         }
 
@@ -103,8 +104,9 @@ public class ConnectionPool {
 
 
     public void closeAll() {
-        if (isInitialized.get()) {
-            isInitialized.set(false);
+        //if (isInitialized.get()) {
+        if (isInitialized.compareAndSet(true, false)) {
+            //isInitialized.set(false);
 
             for (int i = 0; i < POOL_SIZE; i++) {
                 try {

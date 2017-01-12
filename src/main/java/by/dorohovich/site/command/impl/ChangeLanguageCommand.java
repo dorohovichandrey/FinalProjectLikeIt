@@ -11,27 +11,14 @@ import javax.servlet.http.HttpSession;
  */
 public class ChangeLanguageCommand implements ActionCommand {
     private static final String PARAM_LANG = "lang";
-    private static final String PARAM_LOCALE = "locale";
-    private static final String DEFAULT_LOCALE = "ru";
-    private static final String PARAM_PAGE = "page";
-    private static final String PARAM_INDEX = "page.logIn";
+    private static final String ATR_LOCALE = "locale";
+    private static final String ATR_PAGE = "page";
+
     public String execute(HttpServletRequest request) {
         String lang = request.getParameter(PARAM_LANG);
         HttpSession session = request.getSession(true);
-
-        if(lang.isEmpty()){
-            session.setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);
-            //request.setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);
-        }else{
-            session.setAttribute(PARAM_LOCALE, lang);
-            //request.setAttribute(PARAM_LOCALE, lang);
-        }
-
-        String currPage = (String) session.getAttribute(PARAM_PAGE);
-
-        if(currPage == null){
-            currPage = PARAM_INDEX;
-        }
+        session.setAttribute(ATR_LOCALE, lang);
+        String currPage = (String) session.getAttribute(ATR_PAGE);
         return MappingManager.getProperty(currPage);
     }
 }
