@@ -16,15 +16,20 @@ import javax.servlet.http.HttpSession;
  * Created by User on 06.01.2017.
  */
 public class LogInCommand implements ActionCommand {
+
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final String LOGIN = "login";
-    private static final String PASSWORD = "password";
+    private static final String LOGIN_PARAM = "login";
+    private static final String PASSWORD_PARAM = "password";
 
-    private static final String USER_ATR= "user";
-    private static final String LOG_IN_FAILED = "logInFailed";
+    private static final String LOGIN_ATTR = "login";
+    private static final String PASSWORD_ATTR = "password";
+    private static final String USER_ATTR = "user";
+    private static final String LOG_IN_FAILED_ATTR = "logInFailed";
 
-    private UserService userService = new UserService();
+    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.index";
+    private static final String KEY_FOR_PAGE_IF_FAILED = "page.logIn";
+
 
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
@@ -37,8 +42,9 @@ public class LogInCommand implements ActionCommand {
     }
 
     private String tryExecute(HttpServletRequest request) throws ServiceException {
-        String login = request.getParameter(LOGIN);
-        String password = request.getParameter(PASSWORD);
+        String login = request.getParameter(LOGIN_PARAM);
+        String password = request.getParameter(PASSWORD_PARAM);
+        UserService userService = new UserService();
         User user = userService.logIn(login, password);
         boolean isCommandFailed = (user == null);
         packAttributes(login, password, user, isCommandFailed, request);
@@ -48,19 +54,19 @@ public class LogInCommand implements ActionCommand {
 
     private void packAttributes(String login, String password, User user, boolean isCommandFailed, HttpServletRequest request) {
         HttpSession session = request.getSession(true);
-        if( !isCommandFailed){
-            session.setAttribute(USER_ATR, user);
-            LOGGER.info(user+" logged in");
+        if (!isCommandFailed) {
+            session.setAttribute(USER_ATTR, user);
+            LOGGER.info(user + " logged in");
         } else {
-            session.setAttribute(LOG_IN_FAILED, isCommandFailed);
-            session.setAttribute(LOGIN, login);
-            session.setAttribute(PASSWORD, password);
+            session.setAttribute(LOGIN_ATTR, login);
+            session.setAttribute(PASSWORD_ATTR, password);
             LOGGER.info("Log in was failed");
         }
+        session.setAttribute(LOG_IN_FAILED_ATTR, isCommandFailed);
     }
 
-    private String choosePage(boolean isCommandFailed){
-        String key = isCommandFailed ? "page.logIn" : "page.index";
+    private String choosePage(boolean isCommandFailed) {
+        String key = isCommandFailed ? KEY_FOR_PAGE_IF_FAILED : KEY_FOR_PAGE_IF_SUCCESS;
         String page = MappingManager.getProperty(key);
         return page;
     }

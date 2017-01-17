@@ -2389,3 +2389,456 @@ Caused by: by.dorohovich.site.exception.DAOException: User was not created
 02:38:19.978 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
 02:38:19.980 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
 02:38:19.989 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+01:11:52.621 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+01:12:55.839 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:12:55.912 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:12:55.931 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:12:55.970 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:12:55.995 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:12:55.997 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+01:12:55.998 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+01:12:55.999 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+01:12:56.000 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+01:12:56.001 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+01:36:22.608 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+01:36:24.629 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:36:24.731 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:36:24.795 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:36:24.824 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:36:24.838 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+01:36:24.839 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:36:26.220 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:42:12.438 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+01:48:18.996 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+01:48:18.997 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:48:19.970 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:48:19.970 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:48:20.362 [http-nio-8080-exec-1] INFO  by.dorohovich.site.service.UserService tryRegister - [User{id=1, login='Admin1', password='admin', email'', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', email'', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', email'', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', email'', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', email'', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', email'', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', email'', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', email'', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', email'', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', email'', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', email'', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', email'', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', email'', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=25, login='Ronny9', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=26, login='Zidane', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=27, login='Zidane5', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=28, login='Ronny5', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=29, login='Sanches', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=30, login='Ronny25', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=31, login='Ronny27', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=32, login='Sanches7', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=33, login='Totti', password='1234Qwe', email'fcroma@gmail.com', ROLE=USER, rating=0}, User{id=34, login='reus', password='1234Qwe', email'dortmund@mail.ru', ROLE=USER, rating=0}, User{id=35, login='gotse', password='1234Qwe', email'svgjghjv@mail.ru', ROLE=USER, rating=0}]
+01:48:20.368 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:48:24.082 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+01:48:24.083 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:48:24.120 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:48:29.728 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+01:48:33.067 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+01:49:10.308 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: logIn
+01:49:10.309 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:49:10.368 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:49:10.369 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'svgjghjv@mail.ru', ROLE=USER, rating=0} logged in
+01:49:15.901 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: logOut
+01:49:19.931 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+01:49:19.932 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+01:49:19.948 [http-nio-8080-exec-8] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+01:59:54.453 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+01:59:54.454 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+01:59:54.467 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+01:59:54.468 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+01:59:54.470 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+02:07:21.218 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+02:07:27.356 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:07:27.532 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:07:27.630 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:07:27.691 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:07:27.713 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:07:27.713 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:07:27.922 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:08:04.508 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: logIn
+02:08:04.511 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:08:04.551 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:08:04.552 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'svgjghjv@mail.ru', ROLE=USER, rating=0} logged in
+02:09:19.320 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+02:09:19.323 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+02:09:19.326 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+02:09:19.328 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+02:09:19.329 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+02:12:56.442 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+02:12:57.225 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:12:57.253 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:12:57.275 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:12:57.308 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:12:57.352 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+02:12:57.353 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:12:58.357 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:13:12.276 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+02:13:12.277 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:13:12.373 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:13:12.374 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:13:13.217 [http-nio-8080-exec-2] INFO  by.dorohovich.site.service.UserService tryRegister - [User{id=1, login='Admin1', password='admin', email'', ROLE=ADMIN, rating=0}, User{id=2, login='scientist2008', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=3, login='gangster', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=4, login='student15', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=5, login='superTeacher', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=6, login='superTeacher2010', password='qwerty1', email'', ROLE=USER, rating=0}, User{id=7, login='mario', password='qsdfgf7448', email'', ROLE=USER, rating=0}, User{id=8, login='dendi', password='4637chsdfhsf', email'', ROLE=USER, rating=0}, User{id=9, login='sega', password='q435363', email'', ROLE=USER, rating=0}, User{id=10, login='proger', password='sezvs', email'', ROLE=USER, rating=0}, User{id=11, login='Tester', password='1234qwerty', email'', ROLE=USER, rating=0}, User{id=13, login='SuperTTester', password='1234qwerty', email'', ROLE=USER, rating=0}, User{id=14, login='Arkadiy', password='qwerttrewq', email'', ROLE=USER, rating=0}, User{id=15, login='Boss2002', password='Boss2002', email'', ROLE=USER, rating=0}, User{id=16, login='assdfghj', password='12345Ar', email'', ROLE=USER, rating=0}, User{id=17, login='lo', password='123', email'', ROLE=USER, rating=0}, User{id=18, login='KobeBryant', password='12345Qwe', email'', ROLE=USER, rating=0}, User{id=19, login='Ronny', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=20, login='Ronny2', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=21, login='KobeBryant25', password='1234Qw', email'', ROLE=USER, rating=0}, User{id=22, login='Pirlo', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=23, login='Ronny3', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=24, login='Andrey', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=25, login='Ronny9', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=26, login='Zidane', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=27, login='Zidane5', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=28, login='Ronny5', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=29, login='Sanches', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=30, login='Ronny25', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=31, login='Ronny27', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=32, login='Sanches7', password='1234Qwe', email'', ROLE=USER, rating=0}, User{id=33, login='Totti', password='1234Qwe', email'fcroma@gmail.com', ROLE=USER, rating=0}, User{id=34, login='reus', password='1234Qwe', email'dortmund@mail.ru', ROLE=USER, rating=0}, User{id=35, login='gotse', password='1234Qwe', email'svgjghjv@mail.ru', ROLE=USER, rating=0}, User{id=36, login='Sanches20', password='1234Qwe', email'sdsgfdddfb@gmail.com', ROLE=USER, rating=0}]
+02:13:13.220 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:14:39.795 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+02:14:39.796 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:14:39.885 [http-nio-8080-exec-5] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:15:27.125 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: registration
+02:15:27.126 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:15:27.130 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:15:30.251 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+02:15:44.366 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+02:15:44.367 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+02:15:44.505 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+02:20:54.694 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+02:20:54.698 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+02:20:54.705 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+02:20:54.708 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+02:20:54.710 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+22:45:48.108 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:50.189 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:51.337 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:52.425 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:53.527 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:54.494 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:45:55.344 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+22:46:51.300 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+22:46:51.382 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+22:46:51.405 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+22:46:51.426 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+22:46:51.451 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+22:46:51.454 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+22:46:51.455 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+22:46:51.456 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+22:46:51.456 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+22:46:51.457 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+23:27:28.537 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+23:27:30.729 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:27:30.844 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:27:30.861 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:27:30.886 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:27:30.957 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:27:30.958 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+23:27:32.129 [http-nio-8080-exec-6] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+23:27:32.130 [http-nio-8080-exec-6] ERROR by.dorohovich.site.service.UserService showUsersTop - Problem with UserDAO, when trying to showUsersTop
+by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) [classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) [classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) [classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	... 30 more
+23:27:32.165 [http-nio-8080-exec-6] ERROR by.dorohovich.site.command.impl.ShowUsersTopCommand execute - Problem with userService, while trying to showUsersTop
+by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:104) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) [classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	... 28 more
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	... 28 more
+23:27:32.176 [http-nio-8080-exec-6] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:36) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:104) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+23:27:49.105 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+23:27:49.107 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+23:27:49.116 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+23:27:49.117 [http-nio-8080-exec-1] ERROR by.dorohovich.site.service.UserService showUsersTop - Problem with UserDAO, when trying to showUsersTop
+by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) [classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) [classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) [classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	... 30 more
+23:27:49.130 [http-nio-8080-exec-1] ERROR by.dorohovich.site.command.impl.ShowUsersTopCommand execute - Problem with userService, while trying to showUsersTop
+by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:104) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) [classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	... 28 more
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	... 28 more
+23:27:49.155 [http-nio-8080-exec-1] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:36) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:47) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:104) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in UserDAO
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+Caused by: java.sql.SQLException: Column Index out of range, 6 > 5. 
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.checkColumnBounds(ResultSetImpl.java:767) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2477) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.UserDAO.makeUserList(UserDAO.java:120) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersByQuery(UserDAO.java:55) ~[classes/:?]
+	at by.dorohovich.site.DAO.UserDAO.findUsersSortedByRating(UserDAO.java:43) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.tryShowUsersTop(UserService.java:111) ~[classes/:?]
+	at by.dorohovich.site.service.UserService.showUsersTop(UserService.java:98) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.tryExecute(ShowUsersTopCommand.java:42) ~[classes/:?]
+	at by.dorohovich.site.command.impl.ShowUsersTopCommand.execute(ShowUsersTopCommand.java:33) ~[classes/:?]
+	... 26 more
+23:28:12.374 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+23:28:12.376 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+23:28:12.378 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+23:28:12.380 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+23:28:12.381 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+23:32:45.050 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+23:32:46.076 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:32:46.205 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:32:46.228 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:32:46.248 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:32:46.321 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+23:32:46.322 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+23:32:46.422 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+23:37:41.007 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:37:45.713 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:37:47.872 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:02.487 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:05.672 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:11.067 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:12.998 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:14.813 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+23:38:14.813 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+23:38:14.841 [http-nio-8080-exec-10] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+23:38:16.634 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:17.776 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:21.107 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:22.636 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:25.033 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:28.683 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:29.946 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:30.798 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:31.979 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:32.828 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:38:34.062 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: language
+23:44:10.284 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.factory.ActionFactory defineCommand - Command: show_users_top
+23:44:10.286 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+23:44:10.313 [http-nio-8080-exec-7] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool

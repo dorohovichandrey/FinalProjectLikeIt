@@ -1,5 +1,6 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.factory;
 
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.command.impl.*;
 
 /**
@@ -34,10 +35,16 @@ public enum CommandEnum {
         {
             this.command = new LogOutCommand();
         }
+    },
+
+    SHOW_USERS_TOP{
+        {
+            this.command = new ShowUsersTopCommand();
+        }
     };
 
     ActionCommand command;
-    public ActionCommand getCurrentCommand() {
+    public ActionCommand getCommand() {
         return command;
     }
 }

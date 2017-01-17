@@ -2,7 +2,7 @@ package by.dorohovich.site.controller;
 
 
 import by.dorohovich.site.command.ActionCommand;
-import by.dorohovich.site.command.ActionFactory;
+import by.dorohovich.site.command.factory.ActionFactory;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.pool.ConnectionPool;
 import by.dorohovich.site.utility.MappingManager;

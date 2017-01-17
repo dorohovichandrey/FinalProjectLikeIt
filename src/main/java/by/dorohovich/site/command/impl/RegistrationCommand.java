@@ -1,7 +1,6 @@
 package by.dorohovich.site.command.impl;
 
 import by.dorohovich.site.command.ActionCommand;
-import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 
@@ -23,21 +22,23 @@ public class RegistrationCommand  implements ActionCommand {
     private static final String PASSWORD_CONFIRMATION_PARAM = "passwordConfirmation";
     private static final String EMAIL_ADDR_PARAM = "emailAddr";
 
-    private static final String LOGIN_ATR = "login";
-    private static final String PASSWORD_ATR = "password";
-    private static final String PASSWORD_CONFIRMATION_ATR = "passwordConfirmation";
+    private static final String LOGIN_ATTR = "login";
+    private static final String PASSWORD_ATTR = "password";
+    private static final String PASSWORD_CONFIRMATION_ATTR = "passwordConfirmation";
     private static final String EMAIL_ADDR_ATR = "emailAddr";
     private static final String IS_LOGIN_FREE_ATR = "isLoginFree";
 
-    UserService userService = new UserService();
+    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.logIn";
+    private static final String KEY_FOR_PAGE_IF_FAILED = "page.registration";
+
+
 
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
         try {
             return tryExecute(request);
         }
-        catch (ServiceException e)
-        {
+        catch (ServiceException e) {
             LOGGER.error("Problem with userService, while trying to register", e);
             throw new CommandException(e);
         }
@@ -47,6 +48,7 @@ public class RegistrationCommand  implements ActionCommand {
         String login = request.getParameter(LOGIN_PARAM);
         String password = request.getParameter(PASSWORD_PARAM);
         String email = request.getParameter(EMAIL_ADDR_PARAM);
+        UserService userService = new UserService();
         boolean isLoginFree = userService.checkIsLoginFree(login);
         if(isLoginFree) {
             userService.register(login, password, email);
@@ -57,17 +59,17 @@ public class RegistrationCommand  implements ActionCommand {
     }
 
     private void packAttributes(String login, String password, String email, boolean isLoginFree, HttpServletRequest request) {
+        HttpSession session = request.getSession(true);
+        session.setAttribute(IS_LOGIN_FREE_ATR, isLoginFree);
         if( !isLoginFree){
-            HttpSession session = request.getSession(true);
-            session.setAttribute(IS_LOGIN_FREE_ATR, isLoginFree);
-            session.setAttribute(LOGIN_ATR, login);
-            session.setAttribute(PASSWORD_ATR, password);
+            session.setAttribute(LOGIN_ATTR, login);
+            session.setAttribute(PASSWORD_ATTR, password);
             session.setAttribute(EMAIL_ADDR_ATR, email);
         }
     }
 
     private String choosePage(boolean isLoginFree){
-        String key = isLoginFree ? "page.logIn" : "page.registration";
+        String key = isLoginFree ? KEY_FOR_PAGE_IF_SUCCESS : KEY_FOR_PAGE_IF_FAILED;
         String page = MappingManager.getProperty(key);
         return page;
     }

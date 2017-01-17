@@ -2,9 +2,7 @@ package by.dorohovich.site.DAO;
 
 import by.dorohovich.site.entity.Role;
 import by.dorohovich.site.entity.User;
-import by.dorohovich.site.exception.ConnectionProducerException;
 import by.dorohovich.site.exception.DAOException;
-import by.dorohovich.site.pool.ConnectionPool;
 import by.dorohovich.site.pool.ProxyConnection;
 
 import java.sql.PreparedStatement;
@@ -20,6 +18,7 @@ import java.util.List;
 public class UserDAO extends AbstractDAO<Integer, User> {
 
     private static final String SELECT_ALL = "SELECT * FROM user";
+    private static final String SELECT_USERS_SORTED_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";
     private static final String CREATE_USER = "INSERT INTO user (login, password, email, isAdmin) VALUES (?, ?, ?, ?)";
     private static final String FIND_USER_BY_LOGIN = "SELECT * FROM user WHERE login = ?";
 
@@ -31,16 +30,32 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     @Override
     public List<User> findAll() throws DAOException {
-        try (Statement st = connection.createStatement()) {
-            ResultSet rs = st.executeQuery(SELECT_ALL);
-            List<User> list = createUserList(rs);
-            return list;
+        try {
+            return findUsersByQuery(SELECT_ALL);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in UserDAO, while trying to findAll", e);
+        }
+
+    }
+
+    public List<User> findUsersSortedByRating() throws DAOException {
+        try {
+            return findUsersByQuery(SELECT_USERS_SORTED_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO", e);
         }
 
     }
 
+
+
+    private List<User> findUsersByQuery(String query) throws SQLException {
+        try (Statement st = connection.createStatement()) {
+            ResultSet rs = st.executeQuery(query);
+            List<User> list = makeUserList(rs);
+            return list;
+        }
+    }
 
 
     @Override
@@ -88,12 +103,12 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
             preparedSt.setString(1, login);
             ResultSet rs = preparedSt.executeQuery();
-            List<User> list = createUserList(rs);
+            List<User> list = makeUserList(rs);
             return list.size() == 1 ? list.get(0) : null;
         }
     }
 
-    private List<User> createUserList(ResultSet rs) throws SQLException {
+    private List<User> makeUserList(ResultSet rs) throws SQLException {
         ArrayList<User> list = new ArrayList<User>();
         while (rs.next()) {
             int id = rs.getInt(1);

@@ -39,7 +39,7 @@
     <jsp:include page="/jsp/include/footer.jsp" />
 
 
-    <c:if test="${not empty logInFailed}">
+    <c:if test="${logInFailed eq true}">
         <script>
 
             var elems = document.getElementById("loginForm").elements;

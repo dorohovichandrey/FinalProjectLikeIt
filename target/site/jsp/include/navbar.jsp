@@ -22,7 +22,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Пользователи<span class="sr-only">(current)</span></a></li>
+        <li><a href="${pageContext.request.contextPath}/controller?command=show_users_top">Пользователи<span class="sr-only">(current)</span></a></li>
         <li role="separator" class="divider"></li>
         <li><a href="#">Темы</a></li>
         <li class="dropdown">

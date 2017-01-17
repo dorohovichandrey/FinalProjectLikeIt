@@ -1,5 +1,6 @@
-package by.dorohovich.site.command;
+package by.dorohovich.site.command.factory;
 
+import by.dorohovich.site.command.ActionCommand;
 import by.dorohovich.site.command.impl.EmptyCommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -23,7 +24,7 @@ public class ActionFactory {
         }
 // получение объекта, соответствующего команде
             CommandEnum currentEnum = CommandEnum.valueOf(action.toUpperCase());
-            current = currentEnum.getCurrentCommand();
+            current = currentEnum.getCommand();
 
         return current;
     }

@@ -11,10 +11,12 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class LogOutCommand implements ActionCommand {
 
+
+    private static final String KEY_FOR_PAGE = "page.index";
     @Override
     public String execute(HttpServletRequest request) throws CommandException {
         request.getSession().invalidate();
-        String page = MappingManager.getProperty("page.index");
+        String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
 }

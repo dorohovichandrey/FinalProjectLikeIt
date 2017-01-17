@@ -50,7 +50,7 @@
  <jsp:include page="/jsp/include/footer.jsp" />
 
 
-<c:if test="${not empty isLoginFree}">
+<c:if test="${isLoginFree eq false}">
 
     <script>
 

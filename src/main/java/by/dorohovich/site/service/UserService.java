@@ -92,4 +92,24 @@ public class UserService extends AbstractService<Integer, User> {
             return (user.getPassword().equals(password)) ? user : null;
         }
     }
+
+    public List<User> showUsersTop() throws ServiceException{
+        try {
+            return tryShowUsersTop();
+        }  catch (ConnectionPoolException e) {
+            LOGGER.error("Problem with getting connection, when trying to showUsersTop", e);
+            throw new ServiceException(e);
+        } catch (DAOException e) {
+            LOGGER.error("Problem with UserDAO, when trying to showUsersTop", e);
+            throw new ServiceException(e);
+        }
+    }
+
+    private List<User> tryShowUsersTop() throws ConnectionPoolException, DAOException{
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            UserDAO userDAO = new UserDAO(connection);
+            List<User> userList = userDAO.findUsersSortedByRating();
+            return userList;
+        }
+    }
 }
