@@ -47,6 +47,12 @@ public enum CommandEnum {
         {
             command = new ChangePasswordCommand();
         }
+    },
+
+    CHANGE_EMAIL{
+        {
+            command = new ChangeEmailCommand();
+        }
     };
 
     Command command;

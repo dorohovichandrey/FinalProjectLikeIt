@@ -49,10 +49,10 @@
             <br>
             <div class="row">
                 <form role="form" id="emailForm" class="col-md-4 col-md-offset-4" action="${pageContext.request.contextPath}/controller" method="POST">
-                    <input type="hidden" name="command" value="change_password" />
+                    <input type="hidden" name="command" value="change_email" />
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input  name="emailAddr" type="email" class="form-control" id="email" placeholder="Введите email">
+                        <input  name="emailAddr" type="email" class="form-control" id="email" placeholder="${ user.email }"/>
                     </div>
                     <input type="button" name="submitButton"  class="btn btn-success" onclick="validateChangeEmail(document.getElementById('emailForm'))" value="Сменить email"/>
                 </form>
@@ -81,7 +81,7 @@
         <c:if test="${passChangeFailed eq false}">
             <script>
 
-                var elems = document.getElementById("passForm").elements;
+                <%--var elems = document.getElementById("passForm").elements;
                 var container = document.getElementById("newPassConfirm").parentNode;
                 //container.className = 'form-group has-error';
 
@@ -89,7 +89,10 @@
                 msgElem.className = "alert alert-success";
                 msgElem.role = "alert";
                 msgElem.innerHTML ="success";
-                container.appendChild(msgElem);
+                container.appendChild(msgElem);--%>
+                BootstrapDialog.show({
+                    message: 'Hi Apple!'
+                });
 
 
             </script>

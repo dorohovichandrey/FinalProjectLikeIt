@@ -36,16 +36,6 @@ public class UserService extends AbstractService<Integer, User> {
             UserDAO userDAO = new UserDAO(connection);
             User user = new User(login, password, email);
             userDAO.create(user);
-
-            //testS
-            List<User> lst = userDAO.findAll();
-            if (lst.size() > 0) {
-                LOGGER.info(lst);
-            } else {
-                LOGGER.info("Not found");
-            }
-            //testE
-
         }
     }
 
@@ -135,6 +125,29 @@ public class UserService extends AbstractService<Integer, User> {
                 userDAO.updatePassword(login, newPassword);
                 updatedUser = userDAO.findUserByLogin(login);
             }
+            return updatedUser;
+        }
+    }
+
+    public User changeEmail(User user, String email) throws ServiceException {
+        try {
+            return tryChangeEmail(user, email);
+        } catch (ConnectionPoolException e) {
+            LOGGER.error("Problem with getting connection, while trying to change email", e);
+            throw new ServiceException(e);
+        } catch (DAOException e) {
+            LOGGER.error("Problem with UserDAO, while trying to change email", e);
+            throw new ServiceException(e);
+        }
+    }
+
+    private User tryChangeEmail(User user, String email) throws ConnectionPoolException, DAOException{
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            User updatedUser = null;
+            UserDAO userDAO = new UserDAO(connection);
+            String login = user.getLogin();
+            userDAO.updateEmail(login, email);
+            updatedUser = userDAO.findUserByLogin(login);
             return updatedUser;
         }
     }

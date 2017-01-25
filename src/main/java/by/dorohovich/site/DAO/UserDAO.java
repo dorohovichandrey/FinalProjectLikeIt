@@ -22,6 +22,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     private static final String CREATE_USER = "INSERT INTO user (login, password, email, isAdmin) VALUES (?, ?, ?, ?)";
     private static final String FIND_USER_BY_LOGIN = "SELECT * FROM user WHERE login = ?";
     private static final String UPDATE_PASSWORD = "UPDATE user SET password = ? WHERE login = ?";
+    private static final String UPDATE_EMAIL = "UPDATE user SET email = ? WHERE login = ?";
 
 
     public UserDAO(ProxyConnection connection) {
@@ -97,6 +98,15 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
+    private User tryFindUserByLogin(String login) throws SQLException {
+        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
+            preparedSt.setString(1, login);
+            ResultSet rs = preparedSt.executeQuery();
+            List<User> list = makeUserList(rs);
+            return list.size() == 1 ? list.get(0) : null;
+        }
+    }
+
     public void updatePassword(String login, String password) throws DAOException{
         try {
             tryUpdatePassword(login, password);
@@ -116,14 +126,28 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
-    private User tryFindUserByLogin(String login) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
-            preparedSt.setString(1, login);
-            ResultSet rs = preparedSt.executeQuery();
-            List<User> list = makeUserList(rs);
-            return list.size() == 1 ? list.get(0) : null;
+    public void updateEmail(String login, String email) throws DAOException{
+        try {
+            tryUpdateEmail(login, email);
+        } catch (SQLException e){
+            throw new DAOException("Problems in UserDAO, while trying change email", e);
         }
     }
+
+    private void tryUpdateEmail(String login, String email) throws SQLException, DAOException{
+        try (PreparedStatement preparedSt = connection.prepareStatement(UPDATE_EMAIL)) {
+            preparedSt.setString(1, email);
+            preparedSt.setString(2, login);
+            preparedSt.executeUpdate();
+            if (preparedSt.getUpdateCount() != 1) {
+                throw new DAOException("Email was not updated");
+            }
+        }
+    }
+
+
+
+
 
 
     private List<User> makeUserList(ResultSet rs) throws SQLException {
