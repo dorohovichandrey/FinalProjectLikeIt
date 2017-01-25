@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1be135-be9b-4236-a3df-916e979f5381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeEmailCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/DAO/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site.war" afterPath="$PROJECT_DIR$/target/site.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/DAO/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/service/UserService.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
@@ -65,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editProfile.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="editProfile.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="54" column="124" selection-start-line="54" selection-start-column="124" selection-end-line="54" selection-end-column="124" />
+            <state relative-caret-position="390">
+              <caret line="84" column="71" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -79,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/logs/log.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-760">
-              <caret line="21" column="102" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+              <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -108,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandEnum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommandEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-650">
+            <state relative-caret-position="-395">
               <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding />
             </state>
@@ -192,8 +182,8 @@
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeEmailCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
         <option value="$PROJECT_DIR$/logs/log.txt" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" />
       </list>
     </option>
   </component>
@@ -1315,7 +1305,7 @@
       <workItem from="1484680124075" duration="6432000" />
       <workItem from="1484688173962" duration="465000" />
       <workItem from="1485263337046" duration="5279000" />
-      <workItem from="1485340465355" duration="30136000" />
+      <workItem from="1485340465355" duration="30745000" />
     </task>
     <task id="LOCAL-00001" summary="login logout">
       <created>1483750149219</created>
@@ -1345,20 +1335,27 @@
       <option name="project" value="LOCAL" />
       <updated>1485371093336</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed bag in UserDAO">
+      <created>1485383821389</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485383821389</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285302000" />
+    <option name="totallyTimeSpent" value="285911000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3611111" sideWeight="0.3698941" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15885022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15885022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1405,7 +1402,8 @@
     <MESSAGE value="added editProfile.jsp, editProfile.js" />
     <MESSAGE value="added createQuestion.jsp, createQuestion.js" />
     <MESSAGE value="added ChangePasswordCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="added ChangePasswordCommand" />
+    <MESSAGE value="fixed bag in UserDAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bag in UserDAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1783,14 +1781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="54" column="124" selection-start-line="54" selection-start-column="124" selection-end-line="54" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/f93f0b1e/b15668d8-4b99-4583-a8bb-010ce3aab12e/like.answer">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1836,7 +1826,7 @@
     <entry file="file://$PROJECT_DIR$/logs/log.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-760">
-          <caret line="21" column="102" selection-start-line="21" selection-start-column="102" selection-end-line="21" selection-end-column="102" />
+          <caret line="42" column="102" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
           <folding />
         </state>
       </provider>
@@ -1862,8 +1852,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-650">
+        <state relative-caret-position="-395">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="84" column="71" selection-start-line="84" selection-start-column="71" selection-end-line="84" selection-end-column="71" />
           <folding />
         </state>
       </provider>

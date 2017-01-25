@@ -81,7 +81,7 @@
         <c:if test="${passChangeFailed eq false}">
             <script>
 
-                <%--var elems = document.getElementById("passForm").elements;
+                var elems = document.getElementById("passForm").elements;
                 var container = document.getElementById("newPassConfirm").parentNode;
                 //container.className = 'form-group has-error';
 
@@ -89,10 +89,8 @@
                 msgElem.className = "alert alert-success";
                 msgElem.role = "alert";
                 msgElem.innerHTML ="success";
-                container.appendChild(msgElem);--%>
-                BootstrapDialog.show({
-                    message: 'Hi Apple!'
-                });
+                container.appendChild(msgElem);
+
 
 
             </script>
