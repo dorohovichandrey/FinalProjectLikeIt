@@ -1,8 +1,8 @@
 package by.dorohovich.site.controller;
 
 
-import by.dorohovich.site.command.ActionCommand;
-import by.dorohovich.site.command.factory.ActionFactory;
+import by.dorohovich.site.command.Command;
+import by.dorohovich.site.command.factory.CommandFactory;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.pool.ConnectionPool;
 import by.dorohovich.site.utility.MappingManager;
@@ -29,6 +29,7 @@ public class Controller extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -41,8 +42,8 @@ public class Controller extends HttpServlet {
         try {
             String page = null;
 
-            ActionFactory client = new ActionFactory();
-            ActionCommand command = client.defineCommand(request);
+            CommandFactory factory = new CommandFactory();
+            Command command = factory.defineCommand(request);
 
             page = command.execute(request);
 
@@ -54,15 +55,14 @@ public class Controller extends HttpServlet {
 
                 response.sendRedirect(request.getContextPath() + page);
             }
-        } catch (CommandException e){
+        } catch (CommandException e) {
             LOGGER.error("Command was not executed correct", e);
         }
     }
 
     @Override
     public void destroy() {
-        super.destroy();
-
         ConnectionPool.getInstance().closeAll();
+        super.destroy();
     }
 }

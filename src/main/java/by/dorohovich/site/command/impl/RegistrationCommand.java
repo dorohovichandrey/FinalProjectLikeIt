@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 
@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * Created by User on 08.12.2016.
  */
-public class RegistrationCommand  implements ActionCommand {
+public class RegistrationCommand  implements Command {
     private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String LOGIN_PARAM = "login";

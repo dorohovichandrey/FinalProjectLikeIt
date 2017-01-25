@@ -19,7 +19,8 @@
 </head>
 <body>
 
-<%session.setAttribute("page","page.registration");%>
+<%--session.setAttribute("page","page.registration");--%>
+<c:set var="page"  value="page.registration" scope="session"/>
 <div>
 
 <jsp:include page="/jsp/include/navbar.jsp" />

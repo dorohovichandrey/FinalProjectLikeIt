@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.factory;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.command.impl.*;
 
 /**
@@ -43,8 +43,8 @@ public enum CommandEnum {
         }
     };
 
-    ActionCommand command;
-    public ActionCommand getCommand() {
+    Command command;
+    public Command getCommand() {
         return command;
     }
 }

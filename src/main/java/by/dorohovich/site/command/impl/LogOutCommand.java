@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.utility.MappingManager;
 
@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by User on 06.01.2017.
  */
-public class LogOutCommand implements ActionCommand {
+public class LogOutCommand implements Command {
 
 
     private static final String KEY_FOR_PAGE = "page.index";

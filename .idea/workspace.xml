@@ -2,66 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1be135-be9b-4236-a3df-916e979f5381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/tag/OnlyForAdminTag.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/users.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/css/standart.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/ActionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/CommandEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/ActionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/CommandEnum.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/DAO/UserDAO.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resource/js/changeProfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/ActionCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/ActionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/ActionCommand.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/ActionFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/resource/js/changeProfile.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$1.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$2.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$3.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$4.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$5.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$6.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/factory/CommandEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ChangeLanguageCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ChangeLanguageCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/EmptyCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/EmptyCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/LogInCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/LogInCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/LogOutCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/LogOutCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ParsingCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ParsingCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/RegistrationCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/RegistrationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ShowUsersTopCommand.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/command/impl/ShowUsersTopCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/controller/Controller.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/by/dorohovich/site/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/by/dorohovich/site/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site.war" afterPath="$PROJECT_DIR$/target/site.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/DAO/UserDAO.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/DAO/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$1.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$2.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$3.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$4.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$5.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$6.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/factory/CommandEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ChangeLanguageCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ChangeLanguageCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/EmptyCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/EmptyCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/LogInCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/LogInCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/LogOutCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/LogOutCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ParsingCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ParsingCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/RegistrationCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/RegistrationCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ShowUsersTopCommand.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/command/impl/ShowUsersTopCommand.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/controller/Controller.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/controller/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/service/UserService.class" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/by/dorohovich/site/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/log.txt" afterPath="$PROJECT_DIR$/logs/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeLanguageCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeLanguageCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/EmptyCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/EmptyCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogInCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogInCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ParsingCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ParsingCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/config.properties" afterPath="$PROJECT_DIR$/src/main/resources/mapping/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/text.properties" afterPath="$PROJECT_DIR$/src/main/resources/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/text_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/text_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/text_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/text_ru.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/users.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/users.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/config.properties" afterPath="$PROJECT_DIR$/target/classes/mapping/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/text.properties" afterPath="$PROJECT_DIR$/target/classes/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/text_en.properties" afterPath="$PROJECT_DIR$/target/classes/text_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/text_ru.properties" afterPath="$PROJECT_DIR$/target/classes/text_ru.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/mapping/config.properties" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/mapping/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/text.properties" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/text.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/text_en.properties" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/text_en.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/WEB-INF/classes/text_ru.properties" afterPath="$PROJECT_DIR$/target/site/WEB-INF/classes/text_ru.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jsp/include/navbar.jsp" afterPath="$PROJECT_DIR$/target/site/jsp/include/navbar.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jsp/logIn.jsp" afterPath="$PROJECT_DIR$/target/site/jsp/logIn.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jsp/registration.jsp" afterPath="$PROJECT_DIR$/target/site/jsp/registration.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/ActionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/ActionFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/CommandEnum.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/jsp/users.jsp" afterPath="$PROJECT_DIR$/target/site/jsp/users.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/ActionCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/Command.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/ActionFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandFactory.java" />
     </list>
     <ignored path="WebProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,98 +96,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShowUsersTopCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java">
+      <file leaf-file-name="CommandFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistrationCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+            <state relative-caret-position="289">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParsingCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ParsingCommand.java">
+      <file leaf-file-name="editProfile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="-334">
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
+      <file leaf-file-name="navbar.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <marker date="1484684970179" expanded="true" signature="528:546" ph="SELECT * FRO... user" />
-                <marker date="1484684970179" expanded="true" signature="749:819" ph="SELECT * FRO... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfoTimeTag.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/tag/InfoTimeTag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="178">
+              <caret line="64" column="78" selection-start-line="64" selection-start-column="78" selection-end-line="64" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OnlyForAdminTag.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/tag/OnlyForAdminTag.java">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-772">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmptyCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/EmptyCommand.java">
+      <file leaf-file-name="logIn.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="328">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogInCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogInCommand.java">
+      <file leaf-file-name="editProfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="192">
+              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -192,8 +159,28 @@
       <file leaf-file-name="users.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/users.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="11" column="122" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="122" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logIn.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/logIn.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -206,10 +193,10 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Enum" />
-        <option value="JavaScript File" />
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="JavaScript File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -224,14 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/pool/ProxyConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/utility/MappingManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/ServiceException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/AbstractService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/CommandException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/ActionCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/RegistrationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/css/registration.css" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/ChangeLanguageCommand.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/logIn.css" />
@@ -244,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/i18n/text.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/text_en.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/i18n/text_ru.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/pool/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/pool/ConnectionProducer.java" />
@@ -259,22 +237,31 @@
         <option value="$PROJECT_DIR$/logs/log.txt" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/config.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/resource/css/standart.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/result.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/text_en.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/text_ru.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/users.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogInCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/tag/OnlyForAdminTag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/ActionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/changeProfile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/lib/editProfile.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/users.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapping/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/createQuestion.jsp" />
       </list>
     </option>
   </component>
@@ -306,32 +293,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <option name="showVersions" value="true" />
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="site Maven Webapp" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="site Maven Webapp" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -364,6 +326,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -426,7 +391,67 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jsp" />
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WepProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WepProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,36 +480,6 @@
               <option name="myItemId" value="jsp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="include" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'text'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -526,41 +521,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tag" />
+              <option name="myItemId" value="mapping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -579,176 +544,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WepProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="command" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -768,9 +563,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1372,6 +1164,8 @@
       <workItem from="1484336423608" duration="11880000" />
       <workItem from="1484680124075" duration="6432000" />
       <workItem from="1484688173962" duration="465000" />
+      <workItem from="1485263337046" duration="5279000" />
+      <workItem from="1485340465355" duration="3337000" />
     </task>
     <task id="LOCAL-00001" summary="login logout">
       <created>1483750149219</created>
@@ -1384,42 +1178,42 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249887000" />
+    <option name="totallyTimeSpent" value="258503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3611111" sideWeight="0.3698941" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15885022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15885022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36377952" sideWeight="0.6301059" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29198185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.030257186" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18154311" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3627451" sideWeight="0.6301059" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29198185" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1450,59 +1244,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/ParsingException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/ConnectionProducerException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/ServiceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/exception/CommandException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/registration.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/logIn.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1562,31 +1307,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/changeProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/chooseLang.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/include/footer.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1601,20 +1325,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23324">
           <caret line="1372" column="30" selection-start-line="1372" selection-start-column="30" selection-end-line="1372" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/ActionCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeLanguageCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -1667,93 +1377,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="89" selection-start-line="24" selection-start-column="89" selection-end-line="24" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/ActionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="95" selection-start-line="16" selection-start-column="95" selection-end-line="16" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="41" column="37" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text_en.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text_ru.properties">
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="ResourceBundle">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/text.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="493">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1761,10 +1411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1484684970179" expanded="true" signature="528:546" ph="SELECT * FRO... user" />
-            <marker date="1484684970179" expanded="true" signature="749:819" ph="SELECT * FRO... user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1772,7 +1418,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1390#1391#0" expanded="false" />
+            <element signature="e#1432#1433#0" expanded="false" />
+            <element signature="e#1466#1467#0" expanded="false" />
+            <element signature="e#1501#1502#0" expanded="false" />
+            <element signature="e#1532#1533#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1620#1621#0" expanded="false" />
+            <element signature="e#1652#1653#0" expanded="false" />
+            <element signature="e#1680#1681#0" expanded="false" />
+            <element signature="e#1722#1723#0" expanded="false" />
+            <element signature="e#1756#1757#0" expanded="false" />
+            <element signature="e#1785#1786#0" expanded="false" />
+            <element signature="e#1812#1813#0" expanded="false" />
+            <element signature="e#1850#1851#0" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#1912#1913#0" expanded="false" />
+            <element signature="e#1941#1942#0" expanded="false" />
+            <element signature="e#1982#1983#0" expanded="false" />
+            <element signature="e#2018#2019#0" expanded="false" />
+            <element signature="e#2054#2055#0" expanded="false" />
+            <element signature="e#2095#2096#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registrationOld.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/include/footer.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1786,53 +1488,183 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogInCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="289">
           <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="238">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ParsingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="221">
           <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/RegistrationCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="27" column="58" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ShowUsersTopCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
+        <state relative-caret-position="663">
           <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/User.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-772">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="867">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/tag/OnlyForAdminTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="306">
           <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/ChangeLanguageCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/changeProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="72" column="40" selection-start-line="72" selection-start-column="40" selection-end-line="72" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/lib/editProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/logIn.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/users.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="122" selection-start-line="11" selection-start-column="122" selection-end-line="11" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/include/navbar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="64" column="78" selection-start-line="64" selection-start-column="78" selection-end-line="64" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/logIn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/createQuestion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

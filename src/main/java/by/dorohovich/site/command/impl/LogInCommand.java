@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpSession;
 /**
  * Created by User on 06.01.2017.
  */
-public class LogInCommand implements ActionCommand {
+public class LogInCommand implements Command {
 
     private static final Logger LOGGER = LogManager.getLogger();
 

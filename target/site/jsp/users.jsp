@@ -10,7 +10,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resource/bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resource/css/logIn.css"/>
         <link rel="stylesheet" href="${pageContext.servletContext.contextPath}/resource/css/standart.css"/>
         <script src="${pageContext.servletContext.contextPath}/resource/js/lib/jquery-3.1.1.min.js"></script>
         <script src="${pageContext.servletContext.contextPath}/resource/bootstrap/js/bootstrap.min.js"></script>
@@ -19,7 +18,8 @@
     </head>
     <body>
 
-    <%session.setAttribute("page","page.users");%>
+    <%--session.setAttribute("page","page.users");--%>
+    <c:set var="page"  value="page.users" scope="session"/>
 
 
         <jsp:include page="/jsp/include/navbar.jsp" />

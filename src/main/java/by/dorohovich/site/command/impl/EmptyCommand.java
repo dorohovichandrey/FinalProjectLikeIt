@@ -2,7 +2,7 @@ package by.dorohovich.site.command.impl;
 
 
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by User on 26.11.2016.
  */
-public class EmptyCommand implements ActionCommand {
+public class EmptyCommand implements Command {
 
     private static final String PARAM_LANG = "lang";
     private static final String PARAM_LOCALE = "locale";

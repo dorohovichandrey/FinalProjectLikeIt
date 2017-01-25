@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by User on 14.01.2017.
  */
-public class ShowUsersTopCommand implements ActionCommand {
+public class ShowUsersTopCommand implements Command {
 
     private static final Logger LOGGER = LogManager.getLogger();
 

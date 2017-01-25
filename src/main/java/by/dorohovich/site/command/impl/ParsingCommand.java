@@ -1,6 +1,6 @@
 package by.dorohovich.site.command.impl;
 
-import by.dorohovich.site.command.ActionCommand;
+import by.dorohovich.site.command.Command;
 import by.dorohovich.site.entityGem.Gem;
 import by.dorohovich.site.entityGem.PreciousGem;
 import by.dorohovich.site.logic.parsing.AbstractGemsParser;
@@ -15,7 +15,7 @@ import java.util.Set;
 /**
  * Created by User on 25.11.2016.
  */
-public class ParsingCommand implements ActionCommand {
+public class ParsingCommand implements Command {
 
     final static String PARSER_TYPE_PARAM="parserType";
 
