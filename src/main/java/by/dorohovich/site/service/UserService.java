@@ -25,13 +25,13 @@ public class UserService extends AbstractService<Integer, User> {
         } catch (ConnectionPoolException e) {
             LOGGER.error("Problem with getting connection, while trying to register", e);
             throw new ServiceException(e);
-        }  catch (DAOException e) {
+        } catch (DAOException e) {
             LOGGER.error("Problem with UserDAO, while trying to register", e);
             throw new ServiceException(e);
         }
     }
 
-    private void tryRegister(String login, String password, String email) throws DAOException, ConnectionPoolException{
+    private void tryRegister(String login, String password, String email) throws DAOException, ConnectionPoolException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             UserDAO userDAO = new UserDAO(connection);
             User user = new User(login, password, email);
@@ -62,7 +62,7 @@ public class UserService extends AbstractService<Integer, User> {
 
     }
 
-    private boolean tryCheckIsLoginFree(String login) throws ConnectionPoolException, DAOException{
+    private boolean tryCheckIsLoginFree(String login) throws ConnectionPoolException, DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             UserDAO userDAO = new UserDAO(connection);
             User user = userDAO.findUserByLogin(login);
@@ -93,10 +93,10 @@ public class UserService extends AbstractService<Integer, User> {
         }
     }
 
-    public List<User> showUsersTop() throws ServiceException{
+    public List<User> showUsersTop() throws ServiceException {
         try {
             return tryShowUsersTop();
-        }  catch (ConnectionPoolException e) {
+        } catch (ConnectionPoolException e) {
             LOGGER.error("Problem with getting connection, when trying to showUsersTop", e);
             throw new ServiceException(e);
         } catch (DAOException e) {
@@ -105,11 +105,37 @@ public class UserService extends AbstractService<Integer, User> {
         }
     }
 
-    private List<User> tryShowUsersTop() throws ConnectionPoolException, DAOException{
+    private List<User> tryShowUsersTop() throws ConnectionPoolException, DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             UserDAO userDAO = new UserDAO(connection);
             List<User> userList = userDAO.findUsersSortedByRating();
             return userList;
+        }
+    }
+
+    public User changePassword(User user, String curPassword, String newPassword) throws ServiceException {
+        try {
+            return tryChangePassword(user, curPassword, newPassword);
+        } catch (ConnectionPoolException e) {
+            LOGGER.error("Problem with getting connection, while trying to change password", e);
+            throw new ServiceException(e);
+        } catch (DAOException e) {
+            LOGGER.error("Problem with UserDAO, while trying to change password", e);
+            throw new ServiceException(e);
+        }
+    }
+
+
+    private User tryChangePassword(User user, String curPassword, String newPassword) throws ConnectionPoolException, DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            User updatedUser = null;
+            if (user.getPassword().equals(curPassword)) {
+                UserDAO userDAO = new UserDAO(connection);
+                String login = user.getLogin();
+                userDAO.updatePassword(login, newPassword);
+                updatedUser = userDAO.findUserByLogin(login);
+            }
+            return updatedUser;
         }
     }
 }

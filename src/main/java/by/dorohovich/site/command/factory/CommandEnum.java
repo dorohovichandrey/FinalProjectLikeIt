@@ -41,6 +41,12 @@ public enum CommandEnum {
         {
             this.command = new ShowUsersTopCommand();
         }
+    },
+
+    CHANGE_PASSWORD{
+        {
+            command = new ChangePasswordCommand();
+        }
     };
 
     Command command;

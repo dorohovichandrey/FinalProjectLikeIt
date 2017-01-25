@@ -21,10 +21,10 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     private static final String SELECT_USERS_SORTED_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";
     private static final String CREATE_USER = "INSERT INTO user (login, password, email, isAdmin) VALUES (?, ?, ?, ?)";
     private static final String FIND_USER_BY_LOGIN = "SELECT * FROM user WHERE login = ?";
+    private static final String UPDATE_PASSWORD = "UPDATE user SET password = ? WHERE login = ?";
 
 
     public UserDAO(ProxyConnection connection) {
-
         super(connection);
     }
 
@@ -46,8 +46,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
 
     }
-
-
 
     private List<User> findUsersByQuery(String query) throws SQLException {
         try (Statement st = connection.createStatement()) {
@@ -99,6 +97,25 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
+    public void updatePassword(String login, String password) throws DAOException{
+        try {
+            tryUpdatePassword(login, password);
+        } catch (SQLException e){
+            throw new DAOException("Problems in UserDAO, while trying change password", e);
+        }
+    }
+
+    private void tryUpdatePassword(String login, String password) throws SQLException, DAOException{
+        try (PreparedStatement preparedSt = connection.prepareStatement(UPDATE_PASSWORD)) {
+            preparedSt.setString(1, password);
+            preparedSt.setString(2, login);
+            preparedSt.executeUpdate();
+            if (preparedSt.getUpdateCount() != 1) {
+                throw new DAOException("Password was not updated");
+            }
+        }
+    }
+
     private User tryFindUserByLogin(String login) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
             preparedSt.setString(1, login);
@@ -107,6 +124,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             return list.size() == 1 ? list.get(0) : null;
         }
     }
+
 
     private List<User> makeUserList(ResultSet rs) throws SQLException {
         ArrayList<User> list = new ArrayList<User>();
@@ -123,6 +141,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
         return list;
     }
+
 
 
 }

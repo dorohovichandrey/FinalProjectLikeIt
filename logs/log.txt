@@ -2899,3 +2899,57 @@ Caused by: java.sql.SQLException: Column Index out of range, 6 > 5.
 14:37:26.362 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
 14:37:26.364 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
 14:37:26.366 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+18:13:44.320 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: logIn
+18:13:48.030 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:13:48.135 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:13:48.179 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:13:48.282 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:13:48.312 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:13:48.312 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:13:48.530 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:13:48.531 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=29, login='Sanches', password='1234Qwe', email'', ROLE=USER, rating=0} logged in
+18:27:22.457 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+18:27:22.486 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+18:27:22.489 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+18:27:22.492 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+18:27:22.495 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+18:41:58.371 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: logIn
+18:41:59.987 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:42:00.024 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:42:00.059 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:42:00.076 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:42:00.146 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:42:00.147 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:42:00.237 [http-nio-8080-exec-3] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:42:00.241 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=29, login='Sanches', password='1234Qwe', email'', ROLE=USER, rating=0} logged in
+18:42:47.136 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: null
+18:43:11.904 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+18:43:11.906 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+18:43:11.909 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+18:43:11.910 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+18:43:11.912 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
+18:52:01.327 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: logIn
+18:52:02.496 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:52:02.542 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:52:02.567 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:52:02.603 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:52:02.644 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool <init> - Connection was initialized and added to pool
+18:52:02.645 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:52:02.739 [http-nio-8080-exec-4] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:52:02.740 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=29, login='Sanches', password='1234Qwe', email'', ROLE=USER, rating=0} logged in
+18:53:08.762 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: change_password
+18:53:08.766 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:53:09.872 [http-nio-8080-exec-1] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:53:14.304 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: logOut
+18:53:23.407 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: logIn
+18:53:23.408 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:53:23.444 [http-nio-8080-exec-9] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:53:23.444 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.impl.LogInCommand packAttributes - User{id=29, login='Sanches', password='1234Qwe1234', email'', ROLE=USER, rating=0} logged in
+18:53:42.821 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.factory.CommandFactory defineCommand - Command: change_password
+18:53:42.821 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool takeConnection - Connection was taken from pool
+18:53:42.826 [http-nio-8080-exec-2] INFO  by.dorohovich.site.pool.ConnectionPool putConnection - Connection was put to pool
+18:54:27.417 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#0)
+18:54:27.427 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#1)
+18:54:27.429 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#2)
+18:54:27.431 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#3)
+18:54:27.433 [localhost-startStop-2] INFO  by.dorohovich.site.pool.ConnectionPool closeAll - closed successfully (#4)
