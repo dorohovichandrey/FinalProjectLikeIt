@@ -1,5 +1,6 @@
 package by.dorohovich.site.DAO;
 
+import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.exception.DAOException;
 
@@ -13,6 +14,10 @@ import java.util.List;
 public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     private static final String CREATE_QUESTION = "INSERT INTO question (userId, dateAndTime, text, themeId, rating, queHeader) VALUES (?, ?, ?, ?, ?, ?)";
+
+    public QuestionDAO(ProxyConnection connection) {
+        super(connection);
+    }
 
     @Override
     public List<Question> findAll() throws DAOException {

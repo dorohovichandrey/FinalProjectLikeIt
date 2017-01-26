@@ -1,33 +1,31 @@
-package by.dorohovich.site.command.guestcommand;
+package by.dorohovich.site.command.authusercommand;
 
-import by.dorohovich.site.command.AbstractGuestCommand;
+import by.dorohovich.site.command.AbstractAuthenticatedUserCommand;
+import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
+import by.dorohovich.site.service.QuestionService;
 import by.dorohovich.site.service.UserService;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 /**
- * Created by User on 08.12.2016.
+ * Created by User on 27.01.2017.
  */
-public class RegistrationCommand extends AbstractGuestCommand {
+public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
+
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final String LOGIN_PARAM = "login";
-    private static final String PASSWORD_PARAM = "password";
-    private static final String PASSWORD_CONFIRMATION_PARAM = "passwordConfirmation";
-    private static final String EMAIL_ADDR_PARAM = "emailAddr";
+    private static final String HEADER_PARAM = "login";
+    private static final String THEME_NAME_PARAM = "password";
+    private static final String TEXT_PARAM = "passwordConfirmation";
 
-    private static final String LOGIN_ATTR = "login";
-    private static final String PASSWORD_ATTR = "password";
-    private static final String PASSWORD_CONFIRMATION_ATTR = "passwordConfirmation";
-    private static final String EMAIL_ADDR_ATTR = "emailAddr";
-    private static final String IS_LOGIN_FREE_ATTR = "isLoginFree";
+    private static final String USER_ATTR = "user";
+
 
     private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.logIn";
     private static final String KEY_FOR_PAGE_IF_FAILED = "page.registration";
@@ -38,20 +36,19 @@ public class RegistrationCommand extends AbstractGuestCommand {
         try {
             return tryDoLogic(request);
         } catch (ServiceException e) {
-            LOGGER.error("Problem with userService, while trying to register", e);
+            LOGGER.error("Problem with QuestionService, while trying to ask question", e);
             throw new CommandException(e);
         }
     }
 
     private String tryDoLogic(HttpServletRequest request) throws ServiceException {
-        String login = request.getParameter(LOGIN_PARAM);
-        String password = request.getParameter(PASSWORD_PARAM);
-        String email = request.getParameter(EMAIL_ADDR_PARAM);
-        UserService userService = new UserService();
-        boolean isLoginFree = userService.checkIsLoginFree(login);
-        if (isLoginFree) {
-            userService.register(login, password, email);
-        }
+        String header = request.getParameter(HEADER_PARAM);
+        String themeName = request.getParameter(THEME_NAME_PARAM);
+        String text = request.getParameter(TEXT_PARAM);
+        HttpSession session = request.getSession(true);
+        User owner = (User)session.getAttribute(USER_ATTR);
+        QuestionService questionService = new QuestionService();
+        questionService.askQuestion(owner, text, themeName, header);
         packAttributes(login, password, email, isLoginFree, request);
         String page = choosePage(isLoginFree);
         return page;
@@ -72,5 +69,4 @@ public class RegistrationCommand extends AbstractGuestCommand {
         String page = MappingManager.getProperty(key);
         return page;
     }
-
 }

@@ -145,11 +145,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
-
-
-
-
-
     private List<User> makeUserList(ResultSet rs) throws SQLException {
         ArrayList<User> list = new ArrayList<User>();
         while (rs.next()) {
