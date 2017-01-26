@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1be135-be9b-4236-a3df-916e979f5381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/QuestionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Question.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Question.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" />
     </list>
     <ignored path="WebProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,35 +51,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="questions.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/questions.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
               <folding>
                 <marker date="1485454992464" expanded="true" signature="538:556" ph="SELECT * FRO... user" />
                 <marker date="1485454992464" expanded="true" signature="759:829" ph="SELECT * FRO... user" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/users.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="47" column="80" selection-start-line="47" selection-start-column="80" selection-end-line="47" selection-end-column="80" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -147,11 +127,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionDAO.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuestionDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
+                <element signature="e#1715#1716#0" expanded="true" />
+                <element signature="e#1742#1743#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/AbstractService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
-              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -212,7 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/resource/css/standart.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/result.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/impl/LogOutCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/text.properties" />
@@ -263,6 +268,7 @@
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Theme.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Question.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" />
       </list>
     </option>
   </component>
@@ -576,6 +582,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WepProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1262,7 +1298,7 @@
       <workItem from="1484688173962" duration="465000" />
       <workItem from="1485263337046" duration="5279000" />
       <workItem from="1485340465355" duration="31797000" />
-      <workItem from="1485437080712" duration="12412000" />
+      <workItem from="1485437080712" duration="13172000" />
     </task>
     <task id="LOCAL-00001" summary="login logout">
       <created>1483750149219</created>
@@ -1334,11 +1370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485459045108</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added Question">
+      <created>1485460708704</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1485460708704</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="299375000" />
+    <option name="totallyTimeSpent" value="300135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1400,7 +1443,8 @@
     <MESSAGE value="refactored RegistrationCommand" />
     <MESSAGE value="change command structure" />
     <MESSAGE value="added Theme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Theme" />
+    <MESSAGE value="added Question" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Question" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1413,7 +1457,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/changeProfile.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/editProfile.js.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/js/lib/editProfile.js" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resource/css/logIn.css">
@@ -1466,14 +1509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/AbstractService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1804,17 +1839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-          <folding>
-            <marker date="1485454992464" expanded="true" signature="538:556" ph="SELECT * FRO... user" />
-            <marker date="1485454992464" expanded="true" signature="759:829" ph="SELECT * FRO... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-595">
@@ -1849,10 +1873,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="79" column="32" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+          <folding>
+            <marker date="1485454992464" expanded="true" signature="538:556" ph="SELECT * FRO... user" />
+            <marker date="1485454992464" expanded="true" signature="759:829" ph="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/AbstractService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding />
         </state>
       </provider>
