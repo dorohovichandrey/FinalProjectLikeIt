@@ -4,6 +4,8 @@ import by.dorohovich.site.entity.Role;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.DAOException;
 import by.dorohovich.site.connectionpool.ProxyConnection;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -16,6 +18,8 @@ import java.util.List;
  * Created by User on 28.12.2016.
  */
 public class UserDAO extends AbstractDAO<Integer, User> {
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String SELECT_ALL = "SELECT * FROM user";
     private static final String SELECT_USERS_SORTED_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";

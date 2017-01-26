@@ -20,15 +20,14 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    private static final String HEADER_PARAM = "login";
-    private static final String THEME_NAME_PARAM = "password";
-    private static final String TEXT_PARAM = "passwordConfirmation";
+    private static final String HEADER_PARAM = "header";
+    private static final String THEME_NAME_PARAM = "theme";
+    private static final String TEXT_PARAM = "questionText";
 
     private static final String USER_ATTR = "user";
 
+    private static final String KEY_FOR_PAGE = "page.index";
 
-    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.logIn";
-    private static final String KEY_FOR_PAGE_IF_FAILED = "page.registration";
 
 
     @Override
@@ -49,24 +48,9 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
         User owner = (User)session.getAttribute(USER_ATTR);
         QuestionService questionService = new QuestionService();
         questionService.askQuestion(owner, text, themeName, header);
-        packAttributes(login, password, email, isLoginFree, request);
-        String page = choosePage(isLoginFree);
+        String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
 
-    private void packAttributes(String login, String password, String email, boolean isLoginFree, HttpServletRequest request) {
-        HttpSession session = request.getSession(true);
-        session.setAttribute(IS_LOGIN_FREE_ATTR, isLoginFree);
-        if (!isLoginFree) {
-            session.setAttribute(LOGIN_ATTR, login);
-            session.setAttribute(PASSWORD_ATTR, password);
-            session.setAttribute(EMAIL_ADDR_ATTR, email);
-        }
-    }
 
-    private String choosePage(boolean isLoginFree) {
-        String key = isLoginFree ? KEY_FOR_PAGE_IF_SUCCESS : KEY_FOR_PAGE_IF_FAILED;
-        String page = MappingManager.getProperty(key);
-        return page;
-    }
 }

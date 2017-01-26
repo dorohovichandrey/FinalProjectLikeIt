@@ -20,7 +20,7 @@
     <body>
 
         <%--session.setAttribute("page","page.users");--%>
-    <c:set var="page"  value="page.editProfie" scope="session"/>
+    <c:set var="page"  value="page.createQuestion" scope="session" />
 
 
     <jsp:include page="/jsp/include/navbar.jsp" />
@@ -28,18 +28,19 @@
 
         <div id="main" class="row">
             <div class="row">
-                <form role="form" id="createQueForm" class="col-md-6 col-md-offset-3">
+                <form role="form" id="createQueForm" class="col-md-6 col-md-offset-3" action="${pageContext.request.contextPath}/controller" method="POST">
+                    <input type="hidden" name="command" value="ask_question" />
                     <div class="form-group">
                         <label for="themeID">Ответ</label>
                         <select name="theme" class="form-control" id="themeID">
-                            <option value="sax">разное</option>
-                            <option value="dom">спорт</option>
-                            <option value="stax">прога</option>
+                            <option value="programming">programming</option>
+                            <option value="sport">sport</option>
+                            <option value="math">math</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="headerId">Заголовок</label>
-                        <input input name="header" type="text" class="form-control" id="headerId" placeholder="Введите Заголовок">
+                        <input  name="header" type="text" class="form-control" id="headerId" placeholder="Введите Заголовок">
                         <p class="help-block">Должен содержать от 10 до 100 символов</p>
                     </div>
                     <div class="form-group">

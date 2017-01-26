@@ -1,6 +1,7 @@
 package by.dorohovich.site.command.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
+import by.dorohovich.site.command.authusercommand.AskQuestionCommand;
 import by.dorohovich.site.command.authusercommand.ChangeEmailCommand;
 import by.dorohovich.site.command.authusercommand.ChangePasswordCommand;
 import by.dorohovich.site.command.authusercommand.LogOutCommand;
@@ -55,6 +56,12 @@ public enum CommandEnum {
     CHANGE_EMAIL{
         {
             command = new ChangeEmailCommand();
+        }
+    },
+
+    ASK_QUESTION{
+        {
+            command = new AskQuestionCommand();
         }
     };
 

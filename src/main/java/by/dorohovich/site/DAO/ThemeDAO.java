@@ -3,6 +3,8 @@ package by.dorohovich.site.DAO;
 import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Theme;
 import by.dorohovich.site.exception.DAOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,6 +16,8 @@ import java.util.List;
  * Created by User on 27.01.2017.
  */
 public class ThemeDAO extends AbstractDAO<Integer, Theme> {
+
+    private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String FIND_THEME_BY_NAME = "SELECT themeId, themeName FROM theme WHERE themeName = ? and isDeleted = 0";
 
