@@ -1,9 +1,8 @@
 package by.dorohovich.site.DAO;
 
 import by.dorohovich.site.entity.Entity;
-import by.dorohovich.site.exception.ConnectionProducerException;
 import by.dorohovich.site.exception.DAOException;
-import by.dorohovich.site.pool.ProxyConnection;
+import by.dorohovich.site.connectionpool.ProxyConnection;
 
 import java.util.List;
 

@@ -5,8 +5,8 @@ import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.ConnectionPoolException;
 import by.dorohovich.site.exception.DAOException;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.pool.ConnectionPool;
-import by.dorohovich.site.pool.ProxyConnection;
+import by.dorohovich.site.connectionpool.ConnectionPool;
+import by.dorohovich.site.connectionpool.ProxyConnection;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

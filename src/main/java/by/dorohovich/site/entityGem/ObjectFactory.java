@@ -8,7 +8,7 @@ import javax.xml.namespace.QName;
 
 
 /**
- * This object contains factory methods for each 
+ * This object contains definer methods for each
  * Java content interface and Java element interface 
  * entityGem in the by.dorohoch.fifthtask.entityGem package.
  * <p>An ObjectFactory allows you to programatically 

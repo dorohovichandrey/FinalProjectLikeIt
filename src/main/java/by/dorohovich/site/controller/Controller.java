@@ -1,10 +1,10 @@
 package by.dorohovich.site.controller;
 
 
-import by.dorohovich.site.command.Command;
-import by.dorohovich.site.command.factory.CommandFactory;
+import by.dorohovich.site.command.AbstractCommand;
+import by.dorohovich.site.command.definer.CommandDefiner;
 import by.dorohovich.site.exception.CommandException;
-import by.dorohovich.site.pool.ConnectionPool;
+import by.dorohovich.site.connectionpool.ConnectionPool;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -42,8 +42,8 @@ public class Controller extends HttpServlet {
         try {
             String page = null;
 
-            CommandFactory factory = new CommandFactory();
-            Command command = factory.defineCommand(request);
+            CommandDefiner commandDefiner = new CommandDefiner();
+            AbstractCommand command = commandDefiner.define(request);
 
             page = command.execute(request);
 

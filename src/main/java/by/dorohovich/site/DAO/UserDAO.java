@@ -3,7 +3,7 @@ package by.dorohovich.site.DAO;
 import by.dorohovich.site.entity.Role;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.DAOException;
-import by.dorohovich.site.pool.ProxyConnection;
+import by.dorohovich.site.connectionpool.ProxyConnection;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
