@@ -106,4 +106,6 @@ public class User extends Entity<Integer> {
                 ", rating=" + rating +
                 '}';
     }
+
+
 }
