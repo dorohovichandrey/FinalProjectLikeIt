@@ -17,8 +17,6 @@ import java.util.List;
  */
 public class ThemeDAO extends AbstractDAO<Integer, Theme> {
 
-    private static final Logger LOGGER = LogManager.getLogger();
-
     private static final String FIND_THEME_BY_NAME = "SELECT themeId, themeName FROM theme WHERE themeName = ? and isDeleted = 0";
 
     public ThemeDAO(ProxyConnection connection) {
@@ -57,19 +55,23 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_NAME)) {
             preparedSt.setString(1, themeName);
             ResultSet rs = preparedSt.executeQuery();
-            List<Theme> list = makeUserList(rs);
+            List<Theme> list = makeThemeList(rs);
             return list.size() == 1 ? list.get(0) : null;
         }
     }
 
-    private List<Theme> makeUserList(ResultSet rs) throws SQLException {
+    private List<Theme> makeThemeList(ResultSet rs) throws SQLException {
         ArrayList<Theme> list = new ArrayList<Theme>();
         while (rs.next()) {
-            int id = rs.getInt(1);
-            String themeName = rs.getString(2);
-            Theme theme = new Theme(id, themeName);
+            Theme theme = makeTheme(rs);
             list.add(theme);
         }
         return list;
+    }
+
+    private Theme makeTheme(ResultSet rs) throws SQLException {
+        int id = rs.getInt(1);
+        String themeName = rs.getString(2);
+        return new Theme(id, themeName);
     }
 }

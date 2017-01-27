@@ -152,19 +152,22 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     private List<User> makeUserList(ResultSet rs) throws SQLException {
         ArrayList<User> list = new ArrayList<User>();
         while (rs.next()) {
-            int id = rs.getInt(1);
-            String login = rs.getString(2);
-            String password = rs.getString(3);
-            String email = rs.getString(4);
-            int isAdmin = rs.getInt(5);
-            Role role = Role.getRole(isAdmin);
-            int rating = rs.getInt(6);
-            User user = new User(id, login, password, email, role, rating);
+            User user = makeUser(rs);
             list.add(user);
         }
         return list;
     }
 
+    private User makeUser(ResultSet rs) throws SQLException {
+        int id = rs.getInt(1);
+        String login = rs.getString(2);
+        String password = rs.getString(3);
+        String email = rs.getString(4);
+        int isAdmin = rs.getInt(5);
+        Role role = Role.getRole(isAdmin);
+        int rating = rs.getInt(6);
+        return new User(id, login, password, email, role, rating);
+    }
 
 
 }

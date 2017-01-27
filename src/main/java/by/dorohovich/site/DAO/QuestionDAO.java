@@ -2,20 +2,23 @@ package by.dorohovich.site.DAO;
 
 import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Question;
+import by.dorohovich.site.entity.Role;
+import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.DAOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by User on 26.01.2017.
  */
 public class QuestionDAO extends AbstractDAO<Integer, Question> {
-
-    private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String CREATE_QUESTION = "INSERT INTO question (userId, dateAndTime, text, themeId, rating, queHeader) VALUES (?, ?, ?, ?, ?, ?)";
 
@@ -61,6 +64,8 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     public Question update(Question entity) {
         return null;
     }
+
+
 
 
 }
