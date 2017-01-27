@@ -54,7 +54,8 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     private List<User> findUsersByQuery(String query) throws SQLException {
         try (Statement st = connection.createStatement()) {
-            return takeUserList(query, st);
+            List<User> userList = takeUserList(query, st);
+            return userList;
         }
     }
 
