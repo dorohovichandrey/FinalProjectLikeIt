@@ -54,7 +54,13 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     private Theme tryFindThemeByName(String themeName) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_NAME)) {
             preparedSt.setString(1, themeName);
-            ResultSet rs = preparedSt.executeQuery();
+            Theme theme = takeTheme(preparedSt);
+            return theme;
+        }
+    }
+
+    private Theme takeTheme(PreparedStatement preparedSt) throws SQLException {
+        try(ResultSet rs = preparedSt.executeQuery()) {
             List<Theme> list = makeThemeList(rs);
             return list.size() == 1 ? list.get(0) : null;
         }

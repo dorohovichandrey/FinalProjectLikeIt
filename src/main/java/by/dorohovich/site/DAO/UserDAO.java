@@ -54,9 +54,14 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     private List<User> findUsersByQuery(String query) throws SQLException {
         try (Statement st = connection.createStatement()) {
-            ResultSet rs = st.executeQuery(query);
-            List<User> list = makeUserList(rs);
-            return list;
+            return takeUserList(query, st);
+        }
+    }
+
+    private List<User> takeUserList(String query, Statement st) throws SQLException {
+        try(ResultSet rs = st.executeQuery(query)) {
+            List<User> userList = makeUserList(rs);
+            return userList;
         }
     }
 
@@ -105,10 +110,38 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     private User tryFindUserByLogin(String login) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
             preparedSt.setString(1, login);
-            ResultSet rs = preparedSt.executeQuery();
-            List<User> list = makeUserList(rs);
-            return list.size() == 1 ? list.get(0) : null;
+            User user = takeUser(preparedSt);
+            return user;
         }
+    }
+
+    private User takeUser(PreparedStatement preparedSt) throws SQLException {
+        try(ResultSet rs = preparedSt.executeQuery()) {
+            List<User> list = makeUserList(rs);
+            User user = list.size() == 1 ? list.get(0) : null;
+            return user;
+        }
+    }
+
+    private List<User> makeUserList(ResultSet rs) throws SQLException {
+        ArrayList<User> list = new ArrayList<User>();
+        while (rs.next()) {
+            User user = makeUser(rs);
+            list.add(user);
+        }
+        return list;
+    }
+
+    private User makeUser(ResultSet rs) throws SQLException {
+        int id = rs.getInt(1);
+        String login = rs.getString(2);
+        String password = rs.getString(3);
+        String email = rs.getString(4);
+        int isAdmin = rs.getInt(5);
+        Role role = Role.getRole(isAdmin);
+        int rating = rs.getInt(6);
+        User user = new User(id, login, password, email, role, rating);
+        return user;
     }
 
     public void updatePassword(String login, String password) throws DAOException{
@@ -149,25 +182,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
-    private List<User> makeUserList(ResultSet rs) throws SQLException {
-        ArrayList<User> list = new ArrayList<User>();
-        while (rs.next()) {
-            User user = makeUser(rs);
-            list.add(user);
-        }
-        return list;
-    }
 
-    private User makeUser(ResultSet rs) throws SQLException {
-        int id = rs.getInt(1);
-        String login = rs.getString(2);
-        String password = rs.getString(3);
-        String email = rs.getString(4);
-        int isAdmin = rs.getInt(5);
-        Role role = Role.getRole(isAdmin);
-        int rating = rs.getInt(6);
-        return new User(id, login, password, email, role, rating);
-    }
 
 
 }

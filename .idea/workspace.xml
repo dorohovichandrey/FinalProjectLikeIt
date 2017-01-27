@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1be135-be9b-4236-a3df-916e979f5381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/guestcommand/ShowFreshestQuestions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/guestcommand/ShowUsersTopCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/guestcommand/ShowUsersTopCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java" />
     </list>
     <ignored path="WebProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +79,7 @@
       <file leaf-file-name="QuestionDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
+            <state relative-caret-position="-323">
               <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,12 +88,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionWrapper.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuestionWrapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="187">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,24 +113,24 @@
       <file leaf-file-name="ThemeDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+            <state relative-caret-position="204">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1848#1855#0" expanded="true" />
+                <element signature="e#2022#2029#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+            <state relative-caret-position="-442">
+              <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
               <folding>
-                <marker date="1485549233249" expanded="true" signature="688:706" ph="SELECT * FRO... user" />
-                <marker date="1485549233249" expanded="true" signature="909:979" ph="SELECT * FRO... user" />
+                <marker date="1485553056073" expanded="true" signature="688:706" ph="SELECT * FRO... user" />
+                <marker date="1485553056073" expanded="true" signature="909:979" ph="SELECT * FRO... user" />
               </folding>
             </state>
           </provider>
@@ -229,10 +228,10 @@
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/authusercommand/AskQuestionCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/guestcommand/ShowUsersTopCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/guestcommand/ShowFreshestQuestions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java" />
       </list>
     </option>
   </component>
@@ -1459,7 +1458,7 @@
       <workItem from="1485263337046" duration="5279000" />
       <workItem from="1485340465355" duration="31797000" />
       <workItem from="1485437080712" duration="24430000" />
-      <workItem from="1485542993339" duration="4245000" />
+      <workItem from="1485542993339" duration="6461000" />
     </task>
     <task id="LOCAL-00001" summary="login logout">
       <created>1483750149219</created>
@@ -1559,11 +1558,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485474980535</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring DAO">
+      <created>1485550899392</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1485550899392</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315638000" />
+    <option name="totallyTimeSpent" value="317854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1629,7 +1635,8 @@
     <MESSAGE value="added QuestionDAO" />
     <MESSAGE value="created ThemeDAO" />
     <MESSAGE value="finished AskQuestionCommand" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished AskQuestionCommand" />
+    <MESSAGE value="refactoring DAO" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring DAO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1770,7 +1777,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1806,7 +1813,7 @@
         <state relative-caret-position="153">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1847,31 +1854,31 @@
         <state relative-caret-position="187">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1017#1018#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1567#1568#0" expanded="true" />
-            <element signature="e#1596#1597#0" expanded="true" />
-            <element signature="e#1641#1642#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1710#1711#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
-            <element signature="e#1783#1784#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#989#990#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1057#1058#0" expanded="false" />
+            <element signature="e#1091#1092#0" expanded="false" />
+            <element signature="e#1132#1133#0" expanded="false" />
+            <element signature="e#1166#1167#0" expanded="false" />
+            <element signature="e#1223#1224#0" expanded="false" />
+            <element signature="e#1269#1270#0" expanded="false" />
+            <element signature="e#1300#1301#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1367#1368#0" expanded="false" />
+            <element signature="e#1399#1400#0" expanded="false" />
+            <element signature="e#1430#1431#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1499#1500#0" expanded="false" />
+            <element signature="e#1533#1534#0" expanded="false" />
+            <element signature="e#1567#1568#0" expanded="false" />
+            <element signature="e#1596#1597#0" expanded="false" />
+            <element signature="e#1641#1642#0" expanded="false" />
+            <element signature="e#1677#1678#0" expanded="false" />
+            <element signature="e#1710#1711#0" expanded="false" />
+            <element signature="e#1739#1740#0" expanded="false" />
+            <element signature="e#1783#1784#0" expanded="false" />
+            <element signature="e#1819#1820#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1897,8 +1904,8 @@
         <state relative-caret-position="306">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
           <folding>
-            <element signature="e#460#461#0" expanded="true" />
-            <element signature="e#502#503#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="false" />
+            <element signature="e#502#503#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1931,7 +1938,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1948,8 +1955,8 @@
         <state relative-caret-position="357">
           <caret line="65" column="6" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
           <folding>
-            <element signature="e#1414#1415#0" expanded="true" />
-            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="false" />
+            <element signature="e#1444#1445#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2050,6 +2057,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/AbstractDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -2060,29 +2077,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/ThemeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+        <state relative-caret-position="204">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1848#1855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="154" column="24" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
-          <folding>
-            <marker date="1485549233249" expanded="true" signature="688:706" ph="SELECT * FRO... user" />
-            <marker date="1485549233249" expanded="true" signature="909:979" ph="SELECT * FRO... user" />
+            <element signature="e#2022#2029#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/QuestionDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
+        <state relative-caret-position="-323">
           <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2090,11 +2096,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/wrapper/QuestionWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/DAO/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="-442">
+          <caret line="121" column="19" selection-start-line="121" selection-start-column="19" selection-end-line="121" selection-end-column="19" />
+          <folding>
+            <marker date="1485553056073" expanded="true" signature="688:706" ph="SELECT * FRO... user" />
+            <marker date="1485553056073" expanded="true" signature="909:979" ph="SELECT * FRO... user" />
+          </folding>
         </state>
       </provider>
     </entry>
