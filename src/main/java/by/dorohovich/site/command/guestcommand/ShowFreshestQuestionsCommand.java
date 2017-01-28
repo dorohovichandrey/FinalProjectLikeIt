@@ -3,6 +3,7 @@ package by.dorohovich.site.command.guestcommand;
 import by.dorohovich.site.command.AbstractGuestCommand;
 import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.entity.User;
+import by.dorohovich.site.entity.wrapper.QuestionWrapper;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.service.QuestionService;
@@ -35,13 +36,13 @@ public class ShowFreshestQuestionsCommand extends AbstractGuestCommand {
 
     private String tryDoLogic(HttpServletRequest request) throws ServiceException {
         QuestionService questionService = new QuestionService();
-        List<Question> questions = questionService.showFreshestQuestions();
+        List<QuestionWrapper> questions = questionService.showFreshestQuestions();
         packAttributes(questions, request);
         String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
 
-    private void packAttributes(List<Question> questions, HttpServletRequest request) {
+    private void packAttributes(List<QuestionWrapper> questions, HttpServletRequest request) {
         HttpSession session = request.getSession(true);
         session.setAttribute(QUESTIONS_ATTR, questions);
         session.setAttribute(KEY_FOR_QUESTION_LIST_HEADER_ATTR, KEY_FOR_QUESTION_LIST_HEADER);

@@ -29,7 +29,7 @@ public abstract class AbstractDAO<K,T extends Entity> {
     }
 
     public abstract List<T> findAll() throws DAOException;
-    public abstract T findEntityById(K id);
+    public abstract T findEntityById(K id) throws DAOException;
     public abstract void create(T entity) throws DAOException;
     public abstract T update(T entity);
 }

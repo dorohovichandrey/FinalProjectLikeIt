@@ -21,10 +21,13 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
+    private static final String SELECTED_COLUMNS = "userId, login, password, email, isAdmin, rating";
+    private static final String INSERTED_COLUMNS = "login, password, email, isAdmin";
     private static final String SELECT_ALL = "SELECT * FROM user";
-    private static final String SELECT_USERS_ORDER_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";
-    private static final String CREATE_USER = "INSERT INTO user (login, password, email, isAdmin) VALUES (?, ?, ?, ?)";
-    private static final String FIND_USER_BY_LOGIN = "SELECT * FROM user WHERE login = ?";
+    private static final String SELECT_USERS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM user ORDER BY rating DESC";
+    private static final String CREATE_USER = "INSERT INTO user (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?)";
+    private static final String FIND_USER_BY_LOGIN = "SELECT " + SELECTED_COLUMNS + " FROM user WHERE login = ?";
+    private static final String FIND_USER_BY_ID = "SELECT " + SELECTED_COLUMNS + " FROM user WHERE userId = ?";
     private static final String UPDATE_PASSWORD = "UPDATE user SET password = ? WHERE login = ?";
     private static final String UPDATE_EMAIL = "UPDATE user SET email = ? WHERE login = ?";
 
@@ -40,7 +43,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO, while trying to findAll", e);
         }
-
     }
 
     public List<User> findUsersOrderByRating() throws DAOException {
@@ -66,19 +68,12 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         }
     }
 
-
-    @Override
-    public User findEntityById(Integer id) {
-        return null;
-    }
-
-
     @Override
     public void create(User entity) throws DAOException {
         try {
             tryCreate(entity);
         } catch (SQLException e) {
-            throw new DAOException("Problems in UserDAO, while trying to create user", e);
+            throw new DAOException("Problem when trying to create user", e);
         }
     }
 
@@ -100,11 +95,28 @@ public class UserDAO extends AbstractDAO<Integer, User> {
         return null;
     }
 
+    @Override
+    public User findEntityById(Integer id) throws DAOException {
+        try {
+            return tryFindEntityById(id);
+        } catch (SQLException e) {
+            throw new DAOException("Problem when trying to find user by id", e);
+        }
+    }
+
+    public User tryFindEntityById(Integer id) throws SQLException{
+        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_ID)) {
+            preparedSt.setInt(1, id);
+            User user = takeUser(preparedSt);
+            return user;
+        }
+    }
+
     public User findUserByLogin(String login) throws DAOException {
         try {
             return tryFindUserByLogin(login);
         } catch (SQLException e) {
-            throw new DAOException("Exception in UserDAO", e);
+            throw new DAOException("Problem when trying to find user by login", e);
         }
     }
 
