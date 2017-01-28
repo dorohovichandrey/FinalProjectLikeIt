@@ -43,8 +43,12 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     }
 
     @Override
-    public Theme findEntityById(Integer id) {
-        return null;
+    public Theme findEntityById(Integer id) throws DAOException {
+        try {
+            return tryFindEntityById(id);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in ThemeDAO", e);
+        }
     }
 
     private Theme tryFindEntityById(Integer id) throws SQLException {

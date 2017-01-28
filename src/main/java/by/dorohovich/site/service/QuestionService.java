@@ -29,9 +29,9 @@ public class QuestionService {
         try {
             tryAskQuestion(ownerId, text, themeName, header);
         } catch (ConnectionPoolException e) {
-            throw new ServiceException("Problem with getting connection, while trying to ask question", e);
+            throw new ServiceException("Problem with getting connection, when trying to ask question", e);
         } catch (DAOException e) {
-            throw new ServiceException("Problem with QuestionDAO, while trying to ask question", e);
+            throw new ServiceException("Problem with QuestionDAO, when trying to ask question", e);
         }
     }
 
@@ -68,7 +68,7 @@ public class QuestionService {
         }
     }
 
-    private List<QuestionWrapper> makeQuestionWrapperList(List<Question> questionList, ProxyConnection connection){
+    private List<QuestionWrapper> makeQuestionWrapperList(List<Question> questionList, ProxyConnection connection) throws DAOException{
         List<QuestionWrapper> questionWrapperList = new ArrayList<QuestionWrapper>();
         UserDAO userDAO = new UserDAO(connection);
         ThemeDAO themeDAO = new ThemeDAO(connection);
@@ -79,7 +79,7 @@ public class QuestionService {
         return questionWrapperList;
     }
 
-    private QuestionWrapper makeQuestionWrapper(UserDAO userDAO, ThemeDAO themeDAO, Question question) {
+    private QuestionWrapper makeQuestionWrapper(UserDAO userDAO, ThemeDAO themeDAO, Question question) throws DAOException {
         Integer userId = question.getUserId();
         User user = userDAO.findEntityById(userId);
         Integer themeId = question.getThemeId();

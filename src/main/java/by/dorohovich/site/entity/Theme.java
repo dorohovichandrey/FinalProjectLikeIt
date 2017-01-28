@@ -4,22 +4,22 @@ package by.dorohovich.site.entity;
  * Created by User on 26.01.2017.
  */
 public class Theme extends Entity<Integer> {
-    private String themeName;
+    private String name;
 
-    public Theme(Integer id, String themeName) {
+    public Theme(Integer id, String name) {
         super(id);
-        this.themeName = themeName;
+        this.name = name;
     }
 
-    public Theme(String themeName) {
-        this.themeName = themeName;
+    public Theme(String name) {
+        this.name = name;
     }
 
-    public String getThemeName() {
-        return themeName;
+    public String getName() {
+        return name;
     }
 
-    public void setThemeName(String themeName) {
-        this.themeName = themeName;
+    public void setName(String name) {
+        this.name = name;
     }
 }

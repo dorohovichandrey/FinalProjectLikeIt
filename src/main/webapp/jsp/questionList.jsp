@@ -41,8 +41,8 @@
                                     <div class="panel panel-primary">
                                         <div class="panel-heading">
                                             <div class="row">
-                                                <div class="col-md-6"><c:out value="${ elem.user.login }" /> <i class="glyphicon glyphicon-star"></i> 125</div>
-                                                <div class="col-md-offset-3 col-md-3">17:30 10.01.2017</div>
+                                                <div class="col-md-6"><c:out value="${ elem.user.login }" /> <i class="glyphicon glyphicon-star"></i> <c:out value="${ elem.user.rating }" /></div>
+                                                <div class="col-md-offset-2 col-md-4"><right><fmt:formatDate type="both" value="${elem.dateAndTime}" /></right></div>
                                             </div>
                                         </div>
                                         <div class="panel-body">
@@ -54,8 +54,8 @@
                                                 </form>
                                                 <div class="col-md-1"><h2> 12<i style="cursor: pointer;" onclick="document.getElementById('likeForm').submit()" class="glyphicon glyphicon-heart-empty"></i></h2></div>
                                                 <div class="col-md-11">
-                                                    <h4><span class="label label-info">How can it be</span></h4>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dapibus mauris vel sapien consectetur, a tempor erat tincidunt. Morbi a augue in tellus faucibus vestibulum. Fusce tellus eros, hendrerit et leo id, aliquam euismod elit. Etiam bibendum leo id nulla fringilla tempus. Sed tempor semper purus eu posuere. Phasellus tincidunt facilisis ipsum ac vulputate. Pellentesque pharetra lacinia nulla, vel tristique urna suscipit nec.
+                                                    <h4><span class="label label-info"><c:out value="${ elem.header }" /></span></h4>
+                                                    <c:out value="${ elem.text }" />
                                                 </div>
                                             </div>
 
@@ -67,7 +67,7 @@
                                                     <form role="form" id="showQueByThemeForm" action="${pageContext.request.contextPath}/controller" method="POST">
                                                         <input type="hidden" name="command" value="showQuestionsByTheme" />
                                                         <input type="hidden" name="theme" value="sport" />
-                                                        <button type="button" class="btn btn-default">sport </button>
+                                                        <button type="button" class="btn btn-default"><c:out value="${ elem.theme.name }" /> </button>
                                                     </form>
 
                                                 </div>
@@ -83,7 +83,7 @@
 
                                     </div>
 
-
+                                    </c:forEach>
 
 
                                 </div>
@@ -93,7 +93,7 @@
                         </div>
 
                     </div>
-                    </c:forEach>
+
 
                 </div>
 
