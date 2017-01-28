@@ -2,11 +2,13 @@ package by.dorohovich.site.service;
 
 import by.dorohovich.site.DAO.QuestionDAO;
 import by.dorohovich.site.DAO.ThemeDAO;
+import by.dorohovich.site.DAO.UserDAO;
 import by.dorohovich.site.connectionpool.ConnectionPool;
 import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.entity.Theme;
 import by.dorohovich.site.entity.User;
+import by.dorohovich.site.entity.wrapper.QuestionWrapper;
 import by.dorohovich.site.exception.ConnectionPoolException;
 import by.dorohovich.site.exception.DAOException;
 import by.dorohovich.site.exception.ServiceException;
@@ -14,6 +16,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.persistence.criteria.CriteriaBuilder;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -46,7 +49,7 @@ public class QuestionService {
         }
     }
 
-    public List<Question> showFreshestQuestions() throws ServiceException {
+    public List<QuestionWrapper> showFreshestQuestions() throws ServiceException {
         try {
             return tryShowFreshestQuestions();
         } catch (ConnectionPoolException e) {
@@ -56,11 +59,34 @@ public class QuestionService {
         }
     }
 
-    private List<Question> tryShowFreshestQuestions() throws ConnectionPoolException, DAOException {
+    private List<QuestionWrapper> tryShowFreshestQuestions() throws ConnectionPoolException, DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             QuestionDAO questionDAO = new QuestionDAO(connection);
             List<Question> questionList = questionDAO.findQuestionsOrderByDateAndTime();
-            return questionList;
+            List<QuestionWrapper> questionWrapperList = makeQuestionWrapperList(questionList, connection);
+            return questionWrapperList;
         }
     }
+
+    private List<QuestionWrapper> makeQuestionWrapperList(List<Question> questionList, ProxyConnection connection){
+        List<QuestionWrapper> questionWrapperList = new ArrayList<QuestionWrapper>();
+        UserDAO userDAO = new UserDAO(connection);
+        ThemeDAO themeDAO = new ThemeDAO(connection);
+        for(Question question : questionList){
+            QuestionWrapper questionWrapper = makeQuestionWrapper(userDAO, themeDAO, question);
+            questionWrapperList.add(questionWrapper);
+        }
+        return questionWrapperList;
+    }
+
+    private QuestionWrapper makeQuestionWrapper(UserDAO userDAO, ThemeDAO themeDAO, Question question) {
+        Integer userId = question.getUserId();
+        User user = userDAO.findEntityById(userId);
+        Integer themeId = question.getThemeId();
+        Theme theme = themeDAO.findEntityById(themeId);
+        QuestionWrapper questionWrapper = new QuestionWrapper(question, user, theme);
+        return questionWrapper;
+    }
+
+
 }

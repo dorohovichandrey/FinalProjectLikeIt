@@ -63,6 +63,12 @@ public enum CommandEnum {
         {
             command = new AskQuestionCommand();
         }
+    },
+
+    SHOW_FRESHEST_QUESTIONS{
+        {
+            command = new ShowFreshestQuestionsCommand();
+        }
     };
 
     AbstractCommand command;

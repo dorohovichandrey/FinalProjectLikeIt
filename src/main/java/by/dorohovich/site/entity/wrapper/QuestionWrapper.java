@@ -35,7 +35,7 @@ public class QuestionWrapper {
 
     public void setUser(User user) {
         this.user = user;
-        question.setOwnerId(user.getId());
+        question.setUserId(user.getId());
     }
 
     public Theme getTheme() {

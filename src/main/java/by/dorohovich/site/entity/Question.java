@@ -8,15 +8,15 @@ import java.time.LocalDateTime;
  */
 public class Question extends Entity<Integer> {
 
-    private Integer ownerId;
+    private Integer userId;
     private Timestamp dateAndTime;
     private String text;
     private Integer themeId;
     private Integer rating;
     private String header;
 
-    public Question(Integer ownerId, String text, Integer themeId, String header) {
-        this.ownerId = ownerId;
+    public Question(Integer userId, String text, Integer themeId, String header) {
+        this.userId = userId;
         this.text = text;
         this.themeId = themeId;
         this.header = header;
@@ -24,9 +24,9 @@ public class Question extends Entity<Integer> {
         rating = 0;
     }
 
-    public Question(Integer id, Integer ownerId, Timestamp dateAndTime, String text, Integer themeId, Integer rating, String header) {
+    public Question(Integer id, Integer userId, Timestamp dateAndTime, String text, Integer themeId, Integer rating, String header) {
         super(id);
-        this.ownerId = ownerId;
+        this.userId = userId;
         this.dateAndTime = dateAndTime;
         this.text = text;
         this.themeId = themeId;
@@ -34,12 +34,12 @@ public class Question extends Entity<Integer> {
         this.header = header;
     }
 
-    public Integer getOwnerId() {
-        return ownerId;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setOwnerId(Integer ownerId) {
-        this.ownerId = ownerId;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public Timestamp getDateAndTime() {

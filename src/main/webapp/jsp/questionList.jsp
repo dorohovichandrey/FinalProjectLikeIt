@@ -28,6 +28,7 @@
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
+
                     <div class="panel panel-default">
                         <div class="panel-heading"><h4><fmt:message key="${keyForQuestionListHeader}"/></h4></div>
                         <div class="panel-body">
@@ -36,10 +37,11 @@
 
                                 <div class="col-md-10 col-md-offset-1">
 
+                                    <c:forEach var="elem" items="${questions}" varStatus="status">
                                     <div class="panel panel-primary">
                                         <div class="panel-heading">
                                             <div class="row">
-                                                <div class="col-md-6">SuperScientist <i class="glyphicon glyphicon-star"></i> 125</div>
+                                                <div class="col-md-6"><c:out value="${ elem.user.login }" /> <i class="glyphicon glyphicon-star"></i> 125</div>
                                                 <div class="col-md-offset-3 col-md-3">17:30 10.01.2017</div>
                                             </div>
                                         </div>
@@ -91,6 +93,7 @@
                         </div>
 
                     </div>
+                    </c:forEach>
 
                 </div>
 
