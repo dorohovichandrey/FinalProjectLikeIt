@@ -52,7 +52,7 @@ public class QuestionService {
         } catch (ConnectionPoolException e) {
             throw new ServiceException("Problem with getting connection, when trying to show freshest questions", e);
         } catch (DAOException e) {
-            throw new ServiceException("Problem with UserDAO, when trying to showUsersTop", e);
+            throw new ServiceException("Problem with QuestionDAO, when trying to show freshest questions", e);
         }
     }
 
