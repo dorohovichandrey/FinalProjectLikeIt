@@ -47,10 +47,10 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     private void tryCreate(Question entity) throws SQLException, DAOException {
         try (PreparedStatement preparedSt = connection.prepareStatement(CREATE_QUESTION)) {
-            preparedSt.setInt(1, entity.getOwner().getId());
+            preparedSt.setInt(1, entity.getOwnerId());
             preparedSt.setTimestamp(2, entity.getDateAndTime());
             preparedSt.setString(3, entity.getText());
-            preparedSt.setInt(4, entity.getTheme().getId());
+            preparedSt.setInt(4, entity.getThemeId());
             preparedSt.setInt(5, entity.getRating());
             preparedSt.setString(6, entity.getHeader());
             preparedSt.executeUpdate();

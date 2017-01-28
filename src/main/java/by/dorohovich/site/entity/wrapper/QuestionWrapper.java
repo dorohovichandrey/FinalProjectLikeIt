@@ -17,24 +17,40 @@ public class QuestionWrapper {
 
     public QuestionWrapper(Question question, User user, Theme theme) {
         this.question = question;
-        this.user = user;
-        this.theme = theme;
+        setUser(user);
+        setTheme(theme);
     }
 
-    public Integer getId() {
-        return question.getId();
+    public Question getQuestion() {
+        return question;
     }
+
+    public void setQuestion(Question question) {
+        this.question = question;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+        question.setOwnerId(user.getId());
+    }
+
+    public Theme getTheme() {
+        return theme;
+    }
+
+    public void setTheme(Theme theme) {
+        this.theme = theme;
+        question.setThemeId(theme.getId());
+    }
+
+    public Integer getId() {return question.getId();}
 
     public void setId(Integer id) {
         question.setId(id);
-    }
-
-    public User getOwner() {
-        return question.getOwner();
-    }
-
-    public void setOwner(User owner) {
-        question.setOwner(owner);
     }
 
     public Timestamp getDateAndTime() {
@@ -53,14 +69,6 @@ public class QuestionWrapper {
         question.setText(text);
     }
 
-    public Theme getTheme() {
-        return question.getTheme();
-    }
-
-    public void setTheme(Theme theme) {
-        question.setTheme(theme);
-    }
-
     public Integer getRating() {
         return question.getRating();
     }
@@ -75,21 +83,5 @@ public class QuestionWrapper {
 
     public void setHeader(String header) {
         question.setHeader(header);
-    }
-
-    public Question getQuestion() {
-        return question;
-    }
-
-    public void setQuestion(Question question) {
-        this.question = question;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 }

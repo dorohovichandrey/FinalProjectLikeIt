@@ -8,38 +8,38 @@ import java.time.LocalDateTime;
  */
 public class Question extends Entity<Integer> {
 
-    private User owner;
+    private Integer ownerId;
     private Timestamp dateAndTime;
     private String text;
-    private Theme theme;
+    private Integer themeId;
     private Integer rating;
     private String header;
 
-    public Question(User owner, String text, Theme theme, String header) {
-        this.owner = owner;
+    public Question(Integer ownerId, String text, Integer themeId, String header) {
+        this.ownerId = ownerId;
         this.text = text;
-        this.theme = theme;
+        this.themeId = themeId;
         this.header = header;
         dateAndTime = Timestamp.valueOf(LocalDateTime.now());
         rating = 0;
     }
 
-    public Question(Integer id, User owner, Timestamp dateAndTime, String text, Theme theme, Integer rating, String header) {
+    public Question(Integer id, Integer ownerId, Timestamp dateAndTime, String text, Integer themeId, Integer rating, String header) {
         super(id);
-        this.owner = owner;
+        this.ownerId = ownerId;
         this.dateAndTime = dateAndTime;
         this.text = text;
-        this.theme = theme;
+        this.themeId = themeId;
         this.rating = rating;
         this.header = header;
     }
 
-    public User getOwner() {
-        return owner;
+    public Integer getOwnerId() {
+        return ownerId;
     }
 
-    public void setOwner(User owner) {
-        this.owner = owner;
+    public void setOwnerId(Integer ownerId) {
+        this.ownerId = ownerId;
     }
 
     public Timestamp getDateAndTime() {
@@ -58,12 +58,12 @@ public class Question extends Entity<Integer> {
         this.text = text;
     }
 
-    public Theme getTheme() {
-        return theme;
+    public Integer getThemeId() {
+        return themeId;
     }
 
-    public void setTheme(Theme theme) {
-        this.theme = theme;
+    public void setThemeId(Integer themeId) {
+        this.themeId = themeId;
     }
 
     public Integer getRating() {

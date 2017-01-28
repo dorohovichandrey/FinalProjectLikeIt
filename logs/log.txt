@@ -765,3 +765,20 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 02:54:31.410 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
 02:54:31.411 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
 02:54:31.413 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+02:46:30.264 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.definer.CommandDefiner define - Command: logIn
+02:46:33.783 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+02:46:33.872 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+02:46:33.907 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+02:46:33.924 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+02:46:33.958 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+02:46:33.959 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+02:46:34.848 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+02:46:34.849 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+02:47:43.846 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.definer.CommandDefiner define - Command: ask_question
+02:47:43.906 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+02:47:44.892 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+02:49:08.787 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+02:49:08.789 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+02:49:08.791 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+02:49:08.794 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+02:49:08.795 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)

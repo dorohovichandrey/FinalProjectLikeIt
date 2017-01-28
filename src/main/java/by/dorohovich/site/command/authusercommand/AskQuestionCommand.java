@@ -46,8 +46,9 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
         String text = request.getParameter(TEXT_PARAM);
         HttpSession session = request.getSession(true);
         User owner = (User)session.getAttribute(USER_ATTR);
+        Integer ownerId = owner.getId();
         QuestionService questionService = new QuestionService();
-        questionService.askQuestion(owner, text, themeName, header);
+        questionService.askQuestion(ownerId, text, themeName, header);
         String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
