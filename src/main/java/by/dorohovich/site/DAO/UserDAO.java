@@ -22,7 +22,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String SELECT_ALL = "SELECT * FROM user";
-    private static final String SELECT_USERS_SORTED_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";
+    private static final String SELECT_USERS_ORDER_BY_RATING = "SELECT userId, login, password, email, isAdmin, rating FROM user ORDER BY rating DESC";
     private static final String CREATE_USER = "INSERT INTO user (login, password, email, isAdmin) VALUES (?, ?, ?, ?)";
     private static final String FIND_USER_BY_LOGIN = "SELECT * FROM user WHERE login = ?";
     private static final String UPDATE_PASSWORD = "UPDATE user SET password = ? WHERE login = ?";
@@ -43,9 +43,9 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     }
 
-    public List<User> findUsersSortedByRating() throws DAOException {
+    public List<User> findUsersOrderByRating() throws DAOException {
         try {
-            return findUsersByQuery(SELECT_USERS_SORTED_BY_RATING);
+            return findUsersByQuery(SELECT_USERS_ORDER_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO", e);
         }

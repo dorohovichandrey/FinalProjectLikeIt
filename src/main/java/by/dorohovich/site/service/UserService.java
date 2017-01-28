@@ -98,7 +98,7 @@ public class UserService extends AbstractService<Integer, User> {
     private List<User> tryShowUsersTop() throws ConnectionPoolException, DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             UserDAO userDAO = new UserDAO(connection);
-            List<User> userList = userDAO.findUsersSortedByRating();
+            List<User> userList = userDAO.findUsersOrderByRating();
             return userList;
         }
     }

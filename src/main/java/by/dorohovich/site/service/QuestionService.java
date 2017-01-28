@@ -14,6 +14,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.persistence.criteria.CriteriaBuilder;
+import java.util.List;
 
 /**
  * Created by User on 26.01.2017.
@@ -25,11 +26,9 @@ public class QuestionService {
         try {
             tryAskQuestion(ownerId, text, themeName, header);
         } catch (ConnectionPoolException e) {
-            LOGGER.error("Problem with getting connection, while trying to ask question", e);
-            throw new ServiceException(e);
+            throw new ServiceException("Problem with getting connection, while trying to ask question", e);
         } catch (DAOException e) {
-            LOGGER.error("Problem with QuestionDAO, while trying to ask question", e);
-            throw new ServiceException(e);
+            throw new ServiceException("Problem with QuestionDAO, while trying to ask question", e);
         }
     }
 
@@ -44,6 +43,24 @@ public class QuestionService {
             Integer themeId = theme.getId();
             Question question = new Question(ownerId, text, themeId, header);
             questionDAO.create(question);
+        }
+    }
+
+    public List<Question> showFreshestQuestions() throws ServiceException {
+        try {
+            return tryShowFreshestQuestions();
+        } catch (ConnectionPoolException e) {
+            throw new ServiceException("Problem with getting connection, when trying to show freshest questions", e);
+        } catch (DAOException e) {
+            throw new ServiceException("Problem with UserDAO, when trying to showUsersTop", e);
+        }
+    }
+
+    private List<Question> tryShowFreshestQuestions() throws ConnectionPoolException, DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            QuestionDAO questionDAO = new QuestionDAO(connection);
+            List<Question> questionList = questionDAO.findQuestionsOrderByDateAndTime();
+            return questionList;
         }
     }
 }

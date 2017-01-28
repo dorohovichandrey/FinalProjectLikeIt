@@ -2,16 +2,9 @@ package by.dorohovich.site.DAO;
 
 import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Question;
-import by.dorohovich.site.entity.Role;
-import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.DAOException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +13,12 @@ import java.util.List;
  */
 public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
-    private static final String CREATE_QUESTION = "INSERT INTO question (userId, dateAndTime, text, themeId, rating, queHeader) VALUES (?, ?, ?, ?, ?, ?)";
+    private static final String INSERTED_COLUMNS = "userId, dateAndTime, text, themeId, rating, queHeader";
+    private static final String SELECTED_COLUMNS = "questionId, " + INSERTED_COLUMNS;
+
+    private static final String CREATE_QUESTION = "INSERT INTO question (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?, ?, ?)";
+    private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime ASC";
+
 
     public QuestionDAO(ProxyConnection connection) {
         super(connection);
@@ -29,6 +27,49 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     @Override
     public List<Question> findAll() throws DAOException {
         return null;
+    }
+
+    public List<Question> findQuestionsOrderByDateAndTime() throws DAOException {
+        try {
+            return findQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
+        }
+    }
+
+    private List<Question> findQuestionsByQuery(String query) throws SQLException {
+        try (Statement st = connection.createStatement()) {
+            List<Question> questionList = takeQuestionList(query, st);
+            return questionList;
+        }
+    }
+
+    private List<Question> takeQuestionList(String query, Statement st) throws SQLException {
+        try(ResultSet rs = st.executeQuery(query)) {
+            List<Question> questionList = makeQuestionList(rs);
+            return questionList;
+        }
+    }
+
+    private List<Question> makeQuestionList(ResultSet rs) throws SQLException {
+        ArrayList<Question> list = new ArrayList<Question>();
+        while (rs.next()) {
+            Question question = makeQuestion(rs);
+            list.add(question);
+        }
+        return list;
+    }
+
+    private Question makeQuestion(ResultSet rs) throws SQLException {
+        int questionId = rs.getInt(1);
+        int ownerId = rs.getInt(2);
+        Timestamp dateAndTime = rs.getTimestamp(3);
+        String text = rs.getString(4);
+        int themeId = rs.getInt(5);
+        int rating = rs.getInt(6);
+        String queHeader = rs.getString(7);
+        Question question = new Question(questionId, ownerId, dateAndTime, text, themeId, rating, queHeader);
+        return question;
     }
 
     @Override
@@ -64,6 +105,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     public Question update(Question entity) {
         return null;
     }
+
 
 
 
