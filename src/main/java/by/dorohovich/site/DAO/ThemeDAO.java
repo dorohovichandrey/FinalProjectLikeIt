@@ -17,7 +17,9 @@ import java.util.List;
  */
 public class ThemeDAO extends AbstractDAO<Integer, Theme> {
 
-    private static final String FIND_THEME_BY_NAME = "SELECT themeId, themeName FROM theme WHERE themeName = ? and isDeleted = 0";
+    private static final String SELECTED_COLUMNS = "themeId, themeName";
+    private static final String FIND_THEME_BY_NAME = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeName = ? and isDeleted = 0";
+    private static final String FIND_THEME_BY_ID = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeId = ? and isDeleted = 0";
 
     public ThemeDAO(ProxyConnection connection) {
         super(connection);
@@ -28,10 +30,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         return null;
     }
 
-    @Override
-    public Theme findEntityById(Integer id) {
-        return null;
-    }
+
 
     @Override
     public void create(Theme entity) throws DAOException {
@@ -41,6 +40,19 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     @Override
     public Theme update(Theme entity) {
         return null;
+    }
+
+    @Override
+    public Theme findEntityById(Integer id) {
+        return null;
+    }
+
+    private Theme tryFindEntityById(Integer id) throws SQLException {
+        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_ID)) {
+            preparedSt.setInt(1, id);
+            Theme theme = takeTheme(preparedSt);
+            return theme;
+        }
     }
 
     public Theme findThemeByName(String themeName) throws DAOException {
