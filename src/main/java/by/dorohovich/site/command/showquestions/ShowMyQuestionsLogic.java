@@ -9,13 +9,13 @@ import java.util.List;
 /**
  * Created by User on 30.01.2017.
  */
-public class ShowQuestionsByThemeLogic extends AbstractShowQuestionsLogic {
-    private static final String KEY_FOR_QUESTION_LIST_HEADER = "text.questionList.questionsByThemeHeader";
+public class ShowMyQuestionsLogic extends AbstractShowQuestionsLogic {
+    private static final String KEY_FOR_QUESTION_LIST_HEADER = "text.questionList.myQuestionsHeader";
 
     @Override
     protected List<QuestionWrapper> showQuestions(QuestionService questionService, String searchParam) throws ServiceException {
-        Integer themeId = Integer.valueOf(searchParam);
-        List<QuestionWrapper> questions = questionService.showQuestionsByThemeId(themeId);
+        Integer userId = Integer.valueOf(searchParam);
+        List<QuestionWrapper> questions = questionService.showQuestionsByUserId(userId);
         return questions;
     }
 
