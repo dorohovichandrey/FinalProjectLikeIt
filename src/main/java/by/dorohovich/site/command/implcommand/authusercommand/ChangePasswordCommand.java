@@ -1,4 +1,4 @@
-package by.dorohovich.site.command.authusercommand;
+package by.dorohovich.site.command.implcommand.authusercommand;
 
 import by.dorohovich.site.command.AbstractAuthenticatedUserCommand;
 import by.dorohovich.site.entity.User;

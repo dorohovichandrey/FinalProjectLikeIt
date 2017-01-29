@@ -42,7 +42,7 @@
                                         <div class="panel-heading">
                                             <div class="row">
                                                 <div class="col-md-6"><c:out value="${ elem.user.login }" /> <i class="glyphicon glyphicon-star"></i> <c:out value="${ elem.user.rating }" /></div>
-                                                <div class="col-md-offset-2 col-md-4"><right><fmt:formatDate type="both" value="${elem.dateAndTime}" /></right></div>
+                                                <div class="col-md-offset-2 col-md-4"><fmt:formatDate type="both" value="${elem.dateAndTime}" /></div>
                                             </div>
                                         </div>
                                         <div class="panel-body">
@@ -52,7 +52,7 @@
                                                     <input type="hidden" name="command" value="like" />
                                                     <input type="hidden" name="questionId" value="1223" />
                                                 </form>
-                                                <div class="col-md-1"><h2> 12<i style="cursor: pointer;" onclick="document.getElementById('likeForm').submit()" class="glyphicon glyphicon-heart-empty"></i></h2></div>
+                                                <div class="col-md-1"><h2> <c:out value="${ elem.rating }" /><i style="cursor: pointer;" onclick="document.getElementById('likeForm').submit()" class="glyphicon glyphicon-heart-empty"></i></h2></div>
                                                 <div class="col-md-11">
                                                     <h4><span class="label label-info"><c:out value="${ elem.header }" /></span></h4>
                                                     <c:out value="${ elem.text }" />

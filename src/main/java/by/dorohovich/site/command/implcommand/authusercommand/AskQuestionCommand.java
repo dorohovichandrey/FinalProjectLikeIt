@@ -1,11 +1,10 @@
-package by.dorohovich.site.command.authusercommand;
+package by.dorohovich.site.command.implcommand.authusercommand;
 
 import by.dorohovich.site.command.AbstractAuthenticatedUserCommand;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.service.QuestionService;
-import by.dorohovich.site.service.UserService;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

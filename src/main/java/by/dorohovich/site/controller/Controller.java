@@ -2,7 +2,7 @@ package by.dorohovich.site.controller;
 
 
 import by.dorohovich.site.command.AbstractCommand;
-import by.dorohovich.site.command.definer.CommandDefiner;
+import by.dorohovich.site.command.implcommand.definer.CommandDefiner;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.connectionpool.ConnectionPool;
 import by.dorohovich.site.utility.MappingManager;

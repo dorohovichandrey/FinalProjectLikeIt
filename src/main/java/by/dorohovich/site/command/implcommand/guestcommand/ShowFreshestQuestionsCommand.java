@@ -1,13 +1,10 @@
-package by.dorohovich.site.command.guestcommand;
+package by.dorohovich.site.command.implcommand.guestcommand;
 
 import by.dorohovich.site.command.AbstractGuestCommand;
-import by.dorohovich.site.entity.Question;
-import by.dorohovich.site.entity.User;
 import by.dorohovich.site.entity.wrapper.QuestionWrapper;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.service.QuestionService;
-import by.dorohovich.site.service.UserService;
 import by.dorohovich.site.utility.MappingManager;
 
 import javax.servlet.http.HttpServletRequest;
@@ -30,7 +27,7 @@ public class ShowFreshestQuestionsCommand extends AbstractGuestCommand {
         try {
             return tryDoLogic(request);
         } catch (ServiceException e) {
-            throw new CommandException("Problem with userService, while trying to showUsersTop", e);
+            throw new CommandException("Problem with userService, when trying to showUsersTop", e);
         }
     }
 

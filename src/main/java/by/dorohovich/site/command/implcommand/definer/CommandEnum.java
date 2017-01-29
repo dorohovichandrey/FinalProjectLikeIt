@@ -1,11 +1,11 @@
-package by.dorohovich.site.command.definer;
+package by.dorohovich.site.command.implcommand.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
-import by.dorohovich.site.command.authusercommand.AskQuestionCommand;
-import by.dorohovich.site.command.authusercommand.ChangeEmailCommand;
-import by.dorohovich.site.command.authusercommand.ChangePasswordCommand;
-import by.dorohovich.site.command.authusercommand.LogOutCommand;
-import by.dorohovich.site.command.guestcommand.*;
+import by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand;
+import by.dorohovich.site.command.implcommand.authusercommand.ChangeEmailCommand;
+import by.dorohovich.site.command.implcommand.authusercommand.ChangePasswordCommand;
+import by.dorohovich.site.command.implcommand.authusercommand.LogOutCommand;
+import by.dorohovich.site.command.implcommand.guestcommand.*;
 
 /**
  * Created by User on 26.11.2016.

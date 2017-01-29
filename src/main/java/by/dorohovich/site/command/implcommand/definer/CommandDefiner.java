@@ -1,4 +1,4 @@
-package by.dorohovich.site.command.definer;
+package by.dorohovich.site.command.implcommand.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
 import org.apache.logging.log4j.LogManager;

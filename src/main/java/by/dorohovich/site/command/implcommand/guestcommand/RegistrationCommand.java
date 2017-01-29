@@ -1,4 +1,4 @@
-package by.dorohovich.site.command.guestcommand;
+package by.dorohovich.site.command.implcommand.guestcommand;
 
 import by.dorohovich.site.command.AbstractGuestCommand;
 import by.dorohovich.site.exception.CommandException;
