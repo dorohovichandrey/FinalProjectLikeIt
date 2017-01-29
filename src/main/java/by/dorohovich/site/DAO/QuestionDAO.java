@@ -19,6 +19,8 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     private static final String CREATE_QUESTION = "INSERT INTO question (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?, ?, ?)";
     private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime DESC";
     private static final String SELECT_QUESTIONS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY rating DESC";
+    private static final String SELECT_QUESTIONS_BY_THEME_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE themeId = ? ORDER BY dateAndTime DESC";
+    private static final String SELECT_QUESTIONS_BY_USER_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE userId = ? ORDER BY dateAndTime DESC";
 
 
     public QuestionDAO(ProxyConnection connection) {
@@ -30,9 +32,48 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
         return null;
     }
 
+    public List<Question> findQuestionsByThemeId(Integer themeId) throws DAOException {
+        try {
+            return tryFindQuestionsByThemeId(themeId);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
+        }
+    }
+
+    private List<Question> tryFindQuestionsByThemeId(Integer themeId) throws SQLException {
+        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_QUESTIONS_BY_THEME_ID)) {
+            preparedSt.setInt(1, themeId);
+            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
+            return questionList;
+        }
+    }
+
+    public List<Question> findQuestionsByUserId(Integer userId) throws DAOException {
+        try {
+            return tryFindQuestionsByUserId(userId);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
+        }
+    }
+
+    private List<Question> tryFindQuestionsByUserId(Integer userId) throws SQLException {
+        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_QUESTIONS_BY_USER_ID)) {
+            preparedSt.setInt(1, userId);
+            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
+            return questionList;
+        }
+    }
+
+    private List<Question> takeQuestionListByPrStatement(PreparedStatement preparedSt) throws SQLException {
+        try(ResultSet rs = preparedSt.executeQuery()) {
+            List<Question> list = makeQuestionList(rs);
+            return list;
+        }
+    }
+
     public List<Question> findQuestionsOrderByDateAndTime() throws DAOException {
         try {
-            return findQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
+            return tryFindQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -40,20 +81,20 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsOrderByRating() throws DAOException {
         try {
-            return findQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_RATING);
+            return tryFindQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
     }
 
-    private List<Question> findQuestionsByQuery(String query) throws SQLException {
+    private List<Question> tryFindQuestionsByQuery(String query) throws SQLException {
         try (Statement st = connection.createStatement()) {
-            List<Question> questionList = takeQuestionList(query, st);
+            List<Question> questionList = takeQuestionListByQuery(query, st);
             return questionList;
         }
     }
 
-    private List<Question> takeQuestionList(String query, Statement st) throws SQLException {
+    private List<Question> takeQuestionListByQuery(String query, Statement st) throws SQLException {
         try(ResultSet rs = st.executeQuery(query)) {
             List<Question> questionList = makeQuestionList(rs);
             return questionList;

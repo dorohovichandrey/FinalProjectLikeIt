@@ -50,9 +50,29 @@ public class QuestionService {
         }
     }
 
+    public List<QuestionWrapper> showQuestionsByThemeId(Integer themeId) throws ServiceException {
+        try {
+            return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findQuestionsByThemeId((Integer)searchParam), themeId);
+        } catch (ConnectionPoolException e) {
+            throw new ServiceException("Problem with getting connection, when trying to show questions bu userId", e);
+        } catch (DAOException e) {
+            throw new ServiceException("Problem with QuestionDAO, when trying to show questions bu userId", e);
+        }
+    }
+
+    public List<QuestionWrapper> showQuestionsByUserId(Integer userId) throws ServiceException {
+        try {
+            return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findQuestionsByUserId((Integer)searchParam), userId);
+        } catch (ConnectionPoolException e) {
+            throw new ServiceException("Problem with getting connection, when trying to show questions bu userId", e);
+        } catch (DAOException e) {
+            throw new ServiceException("Problem with QuestionDAO, when trying to show questions bu userId", e);
+        }
+    }
+
     public List<QuestionWrapper> showTopRatedQuestions() throws ServiceException {
         try {
-            return tryShowQuestions(questionDAO -> questionDAO.findQuestionsOrderByDateAndTime());
+            return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findQuestionsOrderByRating(), null);
         } catch (ConnectionPoolException e) {
             throw new ServiceException("Problem with getting connection, when trying to show top rated questions", e);
         } catch (DAOException e) {
@@ -62,7 +82,7 @@ public class QuestionService {
 
     public List<QuestionWrapper> showFreshestQuestions() throws ServiceException {
         try {
-            return tryShowQuestions(questionDAO -> questionDAO.findQuestionsOrderByDateAndTime());
+            return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findQuestionsOrderByDateAndTime(), null);
         } catch (ConnectionPoolException e) {
             throw new ServiceException("Problem with getting connection, when trying to show freshest questions", e);
         } catch (DAOException e) {
@@ -70,10 +90,10 @@ public class QuestionService {
         }
     }
 
-    private List<QuestionWrapper> tryShowQuestions(QuestionListFinder questionListFinder) throws ConnectionPoolException, DAOException {
+    private List<QuestionWrapper> tryShowQuestions(QuestionListFinder questionListFinder, Object searchParam) throws ConnectionPoolException, DAOException {
         try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
             QuestionDAO questionDAO = new QuestionDAO(connection);
-            List<Question> questionList = questionListFinder.find(questionDAO);
+            List<Question> questionList = questionListFinder.find(questionDAO, searchParam);
             List<QuestionWrapper> questionWrapperList = makeQuestionWrapperList(questionList, connection);
             return questionWrapperList;
         }
