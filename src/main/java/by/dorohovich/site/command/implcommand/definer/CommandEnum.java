@@ -67,7 +67,7 @@ public enum CommandEnum {
 
     SHOW_FRESHEST_QUESTIONS{
         {
-            command = new ShowFreshestQuestionsCommand();
+            command = new ShowFreshestQuestionsCommandOld();
         }
     };
 

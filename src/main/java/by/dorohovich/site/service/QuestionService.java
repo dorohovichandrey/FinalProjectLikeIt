@@ -1,6 +1,7 @@
 package by.dorohovich.site.service;
 
 import by.dorohovich.site.DAO.QuestionDAO;
+import by.dorohovich.site.DAO.QuestionListFinder;
 import by.dorohovich.site.DAO.ThemeDAO;
 import by.dorohovich.site.DAO.UserDAO;
 import by.dorohovich.site.connectionpool.ConnectionPool;
@@ -51,11 +52,20 @@ public class QuestionService {
 
     public List<QuestionWrapper> showFreshestQuestions() throws ServiceException {
         try {
-            return tryShowFreshestQuestions();
+            return tryShowQuestions(questionDAO -> questionDAO.findQuestionsOrderByDateAndTime());
         } catch (ConnectionPoolException e) {
             throw new ServiceException("Problem with getting connection, when trying to show freshest questions", e);
         } catch (DAOException e) {
             throw new ServiceException("Problem with QuestionDAO, when trying to show freshest questions", e);
+        }
+    }
+
+    private List<QuestionWrapper> tryShowQuestions(QuestionListFinder questionListFinder) throws ConnectionPoolException, DAOException {
+        try (ProxyConnection connection = ConnectionPool.getInstance().takeConnection()) {
+            QuestionDAO questionDAO = new QuestionDAO(connection);
+            List<Question> questionList = questionListFinder.find(questionDAO);
+            List<QuestionWrapper> questionWrapperList = makeQuestionWrapperList(questionList, connection);
+            return questionWrapperList;
         }
     }
 

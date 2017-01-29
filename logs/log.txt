@@ -890,3 +890,29 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 02:05:21.031 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
 02:05:21.033 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
 02:05:21.035 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+17:52:08.792 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+17:52:11.473 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:52:11.541 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:52:11.564 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:52:11.588 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:52:11.617 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:52:11.617 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:52:12.831 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:52:30.922 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+17:52:30.923 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+17:52:30.929 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+17:52:30.955 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+17:52:30.957 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+18:03:44.216 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+18:03:46.796 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+18:03:46.896 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+18:03:46.930 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+18:03:46.953 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+18:03:46.991 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+18:03:46.992 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+18:03:47.204 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+18:25:07.199 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+18:25:07.200 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+18:25:07.203 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+18:25:07.205 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+18:25:07.206 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)

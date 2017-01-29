@@ -18,6 +18,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     private static final String CREATE_QUESTION = "INSERT INTO question (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?, ?, ?)";
     private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime ASC";
+    private static final String SELECT_QUESTIONS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY rating DESC";
 
 
     public QuestionDAO(ProxyConnection connection) {
@@ -32,6 +33,14 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     public List<Question> findQuestionsOrderByDateAndTime() throws DAOException {
         try {
             return findQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
+        }
+    }
+
+    public List<Question> findQuestionsOrderByRating() throws DAOException {
+        try {
+            return findQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
