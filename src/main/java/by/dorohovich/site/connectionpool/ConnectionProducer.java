@@ -39,7 +39,6 @@ public class ConnectionProducer {
     ConnectionProducer() {
         try {
             DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-
         } catch (SQLException e) {
             LOGGER.fatal("Problem with DriverManager registration", e);
             throw new RuntimeException(e);
@@ -48,13 +47,17 @@ public class ConnectionProducer {
 
     ProxyConnection produce() throws ConnectionProducerException {
         try {
-            Connection connection = DriverManager.getConnection(URL, configProp);
-            ProxyConnection proxyConnection = new ProxyConnection(connection);
-            return proxyConnection;
+            return tryProduce();
         } catch (SQLException e) {
             throw new ConnectionProducerException("Connection was not produced", e);
         }
 
+    }
+
+    private ProxyConnection tryProduce() throws SQLException {
+        Connection connection = DriverManager.getConnection(URL, configProp);
+        ProxyConnection proxyConnection = new ProxyConnection(connection);
+        return proxyConnection;
     }
 
 }

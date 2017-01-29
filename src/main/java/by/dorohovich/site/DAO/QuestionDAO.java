@@ -17,7 +17,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     private static final String SELECTED_COLUMNS = "questionId, " + INSERTED_COLUMNS;
 
     private static final String CREATE_QUESTION = "INSERT INTO question (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?, ?, ?)";
-    private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime ASC";
+    private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime DESC";
     private static final String SELECT_QUESTIONS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY rating DESC";
 
 

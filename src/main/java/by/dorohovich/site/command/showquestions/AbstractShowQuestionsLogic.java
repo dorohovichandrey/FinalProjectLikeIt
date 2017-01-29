@@ -16,6 +16,7 @@ import java.util.List;
  */
 public abstract class AbstractShowQuestionsLogic {
 
+    private static final String SEARCH_PARAM = "searchParam";
     private static final String QUESTIONS_ATTR = "questions";
     private static final String KEY_FOR_QUESTION_LIST_HEADER_ATTR = "keyForQuestionListHeader";
 
@@ -23,14 +24,15 @@ public abstract class AbstractShowQuestionsLogic {
 
 
     public String tryDoLogic(HttpServletRequest request) throws ServiceException {
+        String searchParam = request.getParameter(SEARCH_PARAM);
         QuestionService questionService = new QuestionService();
-        List<QuestionWrapper> questions = showQuestions(questionService);
+        List<QuestionWrapper> questions = showQuestions(questionService, searchParam);
         packAttributes(questions, request);
         String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
 
-    protected abstract List<QuestionWrapper> showQuestions(QuestionService questionService) throws ServiceException;
+    protected abstract List<QuestionWrapper> showQuestions(QuestionService questionService, String searchParam) throws ServiceException;
 
     private void packAttributes(List<QuestionWrapper> questions, HttpServletRequest request) {
         HttpSession session = request.getSession(true);

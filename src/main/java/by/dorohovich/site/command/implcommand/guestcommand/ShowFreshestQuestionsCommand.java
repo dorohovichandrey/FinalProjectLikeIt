@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class ShowFreshestQuestionsCommand extends AbstractGuestCommand {
 
-    private ShowFreshestQuestionsLogic showFreshestQuestionsLogic;
+    private ShowFreshestQuestionsLogic showFreshestQuestionsLogic = new ShowFreshestQuestionsLogic();
 
     @Override
     protected String doLogic(HttpServletRequest request) throws CommandException {
