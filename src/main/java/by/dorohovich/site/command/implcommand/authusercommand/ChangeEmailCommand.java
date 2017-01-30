@@ -29,14 +29,14 @@ public class ChangeEmailCommand extends AbstractAuthenticatedUserCommand {
     @Override
     public String doLogic(HttpServletRequest request) throws CommandException {
         try {
-            return tryExecute(request);
+            return tryDoLogic(request);
         } catch (ServiceException e) {
             LOGGER.error("Problem with UserService, while trying to change password", e);
             throw new CommandException(e);
         }
     }
 
-    public String tryExecute(HttpServletRequest request) throws ServiceException {
+    public String tryDoLogic(HttpServletRequest request) throws ServiceException {
         String email = request.getParameter(EMAIL_PARAM);
         HttpSession session = request.getSession(true);
         User user = (User)session.getAttribute(USER_ATTR);

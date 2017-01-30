@@ -34,14 +34,14 @@ public class LogInCommand extends AbstractGuestCommand {
     @Override
     public String doLogic(HttpServletRequest request) throws CommandException {
         try {
-            return tryExecute(request);
+            return tryDoLogic(request);
         } catch (ServiceException e) {
             LOGGER.error("Problem with UserService, while trying to logIn", e);
             throw new CommandException(e);
         }
     }
 
-    private String tryExecute(HttpServletRequest request) throws ServiceException {
+    private String tryDoLogic(HttpServletRequest request) throws ServiceException {
         String login = request.getParameter(LOGIN_PARAM);
         String password = request.getParameter(PASSWORD_PARAM);
         UserService userService = new UserService();

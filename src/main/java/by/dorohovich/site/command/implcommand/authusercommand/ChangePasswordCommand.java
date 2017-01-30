@@ -34,14 +34,14 @@ public class ChangePasswordCommand extends AbstractAuthenticatedUserCommand {
     @Override
     public String doLogic(HttpServletRequest request) throws CommandException {
         try {
-            return tryExecute(request);
+            return tryDoLogic(request);
         } catch (ServiceException e) {
             LOGGER.error("Problem with UserService, while trying to change password", e);
             throw new CommandException(e);
         }
     }
 
-    public String tryExecute(HttpServletRequest request) throws ServiceException {
+    public String tryDoLogic(HttpServletRequest request) throws ServiceException {
         String curPass = request.getParameter(CURRENT_PASSWORD_PARAM);
         String newPass = request.getParameter(NEW_PASSWORD_PARAM);
         String newPassConfirm = request.getParameter(NEW_PASSWORD_CONFIRMATION_PARAM);

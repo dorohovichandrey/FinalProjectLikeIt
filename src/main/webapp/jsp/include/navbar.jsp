@@ -66,6 +66,7 @@
                 <li role="separator" class="divider"></li>
                 <li><a href="/LikeIt/jsp/editProfile.jsp">Редактировать профиль</a></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=show_my_questions&searchParam=${user.id}">Мои вопросы <span class="badge">11</span></a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=show_questions_answered_by_me&searchParam=${user.id}">Отвеченные мной <span class="badge">11</span></a></li>
                 <li><a href="#">Ваши ответы <span class="badge">5</span></a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=logOut"><i class="glyphicon glyphicon-log-out"></i> Выйти</a></li>
