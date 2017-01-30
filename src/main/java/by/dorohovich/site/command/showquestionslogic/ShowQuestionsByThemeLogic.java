@@ -1,4 +1,4 @@
-package by.dorohovich.site.command.showquestions;
+package by.dorohovich.site.command.showquestionslogic;
 
 import by.dorohovich.site.entity.wrapper.QuestionWrapper;
 import by.dorohovich.site.exception.ServiceException;

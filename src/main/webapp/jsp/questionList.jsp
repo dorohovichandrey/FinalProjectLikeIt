@@ -48,7 +48,7 @@
                                         <div class="panel-body">
 
                                             <div class="row">
-                                                <form role="form" id="likeForm" action="${pageContext.request.contextPath}/controller" method="POST">
+                                                <form role="form" id="likeForm${ elem.id }" action="${pageContext.request.contextPath}/controller" method="POST">
                                                     <input type="hidden" name="command" value="like" />
                                                     <input type="hidden" name="questionId" value="1223" />
                                                 </form>
@@ -64,15 +64,16 @@
                                         <div class="panel-footer">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <form role="form" id="showQueByThemeForm" action="${pageContext.request.contextPath}/controller" method="POST">
-                                                        <input type="hidden" name="command" value="showQuestionsByTheme" />
-                                                        <input type="hidden" name="theme" value="sport" />
-                                                        <button type="button" class="btn btn-default"><c:out value="${ elem.theme.name }" /> </button>
+                                                    <form role="form" id="showQueByThemeForm<c:out value="${ elem.id }" />" action="${pageContext.request.contextPath}/controller" method="POST">
+                                                        <input type="hidden" name="command" value="show_questions_by_theme" />
+                                                        <input type="hidden" name="searchParam" value="${ elem.theme.id }" />
+                                                        <%--<button type="button" class="btn btn-default"><c:out value="${ elem.theme.name }" /> </button>--%>
+                                                        <input type="submit" class="btn btn-default" value="<c:out value="${ elem.theme.name }" />"/>
                                                     </form>
 
                                                 </div>
                                                 <div class="col-md-offset-3 col-md-3">
-                                                    <form role="form" id="showQue" action="${pageContext.request.contextPath}/controller" method="POST">
+                                                    <form role="form" id="showQue${ elem.header }" action="${pageContext.request.contextPath}/controller" method="POST">
                                                         <input type="hidden" name="command" value="showQuestion" />
                                                         <input type="hidden" name="questionId" value="123" />
                                                         <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> Подробнее</button>

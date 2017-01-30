@@ -13,15 +13,26 @@ import java.util.List;
  */
 public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
-    private static final String INSERTED_COLUMNS = "userId, dateAndTime, text, themeId, rating, queHeader";
-    private static final String SELECTED_COLUMNS = "questionId, " + INSERTED_COLUMNS;
+    private static final String INSERTED_COLUMNS = "question.userId, question.dateAndTime, question.text, question.themeId, question.rating, question.queHeader";
+    private static final String SELECTED_COLUMNS = "question.questionId, " + INSERTED_COLUMNS;
 
     private static final String CREATE_QUESTION = "INSERT INTO question (" + INSERTED_COLUMNS + ") VALUES (?, ?, ?, ?, ?, ?)";
+    private static final String ORDER_BY = "ORDER BY rating DESC, dateAndTime DESC";
     private static final String SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY dateAndTime DESC";
-    private static final String SELECT_QUESTIONS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM question ORDER BY rating DESC";
-    private static final String SELECT_QUESTIONS_BY_THEME_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE themeId = ? ORDER BY dateAndTime DESC";
-    private static final String SELECT_QUESTIONS_BY_USER_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE userId = ? ORDER BY dateAndTime DESC";
+    private static final String SELECT_QUESTIONS_ORDER_BY_RATING = "SELECT " + SELECTED_COLUMNS + " FROM question " + ORDER_BY;
+    private static final String SELECT_QUESTIONS_BY_THEME_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE themeId = ? " + ORDER_BY;
+    private static final String SELECT_QUESTIONS_BY_USER_ID = "SELECT " + SELECTED_COLUMNS + " FROM question WHERE userId = ? " + ORDER_BY;
+    private static final String SELECT_UNANSWERED_QUESTIONS =
+            "SELECT " + SELECTED_COLUMNS
+                    + " FROM question LEFT JOIN answer ON question.questionId = answer.questionId "
+                    + "WHERE answer.questionId IS NULL "
+            + ORDER_BY;
 
+    private static final String SELECT_ANSWERED_BY_USER =
+            "SELECT " + SELECTED_COLUMNS
+                    + " FROM question INNER JOIN answer ON question.questionId = answer.questionId "
+                    + "WHERE answer.userId = ?  "
+                    + ORDER_BY;
 
     public QuestionDAO(ProxyConnection connection) {
         super(connection);
@@ -30,6 +41,22 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     @Override
     public List<Question> findAll() throws DAOException {
         return null;
+    }
+
+    public List<Question> findQuestionsAnsweredByUser(Integer userId) throws DAOException {
+        try {
+            return tryFindQuestionsAnsweredByUser(userId);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
+        }
+    }
+
+    private List<Question> tryFindQuestionsAnsweredByUser(Integer userId) throws SQLException {
+        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_ANSWERED_BY_USER)) {
+            preparedSt.setInt(1, userId);
+            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
+            return questionList;
+        }
     }
 
     public List<Question> findQuestionsByThemeId(Integer themeId) throws DAOException {
@@ -68,6 +95,14 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
         try(ResultSet rs = preparedSt.executeQuery()) {
             List<Question> list = makeQuestionList(rs);
             return list;
+        }
+    }
+
+    public List<Question> findUnansweredQuestions() throws DAOException {
+        try {
+            return tryFindQuestionsByQuery(SELECT_UNANSWERED_QUESTIONS);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in questionDAO", e);
         }
     }
 
@@ -145,9 +180,13 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
             preparedSt.setInt(5, entity.getRating());
             preparedSt.setString(6, entity.getHeader());
             preparedSt.executeUpdate();
-            if (preparedSt.getUpdateCount() != 1) {
-                throw new DAOException("Question was not created");
-            }
+            checkUpdating(preparedSt);
+        }
+    }
+
+    private void checkUpdating(PreparedStatement preparedSt) throws SQLException, DAOException {
+        if (preparedSt.getUpdateCount() == 0) {
+            throw new DAOException("Problem in QuestionDAO, when trying to make changes in question table");
         }
     }
 

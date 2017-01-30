@@ -70,6 +70,16 @@ public class QuestionService {
         }
     }
 
+    public List<QuestionWrapper> showUnansweredQuestions() throws ServiceException {
+        try {
+            return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findUnansweredQuestions(), null);
+        } catch (ConnectionPoolException e) {
+            throw new ServiceException("Problem with getting connection, when trying to showUnansweredQuestions", e);
+        } catch (DAOException e) {
+            throw new ServiceException("Problem with QuestionDAO, when trying to showUnansweredQuestions", e);
+        }
+    }
+
     public List<QuestionWrapper> showTopRatedQuestions() throws ServiceException {
         try {
             return tryShowQuestions((questionDAO, searchParam) -> questionDAO.findQuestionsOrderByRating(), null);

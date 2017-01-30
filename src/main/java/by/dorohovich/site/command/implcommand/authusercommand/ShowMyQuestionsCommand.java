@@ -1,7 +1,7 @@
 package by.dorohovich.site.command.implcommand.authusercommand;
 
 import by.dorohovich.site.command.AbstractAuthenticatedUserCommand;
-import by.dorohovich.site.command.showquestions.ShowMyQuestionsLogic;
+import by.dorohovich.site.command.showquestionslogic.ShowMyQuestionsLogic;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 

@@ -984,3 +984,455 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 23:02:34.446 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
 23:02:34.447 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
 23:02:34.449 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+17:04:57.887 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+17:05:02.545 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:05:02.689 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:05:02.713 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:05:02.765 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:05:02.797 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:05:02.799 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:05:04.496 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:05:31.394 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+17:05:31.399 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:05:31.473 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:07:49.294 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+17:07:49.296 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:07:49.383 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:07:56.118 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+17:08:23.080 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+17:08:23.145 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:08:23.278 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:08:23.279 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+17:08:42.491 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+17:09:02.789 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+17:09:02.793 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+17:09:02.795 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+17:09:02.797 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+17:09:02.805 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+17:24:10.645 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+17:24:11.559 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:24:11.664 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:24:11.739 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:24:11.793 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:24:11.895 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:24:11.895 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:24:11.965 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:24:17.344 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+17:24:17.348 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:24:17.373 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:24:55.507 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+17:24:55.511 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:24:55.627 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:25:42.814 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+17:25:42.824 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:25:42.828 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:25:42.830 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+17:25:47.377 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+17:26:30.694 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+17:26:30.695 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+17:26:30.696 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+17:26:30.697 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+17:26:30.698 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+17:39:15.441 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+17:39:16.503 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:39:16.542 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:39:16.590 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:39:16.615 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:39:16.661 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+17:39:16.662 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:39:16.785 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:39:16.786 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+17:40:00.672 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+17:40:00.765 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:40:00.967 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:40:50.094 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+17:40:50.096 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:40:50.115 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:41:01.625 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+17:41:01.626 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:41:01.656 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:41:14.597 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+17:41:14.598 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:41:14.616 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:41:18.263 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+17:41:18.264 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:41:18.491 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:41:22.774 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+17:41:22.775 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+17:41:22.790 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+17:46:10.489 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+17:46:10.489 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+17:46:10.489 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+17:46:10.489 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+17:46:10.489 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+19:18:53.178 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:18:56.451 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:18:56.631 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:18:56.671 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:18:56.705 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:18:56.756 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:18:56.756 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:18:57.898 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:18:57.899 [http-nio-8080-exec-2] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: Problem with service, when trying to show freshest questions 
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:23) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:48) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to showUnansweredQuestions
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:79) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in questionDAO
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'questionId' in field list is ambiguous
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_101]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_101]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1369) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.QuestionDAO.takeQuestionListByQuery(QuestionDAO.java:111) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.tryFindQuestionsByQuery(QuestionDAO.java:105) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:81) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+19:19:09.087 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:19:09.089 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:19:09.256 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:19:09.257 [http-nio-8080-exec-5] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: Problem with service, when trying to show freshest questions 
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:23) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:48) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to showUnansweredQuestions
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:79) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in questionDAO
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'questionId' in field list is ambiguous
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_101]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_101]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1369) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.QuestionDAO.takeQuestionListByQuery(QuestionDAO.java:111) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.tryFindQuestionsByQuery(QuestionDAO.java:105) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:81) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+19:19:13.445 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:19:13.448 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:19:13.497 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:19:13.498 [http-nio-8080-exec-7] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: Problem with service, when trying to show freshest questions 
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:23) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:48) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to showUnansweredQuestions
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:79) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in questionDAO
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'questionId' in field list is ambiguous
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_101]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_101]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1369) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.QuestionDAO.takeQuestionListByQuery(QuestionDAO.java:111) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.tryFindQuestionsByQuery(QuestionDAO.java:105) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:81) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+19:19:18.970 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:19:18.975 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:19:19.120 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:19:24.128 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:19:24.129 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:19:24.191 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:19:24.192 [http-nio-8080-exec-1] ERROR by.dorohovich.site.controller.Controller processRequest - Command was not executed correct
+by.dorohovich.site.exception.CommandException: Problem with service, when trying to show freshest questions 
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:23) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:48) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doGet(Controller.java:30) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to showUnansweredQuestions
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:79) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: by.dorohovich.site.exception.DAOException: Exception in questionDAO
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'questionId' in field list is ambiguous
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_101]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_101]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_101]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_101]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:404) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.Util.getInstance(Util.java:387) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:934) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3966) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3902) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2526) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2673) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2545) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2503) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.StatementImpl.executeQuery(StatementImpl.java:1369) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.QuestionDAO.takeQuestionListByQuery(QuestionDAO.java:111) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.tryFindQuestionsByQuery(QuestionDAO.java:105) ~[classes/:?]
+	at by.dorohovich.site.DAO.QuestionDAO.findUnansweredQuestions(QuestionDAO.java:81) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.lambda$showUnansweredQuestions$2(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.tryShowQuestions(QuestionService.java:106) ~[classes/:?]
+	at by.dorohovich.site.service.QuestionService.showUnansweredQuestions(QuestionService.java:75) ~[classes/:?]
+	at by.dorohovich.site.command.showquestionslogic.ShowUnansweredQuestionsLogic.showQuestions(ShowUnansweredQuestionsLogic.java:17) ~[classes/:?]
+	at doLogic(AbstractShowQuestionsLogic.java:27) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowUnansweredQuestionsCommand.doLogic(ShowUnansweredQuestionsCommand.java:21) ~[classes/:?]
+	... 27 more
+19:21:11.494 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+19:21:11.496 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+19:21:11.497 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+19:21:11.501 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+19:21:11.504 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+19:32:00.647 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:32:03.087 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:32:03.160 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:32:03.197 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:32:03.220 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:32:03.236 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:32:03.237 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:32:03.819 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:32:34.271 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+19:32:34.275 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:32:34.423 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:33:25.516 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+19:33:25.517 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:33:25.524 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:33:28.936 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:33:28.938 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:33:28.969 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:33:30.993 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+19:33:30.995 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:33:31.095 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:33:37.913 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+19:33:37.913 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:33:37.929 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:33:55.892 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+19:33:59.138 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:33:59.139 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:33:59.152 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:34:01.738 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+19:34:03.505 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+19:34:07.182 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+19:34:07.184 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:34:07.254 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:39:25.746 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+19:39:25.748 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+19:39:25.751 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+19:39:25.753 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+19:39:25.755 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+19:47:42.757 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:47:43.559 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:47:43.585 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:47:43.668 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:47:43.696 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:47:43.738 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+19:47:43.739 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:47:43.810 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:47:46.244 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:47:46.248 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:47:46.331 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:47:48.281 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+19:47:48.283 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:47:48.390 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:48:00.768 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+19:48:00.782 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:48:01.086 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:48:01.087 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+19:48:12.339 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+19:48:12.342 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:48:12.372 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:50:28.115 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+19:50:28.116 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+19:50:28.228 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+19:53:46.458 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+19:53:46.462 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+19:53:46.464 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+19:53:46.471 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+19:53:46.473 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)

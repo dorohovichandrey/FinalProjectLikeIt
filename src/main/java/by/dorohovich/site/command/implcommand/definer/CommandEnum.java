@@ -84,6 +84,12 @@ public enum CommandEnum {
         {
             command = new ShowMyQuestionsCommand();
         }
+    },
+
+    SHOW_UNANSWERED_QUESTIONS{
+        {
+            command = new ShowUnansweredQuestionsCommand();
+        }
     };
 
 

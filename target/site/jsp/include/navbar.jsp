@@ -29,8 +29,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Вопросы<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="${pageContext.request.contextPath}/controller?command=show_freshest_questions">Свежие</a></li>
-            <li><a href="#">Популярные</a></li>
-            <li><a href="#">Без ответа</a></li>
+            <li><a href="${pageContext.request.contextPath}/controller?command=show_top_rated_questions">Лучшие</a></li>
+            <li><a href="${pageContext.request.contextPath}/controller?command=show_unanswered_questions">Без ответа</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Задать вопрос</a></li>
           </ul>
@@ -64,8 +64,8 @@
               <ul class="dropdown-menu">
                 <li><a href="/LikeIt/jsp/createQuestion.jsp"><i class="glyphicon glyphicon-question-sign"></i> Задать вопрос</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="/LikeIt/jsp/editProfile.jsp">Ваш профиль</a></li>
-                <li><a href="#">Ваши вопросы <span class="badge">11</span></a></li>
+                <li><a href="/LikeIt/jsp/editProfile.jsp">Редактировать профиль</a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=show_my_questions&searchParam=${user.id}">Мои вопросы <span class="badge">11</span></a></li>
                 <li><a href="#">Ваши ответы <span class="badge">5</span></a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=logOut"><i class="glyphicon glyphicon-log-out"></i> Выйти</a></li>

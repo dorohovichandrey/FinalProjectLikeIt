@@ -1,7 +1,7 @@
 package by.dorohovich.site.command.implcommand.guestcommand;
 
 import by.dorohovich.site.command.AbstractGuestCommand;
-import by.dorohovich.site.command.showquestions.ShowQuestionsByThemeLogic;
+import by.dorohovich.site.command.showquestionslogic.ShowQuestionsByThemeLogic;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 

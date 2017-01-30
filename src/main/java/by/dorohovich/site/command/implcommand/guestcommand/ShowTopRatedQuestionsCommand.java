@@ -1,7 +1,7 @@
 package by.dorohovich.site.command.implcommand.guestcommand;
 
 import by.dorohovich.site.command.AbstractGuestCommand;
-import by.dorohovich.site.command.showquestions.ShowTopRatedQuestionsLogic;
+import by.dorohovich.site.command.showquestionslogic.ShowTopRatedQuestionsLogic;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 

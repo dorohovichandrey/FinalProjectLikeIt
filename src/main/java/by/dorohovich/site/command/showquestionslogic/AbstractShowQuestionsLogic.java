@@ -1,8 +1,6 @@
-package by.dorohovich.site.command.showquestions;
+package by.dorohovich.site.command.showquestionslogic;
 
-import by.dorohovich.site.command.AbstractGuestCommand;
 import by.dorohovich.site.entity.wrapper.QuestionWrapper;
-import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
 import by.dorohovich.site.service.QuestionService;
 import by.dorohovich.site.utility.MappingManager;

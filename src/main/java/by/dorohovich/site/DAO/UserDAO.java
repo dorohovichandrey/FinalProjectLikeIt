@@ -170,9 +170,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             preparedSt.setString(1, password);
             preparedSt.setString(2, login);
             preparedSt.executeUpdate();
-            if (preparedSt.getUpdateCount() != 1) {
-                throw new DAOException("Password was not updated");
-            }
+            checkUpdating(preparedSt);
         }
     }
 
@@ -189,9 +187,13 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             preparedSt.setString(1, email);
             preparedSt.setString(2, login);
             preparedSt.executeUpdate();
-            if (preparedSt.getUpdateCount() != 1) {
-                throw new DAOException("Email was not updated");
-            }
+            checkUpdating(preparedSt);
+        }
+    }
+
+    private void checkUpdating(PreparedStatement preparedSt) throws SQLException, DAOException {
+        if (preparedSt.getUpdateCount() != 1) {
+            throw new DAOException("User was not updated");
         }
     }
 
