@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c1be135-be9b-4236-a3df-916e979f5381" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowFreshestQuestionsCommandOld.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowQuestionsByThemeCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java" afterPath="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java" />
     </list>
     <ignored path="WebProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShowTopRatedQuestionsCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ShowTopRatedQuestionsCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
+            <state relative-caret-position="408">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShowQuestionsByThemeCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowQuestionsByThemeCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,19 +131,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="text_en.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/text_en.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -185,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/AbstractGuestCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/AbstractAuthenticatedUserCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/AbstractAdminCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/factory/CommandEnum.java" />
@@ -236,6 +234,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/text_en.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/text_ru.properties" />
         <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowQuestionsByThemeCommand.java" />
       </list>
     </option>
   </component>
@@ -1201,7 +1200,7 @@
       <workItem from="1485542993339" duration="11776000" />
       <workItem from="1485608779907" duration="19903000" />
       <workItem from="1485695501976" duration="19804000" />
-      <workItem from="1485782423238" duration="642000" />
+      <workItem from="1485782423238" duration="986000" />
     </task>
     <task id="LOCAL-00001" summary="login logout">
       <created>1483750149219</created>
@@ -1406,11 +1405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485726007294</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="created ShowTopRatedQuestionsCommand">
+      <created>1485783207398</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1485783207398</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363518000" />
+    <option name="totallyTimeSpent" value="363862000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1462,7 +1468,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed bag in UserDAO" />
     <MESSAGE value="change editProfile.jsp" />
     <MESSAGE value="refactored ChangeLanguageCommand" />
     <MESSAGE value="refactored RegistrationCommand" />
@@ -1487,7 +1492,8 @@
     <MESSAGE value="refactoring ConnectionProducer" />
     <MESSAGE value="refactored QuestionDAO; added methods ShowQuestionsByUserId, ShowQuestionsByThemeId in QuestionService; changed QuestionListFinder" />
     <MESSAGE value="created ShowMyQuestionLogic, ShowQuestionsByThemeLogic" />
-    <option name="LAST_COMMIT_MESSAGE" value="created ShowMyQuestionLogic, ShowQuestionsByThemeLogic" />
+    <MESSAGE value="created ShowTopRatedQuestionsCommand" />
+    <option name="LAST_COMMIT_MESSAGE" value="created ShowTopRatedQuestionsCommand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1500,13 +1506,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/editProfile.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
@@ -1892,8 +1891,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowTopRatedQuestionsCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="98" selection-start-line="20" selection-start-column="98" selection-end-line="20" selection-end-column="98" />
+        <state relative-caret-position="408">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/dorohovich/site/command/implcommand/guestcommand/ShowQuestionsByThemeCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="77" selection-start-line="21" selection-start-column="77" selection-end-line="21" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
