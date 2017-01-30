@@ -1,10 +1,7 @@
 package by.dorohovich.site.command.implcommand.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
-import by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand;
-import by.dorohovich.site.command.implcommand.authusercommand.ChangeEmailCommand;
-import by.dorohovich.site.command.implcommand.authusercommand.ChangePasswordCommand;
-import by.dorohovich.site.command.implcommand.authusercommand.LogOutCommand;
+import by.dorohovich.site.command.implcommand.authusercommand.*;
 import by.dorohovich.site.command.implcommand.guestcommand.*;
 
 /**
@@ -13,37 +10,37 @@ import by.dorohovich.site.command.implcommand.guestcommand.*;
 public enum CommandEnum {
     PARSING{
         {
-            this.command = new ParsingCommand();
+            command = new ParsingCommand();
         }
     },
 
     LANGUAGE{
         {
-            this.command = new ChangeLanguageCommand();
+            command = new ChangeLanguageCommand();
         }
     },
 
     REGISTRATION{
         {
-            this.command = new RegistrationCommand();
+            command = new RegistrationCommand();
         }
     },
 
     LOGIN{
         {
-            this.command = new LogInCommand();
+            command = new LogInCommand();
         }
     },
 
     LOGOUT{
         {
-            this.command = new LogOutCommand();
+            command = new LogOutCommand();
         }
     },
 
     SHOW_USERS_TOP{
         {
-            this.command = new ShowUsersTopCommand();
+            command = new ShowUsersTopCommand();
         }
     },
 
@@ -69,7 +66,26 @@ public enum CommandEnum {
         {
             command = new ShowFreshestQuestionsCommand();
         }
+    },
+
+    SHOW_TOP_RATED_QUESTIONS{
+        {
+            command = new ShowTopRatedQuestionsCommand();
+        }
+    },
+
+    SHOW_QUESTIONS_BY_THEME{
+        {
+            command = new ShowQuestionsByThemeCommand();
+        }
+    },
+
+    SHOW_MY_QUESTIONS{
+        {
+            command = new ShowMyQuestionsCommand();
+        }
     };
+
 
     AbstractCommand command;
     public AbstractCommand getCommand() {
