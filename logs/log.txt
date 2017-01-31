@@ -1465,3 +1465,66 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExce
 01:38:33.659 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
 01:38:33.681 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
 01:38:33.682 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+04:46:13.624 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:46:18.723 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:46:18.912 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:46:19.011 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:46:19.151 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:46:19.233 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:46:19.234 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:46:20.175 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:47:59.261 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+04:47:59.266 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+04:47:59.269 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+04:47:59.273 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+04:47:59.276 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+04:53:29.493 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:53:30.341 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:53:30.385 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:53:30.466 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:53:30.502 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:53:30.518 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:53:30.519 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:53:30.613 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:53:40.850 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+04:53:40.853 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:53:40.881 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:53:43.624 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+04:53:43.625 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:53:43.660 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:54:05.289 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+04:54:05.327 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:54:05.332 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:54:05.332 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+04:54:11.660 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+04:54:11.662 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:54:11.689 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:54:20.692 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+04:54:20.694 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:54:20.698 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+04:54:25.609 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+04:54:29.782 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+04:55:40.470 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+04:55:40.471 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+04:55:40.472 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+04:55:40.473 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+04:55:40.474 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)
+04:59:12.232 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:59:13.158 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:59:13.200 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:59:13.220 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:59:13.252 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:59:13.265 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool <init> - Connection was initialized and added to connectionpool
+04:59:13.266 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+04:59:13.338 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+05:02:54.149 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+05:02:54.151 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+05:02:54.182 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+05:02:57.761 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+05:02:57.764 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool takeConnection - Connection was taken from connectionpool
+05:02:58.520 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connectionpool
+05:03:57.420 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
+05:03:57.426 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#1)
+05:03:57.429 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#2)
+05:03:57.431 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#3)
+05:03:57.432 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#4)

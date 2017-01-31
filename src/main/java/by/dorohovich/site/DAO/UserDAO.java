@@ -39,7 +39,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     @Override
     public List<User> findAll() throws DAOException {
         try {
-            return findUsersByQuery(SELECT_ALL);
+            return tryFindEntityListByQuery(SELECT_ALL);
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO, while trying to findAll", e);
         }
@@ -47,25 +47,41 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     public List<User> findUsersOrderByRating() throws DAOException {
         try {
-            return findUsersByQuery(SELECT_USERS_ORDER_BY_RATING);
+            return tryFindEntityListByQuery(SELECT_USERS_ORDER_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in UserDAO", e);
         }
-
     }
 
-    private List<User> findUsersByQuery(String query) throws SQLException {
-        try (Statement st = connection.createStatement()) {
-            List<User> userList = takeUserList(query, st);
-            return userList;
+    @Override
+    public User findEntityById(Integer id) throws DAOException {
+        try {
+            return tryFindEntityByPrStatement(FIND_USER_BY_ID, (prSt, params) -> prSt.setInt(1, id), id);
+        } catch (SQLException e) {
+            throw new DAOException("Problem when trying to find user by id", e);
         }
     }
 
-    private List<User> takeUserList(String query, Statement st) throws SQLException {
-        try(ResultSet rs = st.executeQuery(query)) {
-            List<User> userList = makeUserList(rs);
-            return userList;
+    public User findUserByLogin(String login) throws DAOException{
+        try {
+            return tryFindEntityByPrStatement(FIND_USER_BY_LOGIN, (prSt, params) -> prSt.setString(1, (String)params[0]), login);
+        } catch (SQLException e) {
+            throw new DAOException("Problem when trying to find user by login", e);
         }
+
+    }
+
+    @Override
+    protected User makeEntity(ResultSet rs) throws SQLException {
+        int id = rs.getInt(1);
+        String login = rs.getString(2);
+        String password = rs.getString(3);
+        String email = rs.getString(4);
+        int isAdmin = rs.getInt(5);
+        Role role = Role.getRole(isAdmin);
+        int rating = rs.getInt(6);
+        User user = new User(id, login, password, email, role, rating);
+        return user;
     }
 
     @Override
@@ -93,68 +109,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     @Override
     public User update(User entity) {
         return null;
-    }
-
-    @Override
-    public User findEntityById(Integer id) throws DAOException {
-        try {
-            return tryFindEntityById(id);
-        } catch (SQLException e) {
-            throw new DAOException("Problem when trying to find user by id", e);
-        }
-    }
-
-    public User tryFindEntityById(Integer id) throws SQLException{
-        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_ID)) {
-            preparedSt.setInt(1, id);
-            User user = takeUser(preparedSt);
-            return user;
-        }
-    }
-
-    public User findUserByLogin(String login) throws DAOException {
-        try {
-            return tryFindUserByLogin(login);
-        } catch (SQLException e) {
-            throw new DAOException("Problem when trying to find user by login", e);
-        }
-    }
-
-    private User tryFindUserByLogin(String login) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_USER_BY_LOGIN)) {
-            preparedSt.setString(1, login);
-            User user = takeUser(preparedSt);
-            return user;
-        }
-    }
-
-    private User takeUser(PreparedStatement preparedSt) throws SQLException {
-        try(ResultSet rs = preparedSt.executeQuery()) {
-            List<User> list = makeUserList(rs);
-            User user = list.size() == 1 ? list.get(0) : null;
-            return user;
-        }
-    }
-
-    private List<User> makeUserList(ResultSet rs) throws SQLException {
-        ArrayList<User> list = new ArrayList<User>();
-        while (rs.next()) {
-            User user = makeUser(rs);
-            list.add(user);
-        }
-        return list;
-    }
-
-    private User makeUser(ResultSet rs) throws SQLException {
-        int id = rs.getInt(1);
-        String login = rs.getString(2);
-        String password = rs.getString(3);
-        String email = rs.getString(4);
-        int isAdmin = rs.getInt(5);
-        Role role = Role.getRole(isAdmin);
-        int rating = rs.getInt(6);
-        User user = new User(id, login, password, email, role, rating);
-        return user;
     }
 
     public void updatePassword(String login, String password) throws DAOException{

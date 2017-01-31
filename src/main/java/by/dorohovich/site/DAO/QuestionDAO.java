@@ -45,62 +45,31 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsAnsweredByUser(Integer userId) throws DAOException {
         try {
-            return tryFindQuestionsAnsweredByUser(userId);
+            return tryFindEntityListByPrStatement(SELECT_ANSWERED_BY_USER, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), userId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
-        }
-    }
-
-    private List<Question> tryFindQuestionsAnsweredByUser(Integer userId) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_ANSWERED_BY_USER)) {
-            preparedSt.setInt(1, userId);
-            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
-            return questionList;
         }
     }
 
     public List<Question> findQuestionsByThemeId(Integer themeId) throws DAOException {
         try {
-            return tryFindQuestionsByThemeId(themeId);
+            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_THEME_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), themeId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
-        }
-    }
-
-    private List<Question> tryFindQuestionsByThemeId(Integer themeId) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_QUESTIONS_BY_THEME_ID)) {
-            preparedSt.setInt(1, themeId);
-            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
-            return questionList;
         }
     }
 
     public List<Question> findQuestionsByUserId(Integer userId) throws DAOException {
         try {
-            return tryFindQuestionsByUserId(userId);
+            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_USER_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), userId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
     }
 
-    private List<Question> tryFindQuestionsByUserId(Integer userId) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(SELECT_QUESTIONS_BY_USER_ID)) {
-            preparedSt.setInt(1, userId);
-            List<Question> questionList = takeQuestionListByPrStatement(preparedSt);
-            return questionList;
-        }
-    }
-
-    private List<Question> takeQuestionListByPrStatement(PreparedStatement preparedSt) throws SQLException {
-        try(ResultSet rs = preparedSt.executeQuery()) {
-            List<Question> list = makeQuestionList(rs);
-            return list;
-        }
-    }
-
     public List<Question> findUnansweredQuestions() throws DAOException {
         try {
-            return tryFindQuestionsByQuery(SELECT_UNANSWERED_QUESTIONS);
+            return tryFindEntityListByQuery(SELECT_UNANSWERED_QUESTIONS);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -108,7 +77,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsOrderByDateAndTime() throws DAOException {
         try {
-            return tryFindQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
+            return tryFindEntityListByQuery(SELECT_QUESTIONS_ORDER_BY_DATE_AND_TIME);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -116,36 +85,14 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsOrderByRating() throws DAOException {
         try {
-            return tryFindQuestionsByQuery(SELECT_QUESTIONS_ORDER_BY_RATING);
+            return tryFindEntityListByQuery(SELECT_QUESTIONS_ORDER_BY_RATING);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
     }
 
-    private List<Question> tryFindQuestionsByQuery(String query) throws SQLException {
-        try (Statement st = connection.createStatement()) {
-            List<Question> questionList = takeQuestionListByQuery(query, st);
-            return questionList;
-        }
-    }
-
-    private List<Question> takeQuestionListByQuery(String query, Statement st) throws SQLException {
-        try(ResultSet rs = st.executeQuery(query)) {
-            List<Question> questionList = makeQuestionList(rs);
-            return questionList;
-        }
-    }
-
-    private List<Question> makeQuestionList(ResultSet rs) throws SQLException {
-        List<Question> list = new ArrayList<Question>();
-        while (rs.next()) {
-            Question question = makeQuestion(rs);
-            list.add(question);
-        }
-        return list;
-    }
-
-    private Question makeQuestion(ResultSet rs) throws SQLException {
+    @Override
+    protected Question makeEntity(ResultSet rs) throws SQLException {
         int questionId = rs.getInt(1);
         int ownerId = rs.getInt(2);
         Timestamp dateAndTime = rs.getTimestamp(3);
@@ -194,9 +141,4 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     public Question update(Question entity) {
         return null;
     }
-
-
-
-
-
 }

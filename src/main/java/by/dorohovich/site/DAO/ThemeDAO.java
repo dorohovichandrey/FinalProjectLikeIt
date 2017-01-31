@@ -29,20 +29,28 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         return null;
     }
 
-    private List<Theme> tryFindThemesByQuery(String query) throws SQLException {
-        try (Statement st = connection.createStatement()) {
-            List<Theme> themeList = takeThemeListByQuery(query, st);
-            return themeList;
+    @Override
+    public Theme findEntityById(Integer id) throws DAOException {
+        try {
+            return tryFindEntityByPrStatement(FIND_THEME_BY_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), id);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in ThemeDAO", e);
         }
     }
 
-    private List<Theme> takeThemeListByQuery(String query, Statement st) throws SQLException {
-        try(ResultSet rs = st.executeQuery(query)) {
-            List<Theme> questionList = makeThemeList(rs);
-            return questionList;
+    public Theme findThemeByName(String themeName) throws DAOException {
+        try {
+            return tryFindEntityByPrStatement(FIND_THEME_BY_NAME, ((prSt, params) -> prSt.setString(1,(String)params[0])), themeName);
+        } catch (SQLException e) {
+            throw new DAOException("Exception in ThemeDAO", e);
         }
     }
 
+    protected Theme makeEntity(ResultSet rs) throws SQLException {
+        int id = rs.getInt(1);
+        String themeName = rs.getString(2);
+        return new Theme(id, themeName);
+    }
 
     @Override
     public void create(Theme entity) throws DAOException {
@@ -54,58 +62,5 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         return null;
     }
 
-    @Override
-    public Theme findEntityById(Integer id) throws DAOException {
-        try {
-            return tryFindEntityById(id);
-        } catch (SQLException e) {
-            throw new DAOException("Exception in ThemeDAO", e);
-        }
-    }
 
-    private Theme tryFindEntityById(Integer id) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_ID)) {
-            preparedSt.setInt(1, id);
-            Theme theme = takeThemeByPrStatement(preparedSt);
-            return theme;
-        }
-    }
-
-    public Theme findThemeByName(String themeName) throws DAOException {
-        try {
-            return tryFindThemeByName(themeName);
-        } catch (SQLException e) {
-            throw new DAOException("Exception in ThemeDAO", e);
-        }
-    }
-
-    private Theme tryFindThemeByName(String themeName) throws SQLException {
-        try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_NAME)) {
-            preparedSt.setString(1, themeName);
-            Theme theme = takeThemeByPrStatement(preparedSt);
-            return theme;
-        }
-    }
-
-    private Theme takeThemeByPrStatement(PreparedStatement preparedSt) throws SQLException {
-        try(ResultSet rs = preparedSt.executeQuery()) {
-            List<Theme> list = makeThemeList(rs);
-            return list.size() == 1 ? list.get(0) : null;
-        }
-    }
-
-    private List<Theme> makeThemeList(ResultSet rs) throws SQLException {
-        ArrayList<Theme> list = new ArrayList<Theme>();
-        while (rs.next()) {
-            Theme theme = makeTheme(rs);
-            list.add(theme);
-        }
-        return list;
-    }
-
-    private Theme makeTheme(ResultSet rs) throws SQLException {
-        int id = rs.getInt(1);
-        String themeName = rs.getString(2);
-        return new Theme(id, themeName);
-    }
 }

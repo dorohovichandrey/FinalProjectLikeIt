@@ -39,7 +39,13 @@ public abstract class AbstractDAO<K,T extends Entity> {
     public abstract void create(T entity) throws DAOException;
     public abstract T update(T entity);
 
-    private List<T> tryFindQuestionsByUserId(String query, StatementMaster master, Object... params) throws SQLException {
+    protected T tryFindEntityByPrStatement(String query, StatementMaster master, Object... params) throws SQLException{
+        List<T> entityList = tryFindEntityListByPrStatement(query, master, params);
+        T entity = (entityList.isEmpty()) ? null : entityList.get(0);
+        return entity;
+    }
+
+    protected List<T> tryFindEntityListByPrStatement(String query, StatementMaster master, Object... params) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(query)) {
             master.prepare(preparedSt, params);
             List<T> entityList = takeEntityListByPrStatement(preparedSt);
@@ -77,7 +83,7 @@ public abstract class AbstractDAO<K,T extends Entity> {
         return list;
     }
 
-    protected abstract T makeEntity(ResultSet rs);
+    protected abstract T makeEntity(ResultSet rs) throws SQLException;
 
 
 }
