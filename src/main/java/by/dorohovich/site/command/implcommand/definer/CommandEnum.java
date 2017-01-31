@@ -2,6 +2,7 @@ package by.dorohovich.site.command.implcommand.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
 import by.dorohovich.site.command.implcommand.authusercommand.*;
+import by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand;
 import by.dorohovich.site.command.implcommand.guestcommand.*;
 
 /**
@@ -95,6 +96,12 @@ public enum CommandEnum {
     SHOW_QUESTIONS_ANSWERED_BY_ME{
         {
             command = new ShowQuestionsAnsweredByMeCommand();
+        }
+    },
+
+    PREPARE_FOR_CREATING_QUESTION{
+        {
+            command = new PrepareForCreatingQuestionCommand();
         }
     };
 

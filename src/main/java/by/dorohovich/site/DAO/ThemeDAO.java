@@ -19,7 +19,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     private static final String SELECTED_COLUMNS = "themeId, themeName";
     private static final String FIND_THEME_BY_NAME = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeName = ? and isDeleted = 0";
     private static final String FIND_THEME_BY_ID = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeId = ? and isDeleted = 0";
-    private static final String FIND_ALL_THEMES = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeId = ? and isDeleted = 0 ORDER BY themeName ASC";
+    private static final String FIND_ALL_THEMES = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE isDeleted = 0 ORDER BY themeName ASC";
 
     public ThemeDAO(ProxyConnection connection) {
         super(connection);
@@ -30,7 +30,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         try{
             return tryFindEntityListByQuery(FIND_ALL_THEMES);
         } catch (SQLException e){
-            throw new DAOException("Exception in ThemeDAO", e);
+            throw new DAOException("Problem in ThemeDAO, while trying to fina all themes", e);
         }
     }
 

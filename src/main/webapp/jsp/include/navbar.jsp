@@ -62,7 +62,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> ${user.login}<span class="caret">
           </span></a>
               <ul class="dropdown-menu">
-                <li><a href="/LikeIt/jsp/createQuestion.jsp"><i class="glyphicon glyphicon-question-sign"></i> Задать вопрос</a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=prepare_for_creating_question"><i class="glyphicon glyphicon-question-sign"></i> Задать вопрос</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="/LikeIt/jsp/editProfile.jsp">Редактировать профиль</a></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=show_my_questions&searchParam=${user.id}">Мои вопросы <span class="badge">11</span></a></li>

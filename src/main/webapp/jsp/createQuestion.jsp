@@ -33,9 +33,9 @@
                     <div class="form-group">
                         <label for="themeID">Ответ</label>
                         <select name="theme" class="form-control" id="themeID">
-                            <option value="programming">programming</option>
-                            <option value="sport">sport</option>
-                            <option value="math">math</option>
+                            <c:forEach var="elem" items="${themeList}" varStatus="status">
+                            <option value="${elem.name}">${elem.name}</option>
+                            </c:forEach>
                         </select>
                     </div>
                     <div class="form-group">
