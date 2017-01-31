@@ -1,5 +1,6 @@
 package by.dorohovich.site.entity.wrapper;
 
+import by.dorohovich.site.entity.Entity;
 import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.entity.Theme;
 import by.dorohovich.site.entity.User;

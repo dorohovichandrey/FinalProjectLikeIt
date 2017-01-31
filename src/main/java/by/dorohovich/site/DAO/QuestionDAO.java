@@ -39,13 +39,18 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     }
 
     @Override
+    public Question findEntityById(Integer id) {
+        return null;
+    }
+
+    @Override
     public List<Question> findAll() throws DAOException {
         return null;
     }
 
     public List<Question> findQuestionsAnsweredByUser(Integer userId) throws DAOException {
         try {
-            return tryFindEntityListByPrStatement(SELECT_ANSWERED_BY_USER, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), userId);
+            return tryFindEntityListByPrStatement(SELECT_ANSWERED_BY_USER, ((prSt, params) -> prSt.setInt(1,userId)), userId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -53,7 +58,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsByThemeId(Integer themeId) throws DAOException {
         try {
-            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_THEME_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), themeId);
+            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_THEME_ID, ((prSt, params) -> prSt.setInt(1,themeId)), themeId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -61,7 +66,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
 
     public List<Question> findQuestionsByUserId(Integer userId) throws DAOException {
         try {
-            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_USER_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), userId);
+            return tryFindEntityListByPrStatement(SELECT_QUESTIONS_BY_USER_ID, ((prSt, params) -> prSt.setInt(1,userId)), userId);
         } catch (SQLException e) {
             throw new DAOException("Exception in questionDAO", e);
         }
@@ -104,10 +109,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
         return question;
     }
 
-    @Override
-    public Question findEntityById(Integer id) {
-        return null;
-    }
+
 
     @Override
     public void create(Question entity) throws DAOException {

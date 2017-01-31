@@ -39,12 +39,16 @@ public class QuestionService {
             QuestionDAO questionDAO = new QuestionDAO(connection);
             ThemeDAO themeDAO = new ThemeDAO(connection);
             Theme theme = themeDAO.findThemeByName(themeName);
-            if(theme == null){
-                throw new ServiceException("Theme with name = " + themeName + " not exist");
-            }
+            checkThemeFinding(themeName, theme);
             Integer themeId = theme.getId();
             Question question = new Question(ownerId, text, themeId, header);
             questionDAO.create(question);
+        }
+    }
+
+    private void checkThemeFinding(String themeName, Theme theme) throws ServiceException {
+        if(theme == null){
+            throw new ServiceException("Theme with name = " + themeName + " not exist");
         }
     }
 

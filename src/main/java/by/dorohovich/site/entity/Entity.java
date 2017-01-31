@@ -4,7 +4,7 @@ package by.dorohovich.site.entity;
  * Created by User on 28.12.2016.
  */
 public abstract class Entity<T> {
-    private T id;
+    protected T id;
 
     public Entity(T id) {
         this.id = id;

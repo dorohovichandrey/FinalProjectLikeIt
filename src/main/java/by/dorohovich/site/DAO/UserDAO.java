@@ -10,8 +10,6 @@ import org.apache.logging.log4j.Logger;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -64,7 +62,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
 
     public User findUserByLogin(String login) throws DAOException{
         try {
-            return tryFindEntityByPrStatement(FIND_USER_BY_LOGIN, (prSt, params) -> prSt.setString(1, (String)params[0]), login);
+            return tryFindEntityByPrStatement(FIND_USER_BY_LOGIN, (prSt, params) -> prSt.setString(1, login), login);
         } catch (SQLException e) {
             throw new DAOException("Problem when trying to find user by login", e);
         }

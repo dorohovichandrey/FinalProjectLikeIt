@@ -19,6 +19,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     private static final String SELECTED_COLUMNS = "themeId, themeName";
     private static final String FIND_THEME_BY_NAME = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeName = ? and isDeleted = 0";
     private static final String FIND_THEME_BY_ID = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeId = ? and isDeleted = 0";
+    private static final String FIND_ALL_THEMES = "SELECT " + SELECTED_COLUMNS + " FROM theme WHERE themeId = ? and isDeleted = 0 ORDER BY themeName ASC";
 
     public ThemeDAO(ProxyConnection connection) {
         super(connection);
@@ -26,13 +27,17 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
 
     @Override
     public List<Theme> findAll() throws DAOException {
-        return null;
+        try{
+            return tryFindEntityListByQuery(FIND_ALL_THEMES);
+        } catch (SQLException e){
+            throw new DAOException("Exception in ThemeDAO", e);
+        }
     }
 
     @Override
     public Theme findEntityById(Integer id) throws DAOException {
         try {
-            return tryFindEntityByPrStatement(FIND_THEME_BY_ID, ((prSt, params) -> prSt.setInt(1,(Integer)params[0])), id);
+            return tryFindEntityByPrStatement(FIND_THEME_BY_ID, ((prSt, params) -> prSt.setInt(1,id)), id);
         } catch (SQLException e) {
             throw new DAOException("Exception in ThemeDAO", e);
         }
@@ -40,7 +45,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
 
     public Theme findThemeByName(String themeName) throws DAOException {
         try {
-            return tryFindEntityByPrStatement(FIND_THEME_BY_NAME, ((prSt, params) -> prSt.setString(1,(String)params[0])), themeName);
+            return tryFindEntityByPrStatement(FIND_THEME_BY_NAME, ((prSt, params) -> prSt.setString(1,themeName)), themeName);
         } catch (SQLException e) {
             throw new DAOException("Exception in ThemeDAO", e);
         }

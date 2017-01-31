@@ -1,7 +1,6 @@
 package by.dorohovich.site.DAO;
 
 import by.dorohovich.site.entity.Entity;
-import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.exception.DAOException;
 import by.dorohovich.site.connectionpool.ProxyConnection;
 
@@ -19,8 +18,7 @@ public abstract class AbstractDAO<K,T extends Entity> {
 
     protected ProxyConnection connection;
 
-    public AbstractDAO() {
-    }
+    public AbstractDAO() {}
 
     public AbstractDAO(ProxyConnection connection) {
         this.connection = connection;
@@ -84,6 +82,5 @@ public abstract class AbstractDAO<K,T extends Entity> {
     }
 
     protected abstract T makeEntity(ResultSet rs) throws SQLException;
-
 
 }

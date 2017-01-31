@@ -151,4 +151,5 @@ public class UserService extends AbstractService<Integer, User> {
             return updatedUser;
         }
     }
+
 }
