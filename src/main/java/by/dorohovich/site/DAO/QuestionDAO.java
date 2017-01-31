@@ -137,7 +137,7 @@ public class QuestionDAO extends AbstractDAO<Integer, Question> {
     }
 
     private List<Question> makeQuestionList(ResultSet rs) throws SQLException {
-        ArrayList<Question> list = new ArrayList<Question>();
+        List<Question> list = new ArrayList<Question>();
         while (rs.next()) {
             Question question = makeQuestion(rs);
             list.add(question);

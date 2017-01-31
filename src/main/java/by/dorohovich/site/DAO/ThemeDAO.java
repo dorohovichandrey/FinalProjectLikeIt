@@ -3,12 +3,11 @@ package by.dorohovich.site.DAO;
 import by.dorohovich.site.connectionpool.ProxyConnection;
 import by.dorohovich.site.entity.Theme;
 import by.dorohovich.site.exception.DAOException;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +29,19 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
         return null;
     }
 
+    private List<Theme> tryFindThemesByQuery(String query) throws SQLException {
+        try (Statement st = connection.createStatement()) {
+            List<Theme> themeList = takeThemeListByQuery(query, st);
+            return themeList;
+        }
+    }
+
+    private List<Theme> takeThemeListByQuery(String query, Statement st) throws SQLException {
+        try(ResultSet rs = st.executeQuery(query)) {
+            List<Theme> questionList = makeThemeList(rs);
+            return questionList;
+        }
+    }
 
 
     @Override
@@ -54,7 +66,7 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     private Theme tryFindEntityById(Integer id) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_ID)) {
             preparedSt.setInt(1, id);
-            Theme theme = takeTheme(preparedSt);
+            Theme theme = takeThemeByPrStatement(preparedSt);
             return theme;
         }
     }
@@ -70,12 +82,12 @@ public class ThemeDAO extends AbstractDAO<Integer, Theme> {
     private Theme tryFindThemeByName(String themeName) throws SQLException {
         try (PreparedStatement preparedSt = connection.prepareStatement(FIND_THEME_BY_NAME)) {
             preparedSt.setString(1, themeName);
-            Theme theme = takeTheme(preparedSt);
+            Theme theme = takeThemeByPrStatement(preparedSt);
             return theme;
         }
     }
 
-    private Theme takeTheme(PreparedStatement preparedSt) throws SQLException {
+    private Theme takeThemeByPrStatement(PreparedStatement preparedSt) throws SQLException {
         try(ResultSet rs = preparedSt.executeQuery()) {
             List<Theme> list = makeThemeList(rs);
             return list.size() == 1 ? list.get(0) : null;

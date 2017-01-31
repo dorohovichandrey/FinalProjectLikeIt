@@ -1,5 +1,6 @@
-package by.dorohovich.site.DAO;
+package by.dorohovich.site.service;
 
+import by.dorohovich.site.DAO.QuestionDAO;
 import by.dorohovich.site.entity.Question;
 import by.dorohovich.site.exception.DAOException;
 

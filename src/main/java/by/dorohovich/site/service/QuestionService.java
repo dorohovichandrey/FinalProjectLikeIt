@@ -1,7 +1,6 @@
 package by.dorohovich.site.service;
 
 import by.dorohovich.site.DAO.QuestionDAO;
-import by.dorohovich.site.DAO.QuestionListFinder;
 import by.dorohovich.site.DAO.ThemeDAO;
 import by.dorohovich.site.DAO.UserDAO;
 import by.dorohovich.site.connectionpool.ConnectionPool;
@@ -16,7 +15,6 @@ import by.dorohovich.site.exception.ServiceException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
