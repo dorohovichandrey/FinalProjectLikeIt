@@ -46,4 +46,6 @@ public class ChangeEmailCommand extends AbstractAuthenticatedUserCommand {
         String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
     }
+
+
 }

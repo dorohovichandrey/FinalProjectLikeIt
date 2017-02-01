@@ -27,7 +27,8 @@ public class ChangePasswordCommand extends AbstractAuthenticatedUserCommand {
     private static final String NEW_PASSWORD_ATTR = "newPass";
     private static final String CHANGE_PASSWORD_FAILED_ATTR = "passChangeFailed";
 
-    private static final String KEY_FOR_PAGE= "page.editProfile";
+    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.infoSuccess";
+    private static final String KEY_FOR_PAGE_IF_FAILED = "page.editProfile";
 
 
 
@@ -51,7 +52,7 @@ public class ChangePasswordCommand extends AbstractAuthenticatedUserCommand {
         User updatedUser = userService.changePassword(user, curPass, newPass);
         boolean isCommandFailed = (updatedUser == null);
         packAttributes(session, isCommandFailed, curPass, newPass, updatedUser);
-        String page = MappingManager.getProperty(KEY_FOR_PAGE);
+        String page = choosePage(isCommandFailed);
         return page;
 
 
@@ -68,5 +69,10 @@ public class ChangePasswordCommand extends AbstractAuthenticatedUserCommand {
         }
     }
 
+    private String choosePage(boolean isCommandFailed) {
+        String key = isCommandFailed ? KEY_FOR_PAGE_IF_FAILED : KEY_FOR_PAGE_IF_SUCCESS;
+        String page = MappingManager.getProperty(key);
+        return page;
+    }
 
 }

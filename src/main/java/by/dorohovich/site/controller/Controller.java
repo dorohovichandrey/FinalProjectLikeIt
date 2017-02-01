@@ -5,6 +5,7 @@ import by.dorohovich.site.command.AbstractCommand;
 import by.dorohovich.site.command.implcommand.definer.CommandDefiner;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.connectionpool.ConnectionPool;
+import by.dorohovich.site.exception.LikeItControllerException;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -40,24 +41,20 @@ public class Controller extends HttpServlet {
             throws ServletException, IOException {
 
         try {
-            String page = null;
-
-            CommandDefiner commandDefiner = new CommandDefiner();
-            AbstractCommand command = commandDefiner.define(request);
-
-            page = command.execute(request);
-
-            if (page != null) {
-                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
-                dispatcher.forward(request, response);
-            } else {
-                page = MappingManager.getProperty("path.page.index");
-
-                response.sendRedirect(request.getContextPath() + page);
-            }
+            tryProcessRequest(request, response);
         } catch (CommandException e) {
-            LOGGER.error("Command was not executed correct", e);
+            LOGGER.error("Command failed", e);
+            throw new LikeItControllerException("Problem in LikeIt controller",e);
         }
+    }
+
+    private void tryProcessRequest(HttpServletRequest request, HttpServletResponse response) throws CommandException, ServletException, IOException {
+        String page = null;
+        CommandDefiner commandDefiner = new CommandDefiner();
+        AbstractCommand command = commandDefiner.define(request);
+        page = command.execute(request);
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(page);
+        dispatcher.forward(request, response);
     }
 
     @Override

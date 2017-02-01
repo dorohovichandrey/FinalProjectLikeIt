@@ -63,7 +63,6 @@
         <c:if test="${passChangeFailed eq true}">
             <script>
 
-                var elems = document.getElementById("passForm").elements;
                 var container = document.getElementById("newPassConfirm").parentNode;
                 //container.className = 'form-group has-error';
 
@@ -78,7 +77,7 @@
 
             </script>
         </c:if>
-        <c:if test="${passChangeFailed eq false}">
+       <%-- <c:if test="${passChangeFailed eq false}">
             <script>
 
                 var elems = document.getElementById("passForm").elements;
@@ -94,7 +93,7 @@
 
 
             </script>
-        </c:if>
+        </c:if>   --%>
 
         <!--main -->
 

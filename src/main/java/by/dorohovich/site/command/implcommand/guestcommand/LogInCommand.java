@@ -27,7 +27,7 @@ public class LogInCommand extends AbstractGuestCommand {
     private static final String USER_ATTR = "user";
     private static final String LOG_IN_FAILED_ATTR = "logInFailed";
 
-    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.index";
+    private static final String KEY_FOR_PAGE_IF_SUCCESS = "page.freshestQuestions";
     private static final String KEY_FOR_PAGE_IF_FAILED = "page.logIn";
 
 

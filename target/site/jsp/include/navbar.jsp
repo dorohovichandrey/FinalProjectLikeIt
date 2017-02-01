@@ -43,6 +43,7 @@
         <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Поиск</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
+        <ctg:onlyForAdmin>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-sunglasses"></i> Администрирование<span class="caret">
           </span></a>
@@ -52,6 +53,7 @@
             <li><a href="#">Жалобы и предложения <span class="badge">21</span></a></li>
           </ul>
         </li>
+        </ctg:onlyForAdmin>
         <c:choose>
           <c:when test="${empty user}">
             <li><a href="/LikeIt/jsp/registration.jsp">Зарегистрироваться</a></li>

@@ -25,7 +25,7 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
 
     private static final String USER_ATTR = "user";
 
-    private static final String KEY_FOR_PAGE = "page.index";
+    private static final String KEY_FOR_PAGE = "page.myQuestions";
 
 
 
