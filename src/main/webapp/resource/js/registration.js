@@ -30,7 +30,7 @@
             showError(elems.password.parentNode, ' ������� ������.');
         } else{
             var str=elems.password.value;
-            if((str.length < 6)||(str.search(/[0-9]/) == -1) ||(str.search(/[a-z]/) == -1)||(str.search(/[A-Z]/) == -1)) {
+            if((str.length < 6)||(str.length > 25)||(str.search(/[0-9]/) == -1) ||(str.search(/[a-z]/) == -1)||(str.search(/[A-Z]/) == -1)) {
                 errorCounter++;
                 showError(elems.password.parentNode, ' ������� ���������� ������.');
             }

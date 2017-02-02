@@ -49,10 +49,10 @@
 
                                             <div class="row">
                                                 <form role="form" id="likeForm${ elem.id }" action="${pageContext.request.contextPath}/controller" method="POST">
-                                                    <input type="hidden" name="command" value="like" />
-                                                    <input type="hidden" name="questionId" value="1223" />
+                                                    <input type="hidden" name="command" value="like_question" />
+                                                    <input type="hidden" name="questionId" value="${ elem.id }" />
                                                 </form>
-                                                <div class="col-md-1"><h2> <c:out value="${ elem.rating }" /><i style="cursor: pointer;" onclick="document.getElementById('likeForm').submit()" class="glyphicon glyphicon-heart-empty"></i></h2></div>
+                                                <div class="col-md-1"><h2> <c:out value="${ elem.rating }" /><i style="cursor: pointer;" onclick="document.getElementById('likeForm${ elem.id }').submit()" class="glyphicon glyphicon-heart-empty"></i></h2></div>
                                                 <div class="col-md-11">
                                                     <h4><span class="label label-info"><c:out value="${ elem.header }" /></span></h4>
                                                     <c:out value="${ elem.text }" />
@@ -74,9 +74,9 @@
                                                 </div>
                                                 <div class="col-md-offset-3 col-md-3">
                                                     <form role="form" id="showQue${ elem.header }" action="${pageContext.request.contextPath}/controller" method="POST">
-                                                        <input type="hidden" name="command" value="showQuestion" />
-                                                        <input type="hidden" name="questionId" value="123" />
-                                                        <button type="button" class="btn btn-primary"><i class="glyphicon glyphicon-eye-open"></i> Подробнее</button>
+                                                        <input type="hidden" name="command" value="show_question_plus_answers" />
+                                                        <input type="hidden" name="questionId" value="${ elem.id }" />
+                                                        <input type="submit" class="btn btn-primary" value="подробнее"/>
                                                     </form>
                                                 </div>
                                             </div>

@@ -11,7 +11,7 @@ public class LikeItSessionListener implements HttpSessionListener {
     private final static String DEFAULT_LOCALE = "en";
     @Override
     public void sessionCreated(HttpSessionEvent httpSessionEvent) {
-        httpSessionEvent.getSession().setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);
+      /*  httpSessionEvent.getSession().setAttribute(PARAM_LOCALE, DEFAULT_LOCALE);*/
     }
 
     @Override

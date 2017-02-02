@@ -1572,14 +1572,14 @@ by.dorohovich.site.exception.CommandException: Problem in command, while trying 
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
 Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show themes
 	at by.dorohovich.site.service.ThemeService.showThemes(ThemeService.java:26) ~[classes/:?]
-	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.getString(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
+	at tryDoLogic(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
 	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.doLogic(PrepareForCreatingQuestionCommand.java:26) ~[classes/:?]
 	... 27 more
 Caused by: by.dorohovich.site.exception.DAOException: Exception in ThemeDAO
 	at by.dorohovich.site.DAO.ThemeDAO.findAll(ThemeDAO.java:33) ~[classes/:?]
 	at by.dorohovich.site.service.ThemeService.tryShowThemes(ThemeService.java:33) ~[classes/:?]
 	at by.dorohovich.site.service.ThemeService.showThemes(ThemeService.java:22) ~[classes/:?]
-	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.getString(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
+	at tryDoLogic(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
 	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.doLogic(PrepareForCreatingQuestionCommand.java:26) ~[classes/:?]
 	... 27 more
 Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? and isDeleted = 0 ORDER BY themeName ASC' at line 1
@@ -1602,7 +1602,7 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 	at by.dorohovich.site.DAO.ThemeDAO.findAll(ThemeDAO.java:31) ~[classes/:?]
 	at by.dorohovich.site.service.ThemeService.tryShowThemes(ThemeService.java:33) ~[classes/:?]
 	at by.dorohovich.site.service.ThemeService.showThemes(ThemeService.java:22) ~[classes/:?]
-	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.getString(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
+	at tryDoLogic(PrepareForCreatingQuestionCommand.java:34) ~[classes/:?]
 	at by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand.doLogic(PrepareForCreatingQuestionCommand.java:26) ~[classes/:?]
 	... 27 more
 19:29:27.870 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeAll - closed successfully (#0)
@@ -1930,3 +1930,1412 @@ Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have a
 05:27:10.374 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
 05:27:10.374 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
 05:27:10.374 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+18:12:46.205 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+18:12:49.581 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+18:12:49.816 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+18:12:49.865 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+18:12:49.900 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+18:12:49.930 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+18:12:49.930 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+18:12:51.813 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+18:13:13.751 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+18:13:13.753 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+18:13:13.756 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+18:13:13.758 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+18:13:13.759 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+19:43:25.996 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+19:43:28.983 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:43:29.121 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:43:29.268 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:43:29.343 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:43:29.553 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:43:29.554 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:43:30.707 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:43:30.709 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+19:43:31.122 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:43:31.180 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:43:31.242 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:45:17.713 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+19:45:17.717 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+19:45:17.719 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+19:45:17.727 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+19:45:17.729 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+19:55:17.599 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:55:18.702 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:55:18.757 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:55:18.832 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:55:18.866 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:55:18.898 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+19:55:18.899 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:55:19.020 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:55:47.431 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+19:55:47.433 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:55:47.896 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:55:49.676 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+19:55:49.678 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:55:49.817 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:56:07.568 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+19:56:07.574 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:56:07.581 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:56:07.581 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+19:56:07.948 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+19:56:07.952 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+19:56:08.024 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+19:56:23.754 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+19:56:23.755 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+19:56:23.756 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+19:56:23.756 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+19:56:23.758 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+20:32:46.247 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+20:32:47.095 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+20:32:47.120 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+20:32:47.154 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+20:32:47.176 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+20:32:47.200 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+20:32:47.200 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:32:47.263 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:32:47.264 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+20:32:47.740 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+20:32:47.750 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:32:47.839 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:32:58.660 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+20:32:58.665 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:32:58.874 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:33:06.029 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+20:33:06.032 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:33:06.121 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:33:10.765 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+20:33:10.767 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:33:11.162 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:33:15.502 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+20:33:15.541 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+20:33:15.642 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+20:40:00.650 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+20:40:00.651 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+20:40:00.653 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+20:40:00.654 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+20:40:00.655 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+01:11:19.766 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:24.775 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:26.205 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:27.320 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:28.075 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:28.627 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:29.143 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:29.709 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:30.993 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:31.549 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:32.102 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:32.687 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+01:11:47.495 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:11:47.606 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:11:47.788 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:11:47.851 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:11:47.961 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:11:47.964 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+01:11:47.965 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+01:11:47.965 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+01:11:47.966 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+01:11:47.967 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+01:23:59.881 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+01:24:00.974 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:24:01.039 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:24:01.087 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:24:01.119 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:24:01.129 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+01:24:01.130 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+01:24:01.416 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+01:24:10.707 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+01:24:10.712 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+01:24:12.153 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+01:24:19.435 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+01:24:19.437 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+01:24:19.475 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+01:24:41.333 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+01:24:41.335 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+01:24:41.350 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+01:25:00.998 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+01:25:01.001 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+01:25:01.003 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+01:25:01.004 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+01:25:01.005 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+01:25:01.039 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@554f3624
+01:25:01.040 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@71259d96
+04:13:24.520 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:13:27.632 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:13:27.802 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:13:27.927 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:13:27.996 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:13:28.089 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:13:28.090 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:13:28.419 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:14:07.480 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:14:41.492 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+04:14:41.497 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+04:14:41.500 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+04:14:41.503 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+04:14:41.506 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+04:14:41.781 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@73a35ac6
+04:14:41.781 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@5d8de6b0
+04:31:44.341 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:31:45.893 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:31:45.947 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:31:45.975 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:31:46.021 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:31:46.068 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:31:46.069 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:31:46.290 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:31:49.949 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:31:49.959 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:31:53.930 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:31:53.963 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:31:54.628 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:05.339 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:32:05.340 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:05.453 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:05.454 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:05.506 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:12.775 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:32:12.776 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:12.901 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:12.902 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:12.928 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:16.138 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:32:16.141 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:16.151 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:16.153 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:16.302 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:19.587 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:32:19.587 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:19.602 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:19.604 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:32:19.769 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:32:19.770 [http-nio-8080-exec-3] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+04:34:20.734 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+04:34:20.736 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+04:34:20.737 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+04:34:20.738 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+04:34:20.739 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+04:34:20.774 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@7687701b
+04:34:20.774 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@22c42d84
+04:43:35.798 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+04:43:37.145 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:43:37.207 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:43:37.275 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:43:37.286 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:43:37.529 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+04:43:37.530 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:37.685 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:43.293 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:43:43.311 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:43.494 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:43.549 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:43.795 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:48.018 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:43:48.021 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:48.071 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:48.072 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:48.146 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:53.706 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:43:53.707 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:53.721 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:43:53.722 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:43:53.785 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:00.115 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:44:00.116 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:00.120 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:00.121 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:00.122 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:04.288 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:44:04.289 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:04.320 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:04.320 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:04.325 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:07.077 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+04:44:07.078 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:07.085 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:07.087 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+04:44:07.130 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+04:44:07.131 [http-nio-8080-exec-3] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:80) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowQuestions(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+04:45:34.282 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+04:45:34.302 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+04:45:34.303 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+04:45:34.306 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+04:45:34.308 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+04:45:34.366 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@267392f
+04:45:34.367 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@7f1825b6
+05:00:03.537 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:00:05.076 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:00:05.188 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:00:05.226 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:00:05.329 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:00:05.569 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:00:05.570 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:00:05.670 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:00:10.261 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:00:10.274 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:00:10.290 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:00:10.298 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:00:10.324 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:00:19.761 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:00:19.762 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:00:19.770 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:00:19.770 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:00:19.834 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:00:19.835 [http-nio-8080-exec-9] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:79) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:04:48.964 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:04:48.965 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:04:48.967 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:04:48.967 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:04:48.968 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:04:49.024 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@3012a80c
+05:04:49.024 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@bca6194
+05:09:31.436 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:09:36.520 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:09:36.567 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:09:36.796 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:09:37.483 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:09:37.563 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:09:37.564 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:09:37.676 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:09:46.071 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+05:09:46.074 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:09:46.133 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:10:03.011 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+05:10:03.012 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:10:03.079 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:10:10.896 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:10:10.907 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:10:10.920 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:10:10.938 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:10:11.321 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:10:11.322 [http-nio-8080-exec-9] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:84) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:10:31.531 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:10:31.533 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:10:31.533 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:10:31.534 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:10:31.535 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:10:31.579 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@1b27c450
+05:10:31.580 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@2b6a26df
+05:12:21.944 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+05:12:22.734 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:12:22.766 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:12:22.788 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:12:22.854 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:12:22.891 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:12:22.892 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:12:22.979 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:12:25.989 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+05:12:25.995 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:12:26.047 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:12:39.788 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:12:39.800 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:12:39.809 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:12:39.815 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:12:40.004 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:12:40.005 [http-nio-8080-exec-5] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:84) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:13:42.855 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:13:42.857 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:13:42.858 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:13:42.859 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:13:42.860 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:13:42.879 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@f8fc06c
+05:13:42.879 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@7d06aa29
+05:15:11.319 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:15:12.131 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:15:12.175 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:15:12.204 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:15:12.255 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:15:12.266 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:15:12.267 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:15:12.403 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:15:19.446 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:15:19.452 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:15:19.473 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:15:19.480 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:15:19.598 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:15:19.598 [http-nio-8080-exec-2] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:16:04.953 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:16:04.955 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:16:04.956 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:16:04.957 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:16:04.958 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:16:05.001 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@1ca29af4
+05:16:05.001 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@56643582
+05:21:02.550 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:21:03.224 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:21:03.280 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:21:03.317 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:21:03.337 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:21:03.364 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:21:03.364 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:21:03.475 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:21:14.910 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:21:14.921 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:21:14.934 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:21:14.942 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:21:15.113 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:21:15.113 [http-nio-8080-exec-7] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:85) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:22:28.899 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:22:28.902 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:22:28.904 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:22:28.905 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:22:28.906 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:22:28.923 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@5e38288c
+05:22:28.925 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@4e2282a6
+05:36:00.118 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:36:03.039 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:36:03.182 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:36:03.373 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:36:03.505 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:36:03.624 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:36:03.625 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:36:04.041 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:36:23.880 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:36:23.889 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:36:23.899 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:36:23.968 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:36:24.052 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:36:24.052 [http-nio-8080-exec-3] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:85) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:36:57.543 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:36:57.545 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:36:57.547 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:36:57.548 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:36:57.548 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:36:57.645 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@66bfd0f5
+05:36:57.648 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@54aace82
+05:39:05.062 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+05:39:06.128 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:39:06.178 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:39:06.220 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:39:06.247 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:39:06.258 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:39:06.259 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:06.358 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:10.515 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:39:10.517 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:10.556 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:12.914 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+05:39:12.916 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:12.958 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:14.447 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:39:14.448 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:14.484 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:27.480 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:39:27.490 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:27.498 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:27.518 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:39:27.575 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:39:27.576 [http-nio-8080-exec-10] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Exception when trying to show question plus answers
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:33) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:13) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ServiceException: Problem with QuestionDAO, when trying to show questions by userId
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: by.dorohovich.site.exception.DAOException: Problem in AnswerDAO, while trying to find answers
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:85) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+Caused by: java.sql.SQLException: Invalid value for getInt() - 'a*a+b*b=c*c'
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at com.mysql.jdbc.ResultSetImpl.getInt(ResultSetImpl.java:2517) ~[mysql-connector-java-5.1.39.jar:5.1.39]
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.makeEntity(AnswerDAO.java:96) ~[classes/:?]
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.makeEntity(AnswerDAO.java:17) ~[classes/:?]
+	at by.dorohovich.site.DAO.AbstractDAO.makeEntityList(AbstractDAO.java:78) ~[classes/:?]
+	at by.dorohovich.site.DAO.AbstractDAO.takeEntityListByQuery(AbstractDAO.java:70) ~[classes/:?]
+	at by.dorohovich.site.DAO.AbstractDAO.tryFindEntityListByQuery(AbstractDAO.java:63) ~[classes/:?]
+	at by.dorohovich.site.DAO.daoimpl.AnswerDAO.findAnswerListByQuestionId(AnswerDAO.java:83) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.lambda$showAnswersByQuestionId$0(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.tryShowAnswers(AnswerService.java:56) ~[classes/:?]
+	at by.dorohovich.site.service.serviceimpl.AnswerService.showAnswersByQuestionId(AnswerService.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.tryDoLogic(ShowQuestionPlusAnswersCommand.java:43) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.guestcommand.ShowQuestionPlusAnswersCommand.doLogic(ShowQuestionPlusAnswersCommand.java:31) ~[classes/:?]
+	... 31 more
+05:41:13.348 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:41:13.349 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:41:13.350 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:41:13.353 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:41:13.354 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:41:13.405 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@72630a68
+05:41:13.406 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@5bb6b90f
+05:44:48.920 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:44:50.306 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:44:50.340 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:44:50.398 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:44:50.429 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:44:50.476 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:44:50.476 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:44:50.599 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:46:13.334 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:46:13.349 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:46:13.358 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:46:13.366 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:46:14.650 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:47:38.199 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:47:38.201 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:47:38.205 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:47:38.206 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:47:38.207 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:47:38.305 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@c03a4bc
+05:47:38.307 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@64978833
+05:58:47.613 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+05:58:48.626 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:58:48.652 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:58:48.676 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:58:48.695 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:58:48.708 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+05:58:48.709 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:58:48.800 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:58:51.680 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:58:51.687 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:58:51.704 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:58:51.717 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:58:51.885 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:02.546 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+05:59:02.548 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:59:02.584 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:09.269 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:59:09.271 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:59:09.282 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:09.284 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:59:09.312 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:19.394 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+05:59:19.394 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:59:19.400 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:19.400 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+05:59:19.418 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+05:59:57.403 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+05:59:57.404 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+05:59:57.405 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+05:59:57.406 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+05:59:57.406 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+05:59:57.453 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@54f13fcc
+05:59:57.453 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@380f9bf6
+06:07:33.896 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_unanswered_questions
+06:07:34.705 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+06:07:34.762 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+06:07:34.793 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+06:07:34.926 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+06:07:34.953 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+06:07:34.954 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:07:35.062 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:07:38.725 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_users_top
+06:07:38.730 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:07:38.900 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:07:45.787 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_top_rated_questions
+06:07:45.790 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:07:45.844 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:08:07.306 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+06:08:07.309 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:08:07.517 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:08:48.949 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+06:08:48.965 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:08:48.978 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:08:48.984 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:08:49.005 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:09:07.945 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+06:09:07.949 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+06:09:08.005 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+06:09:26.055 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+06:09:26.056 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+06:09:26.057 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+06:09:26.058 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+06:09:26.059 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+06:09:26.108 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@69478d90
+06:09:26.109 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@2cd3446f
+07:37:28.438 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:37:34.445 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:37:34.593 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:37:34.696 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:37:35.013 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:37:35.102 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:37:35.104 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:37:35.457 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:37:58.739 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:37:58.741 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:37:58.781 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:38:36.497 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+07:38:36.507 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:38:36.527 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:38:36.558 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:38:36.623 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:39:17.762 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+07:39:17.763 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+07:39:17.764 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+07:39:17.765 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+07:39:17.766 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+07:39:17.822 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@4e976384
+07:39:17.822 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@1dadac00
+07:43:57.740 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:43:58.883 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:43:59.292 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:43:59.379 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:43:59.428 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:43:59.452 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:43:59.453 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:43:59.576 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:44:06.936 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:44:06.938 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:44:06.981 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:44:32.194 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+07:44:32.199 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:44:32.207 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:44:32.212 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:44:32.221 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:44:34.755 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+07:44:47.070 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+07:45:33.401 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: null
+07:45:50.832 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+07:45:50.837 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+07:45:50.838 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+07:45:50.839 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+07:45:50.840 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+07:45:50.891 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@4a7fb5a
+07:45:50.892 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@6ee4d87d
+07:52:01.261 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:52:02.410 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:52:02.467 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:52:02.505 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:52:02.537 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:52:02.590 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:52:02.590 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:52:02.822 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:52:11.380 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:52:11.382 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:52:11.466 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:52:31.016 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+07:52:31.027 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:52:31.044 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:52:31.052 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:52:32.488 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:52:53.868 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+07:53:16.604 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+07:56:59.538 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+07:56:59.541 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+07:56:59.542 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+07:56:59.543 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+07:56:59.544 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+07:56:59.580 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@17c5db68
+07:56:59.580 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@61916418
+07:58:35.392 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:58:36.586 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:58:36.621 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:58:36.670 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:58:36.713 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:58:36.764 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+07:58:36.765 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:58:37.081 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:58:41.847 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:58:41.849 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:58:41.885 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:58:57.198 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+07:58:57.208 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:58:57.321 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:58:57.322 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+07:58:57.660 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+07:58:57.661 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:58:57.731 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:00.208 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+07:59:00.212 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:00.219 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:00.227 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:00.236 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:12.168 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+07:59:12.169 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:12.179 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:12.181 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:12.183 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:16.757 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+07:59:35.945 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+07:59:35.946 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:36.033 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:41.879 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+07:59:41.881 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:42.519 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+07:59:54.364 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+07:59:54.366 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+07:59:54.388 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:06.855 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:00:06.855 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:06.910 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:13.903 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:00:13.904 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:13.911 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:13.912 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:13.913 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:28.985 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:00:28.987 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:29.047 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:40.588 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:00:40.589 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:40.601 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:40.602 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:40.621 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:00:45.698 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+08:00:49.260 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+08:00:49.261 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:00:49.265 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:01:00.140 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+08:01:00.141 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:01:00.142 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:01:02.441 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+08:01:02.441 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:01:02.445 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:01:42.882 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+08:01:42.889 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:01:42.891 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:02:44.383 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: ask_question
+08:02:44.383 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:02:45.426 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:02:45.699 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+08:02:45.700 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:02:45.778 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:07:01.037 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+08:07:01.039 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+08:07:01.040 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+08:07:01.041 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+08:07:01.042 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+08:07:01.081 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@2783f9a6
+08:07:01.081 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@45f801a7
+08:09:08.408 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:09:09.209 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:09:09.262 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:09:09.307 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:09:09.332 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:09:09.377 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:09:09.377 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:09:09.593 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:09:15.264 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:09:15.265 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:09:15.306 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:10:52.555 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:10:52.566 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:10:52.679 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:10:52.693 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:10:52.748 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:10:56.107 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+08:11:17.461 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+08:11:46.592 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+08:11:46.597 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:11:47.051 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:11:47.053 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=32, login='Sanches7', password='1234Qwe', email'', ROLE=USER, rating=0} logged in
+08:11:47.454 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:11:47.455 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:11:47.517 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:13:21.690 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:13:21.690 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:13:21.697 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:13:21.698 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:13:21.700 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:13:23.789 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+08:14:25.814 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+08:14:25.818 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:14:26.011 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:14:31.139 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+08:14:31.150 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:14:31.314 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:14:35.026 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:14:35.027 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:14:35.034 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:14:35.035 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:14:35.161 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:15:12.068 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:15.809 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:17.357 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:19.322 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:20.684 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:22.633 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:23.802 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:24.959 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:25.688 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:26.335 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:26.938 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:27.806 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:28.992 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:29.506 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:29.959 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:30.567 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:31.124 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:31.893 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:32.410 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:33.070 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:33.619 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:34.219 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:34.592 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:40.525 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:15:41.740 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:16:03.857 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+08:16:21.422 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+08:16:21.423 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+08:16:21.424 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+08:16:21.426 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+08:16:21.427 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+08:16:21.455 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@66a5542e
+08:16:21.456 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@7f42eaf5
+08:56:18.349 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:56:21.986 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:56:22.033 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:56:22.115 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:56:22.334 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:56:22.419 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+08:56:22.420 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:56:22.620 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:56:40.418 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:56:40.423 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:56:40.491 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:56:58.570 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+08:56:58.577 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:56:58.582 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:56:58.746 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:56:58.850 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:57:35.687 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+08:57:58.212 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+08:57:58.233 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:57:58.287 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:57:58.288 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+08:57:58.538 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:57:58.539 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:57:58.583 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:07.764 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+08:58:07.779 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:58:07.780 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:07.829 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:21.189 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+08:58:21.191 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:21.199 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:21.200 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+08:58:21.209 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:58:21.211 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:21.245 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:31.914 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+08:58:31.934 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:58:31.935 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:31.971 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:45.430 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+08:58:45.431 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:45.435 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:45.436 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+08:58:45.440 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:58:45.441 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:45.498 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:58:49.302 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+08:58:49.314 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+08:58:49.315 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+08:58:49.342 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+08:59:09.622 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+08:59:09.624 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+08:59:09.627 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+08:59:09.628 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+08:59:09.629 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+08:59:09.788 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@20fe7f71
+08:59:09.789 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@66a5542e
+09:45:09.021 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+09:45:10.174 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+09:45:10.262 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+09:45:10.288 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+09:45:10.329 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+09:45:10.621 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+09:45:10.622 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+09:45:10.851 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+09:45:19.415 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+09:45:19.416 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+09:45:19.458 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+09:45:27.633 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+09:45:27.642 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+09:45:27.651 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+09:45:27.698 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+09:45:27.956 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+09:45:31.738 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+09:45:31.740 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+09:45:32.020 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+09:45:43.955 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:45.038 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:46.783 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:48.106 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:48.797 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:49.771 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:50.390 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:50.966 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:51.472 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:45:51.857 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+09:46:19.395 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+09:46:19.396 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+09:46:19.400 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+09:46:19.405 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+09:46:19.407 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+09:46:19.477 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@d1266e2
+09:46:19.478 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@69eb8b43
+10:56:26.581 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+10:56:28.945 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+10:56:29.126 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+10:56:29.347 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+10:56:29.464 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+10:56:29.594 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+10:56:29.595 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+10:56:29.802 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+10:56:48.715 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+10:56:48.716 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+10:56:48.767 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+10:57:52.316 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+10:57:52.395 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+10:57:52.511 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+10:57:52.512 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+10:57:52.783 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+10:57:52.784 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+10:57:52.811 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+10:58:02.138 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+10:58:09.374 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+10:58:11.308 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+10:58:13.694 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+10:58:26.507 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+10:58:26.510 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+10:58:26.511 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+10:58:26.511 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+10:58:26.512 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+10:58:26.560 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@6cc448b8
+10:58:26.561 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@5d9f7ca3
+11:02:19.501 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:02:20.538 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+11:02:20.631 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+11:02:20.666 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+11:02:20.709 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+11:02:20.748 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool initConnection - Connection was initialized and added to connection pool
+11:02:20.749 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:02:20.921 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:02:27.226 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:02:27.229 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:02:27.273 [http-nio-8080-exec-5] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:03:12.063 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+11:03:12.068 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:03:12.076 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:03:12.085 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:03:12.115 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:03:48.559 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+11:04:02.822 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+11:04:02.830 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:04:02.845 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:04:02.846 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=35, login='gotse', password='1234Qwe', email'borussia@gmail.fc', ROLE=USER, rating=0} logged in
+11:04:03.222 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:04:03.222 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:04:03.283 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:04:06.056 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+11:04:06.059 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:04:06.084 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:04:06.084 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:04:06.098 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:04:07.417 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+11:04:16.622 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+11:04:57.796 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+11:04:57.802 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:04:59.069 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:05:02.802 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+11:05:02.806 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:05:02.834 [http-nio-8080-exec-4] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:05:05.038 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_answered_by_me
+11:05:05.041 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:05:05.858 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:05:09.236 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+11:05:09.237 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:05:09.240 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:05:09.241 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:05:09.621 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:06:41.804 [http-nio-8080-exec-9] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_question
+11:06:41.885 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:06:41.987 [http-nio-8080-exec-9] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:06:56.054 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: ask_question
+11:06:56.056 [http-nio-8080-exec-2] ERROR by.dorohovich.site.controller.Controller processRequest - Command failed
+by.dorohovich.site.exception.CommandException: Data is not valid
+	at by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand.doLogic(AskQuestionCommand.java:41) ~[classes/:?]
+	at by.dorohovich.site.command.AbstractCommand.execute(AbstractCommand.java:14) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.tryProcessRequest(Controller.java:55) ~[classes/:?]
+	at by.dorohovich.site.controller.Controller.processRequest(Controller.java:44) [classes/:?]
+	at by.dorohovich.site.controller.Controller.doPost(Controller.java:37) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648) [servlet-api.jar:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729) [servlet-api.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-websocket.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at by.dorohovich.site.filter.EncodingFilter.doFilter(EncodingFilter.java:30) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108) [catalina.jar:8.5.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79) [catalina.jar:8.5.8]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:620) [catalina.jar:8.5.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [catalina.jar:8.5.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349) [catalina.jar:8.5.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:783) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-coyote.jar:8.5.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:789) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-coyote.jar:8.5.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:8.5.8]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_101]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_101]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:8.5.8]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_101]
+Caused by: by.dorohovich.site.exception.ValidationException: Text is not valid
+	at by.dorohovich.site.validator.Validator.validateQuestionText(Validator.java:45) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand.validate(AskQuestionCommand.java:62) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand.tryDoLogic(AskQuestionCommand.java:49) ~[classes/:?]
+	at by.dorohovich.site.command.implcommand.authusercommand.AskQuestionCommand.doLogic(AskQuestionCommand.java:37) ~[classes/:?]
+	... 31 more
+11:07:46.548 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: ask_question
+11:07:46.550 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:07:46.842 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:07:47.080 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_my_questions
+11:07:47.081 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:07:47.133 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:07:54.791 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logOut
+11:07:54.805 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:07:54.806 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:07:54.880 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:07:58.417 [http-nio-8080-exec-2] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_questions_by_theme
+11:07:58.421 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:07:58.576 [http-nio-8080-exec-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:09.200 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+11:08:09.201 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:09.367 [http-nio-8080-exec-1] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:09.368 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - Log in was failed
+11:08:16.415 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+11:08:16.415 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:16.426 [http-nio-8080-exec-7] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:16.427 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - Log in was failed
+11:08:18.521 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+11:08:18.522 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:18.524 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:18.526 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - Log in was failed
+11:08:22.228 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: logIn
+11:08:22.228 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:22.230 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:22.235 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.guestcommand.LogInCommand packAttributes - User{id=32, login='Sanches7', password='1234Qwe', email'', ROLE=USER, rating=0} logged in
+11:08:22.244 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:08:22.246 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:22.295 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:24.672 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+11:08:24.672 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:24.786 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:24.787 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:08:24.825 [http-nio-8080-exec-3] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:08:35.550 [http-nio-8080-exec-5] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: prepare_for_creating_answer
+11:09:18.429 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: create_answer
+11:09:18.430 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:09:18.555 [http-nio-8080-exec-8] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:09:23.899 [http-nio-8080-exec-6] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_freshest_questions
+11:09:23.900 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:09:23.954 [http-nio-8080-exec-6] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:09:34.349 [http-nio-8080-exec-10] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: show_question_plus_answers
+11:09:34.350 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:09:34.357 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:09:34.357 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool tryTakeConnection - Connection was taken from connection pool
+11:09:34.427 [http-nio-8080-exec-10] INFO  by.dorohovich.site.connectionpool.ConnectionPool putConnection - Connection was put to connection pool
+11:09:41.187 [http-nio-8080-exec-3] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+11:09:43.393 [http-nio-8080-exec-4] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+11:09:44.814 [http-nio-8080-exec-1] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+11:09:45.855 [http-nio-8080-exec-8] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+11:09:46.691 [http-nio-8080-exec-7] INFO  by.dorohovich.site.command.implcommand.definer.CommandDefiner define - Command: language
+11:11:47.690 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#0)
+11:11:47.692 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#1)
+11:11:47.694 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#2)
+11:11:47.696 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#3)
+11:11:47.698 [localhost-startStop-2] INFO  by.dorohovich.site.connectionpool.ConnectionPool closeConnection - closed successfully (#4)
+11:11:47.797 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@5da10eae
+11:11:47.797 [localhost-startStop-2] INFO  by.dorohovich.site.listener.ControllerContextListener tryDeregisterDrivers - deregistering jdbc driver: com.mysql.jdbc.Driver@7c960d53

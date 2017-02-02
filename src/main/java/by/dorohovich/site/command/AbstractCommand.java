@@ -9,11 +9,14 @@ import javax.servlet.http.HttpServletRequest;
  */
 public abstract class AbstractCommand {
     public String execute(HttpServletRequest request) throws CommandException{
-        checkAccessRights(request);
-        return doLogic(request);
+        String page = checkAccessRights(request);
+        if(page == null){
+            page = doLogic(request);
+        }
+        return page;
     }
 
-    protected abstract void checkAccessRights(HttpServletRequest request) throws CommandException;
+    protected abstract String checkAccessRights(HttpServletRequest request) throws CommandException;
 
     protected abstract String doLogic(HttpServletRequest request) throws CommandException;
 }

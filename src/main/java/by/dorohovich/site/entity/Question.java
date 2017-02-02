@@ -1,12 +1,14 @@
 package by.dorohovich.site.entity;
 
+import by.dorohovich.site.service.wrapper.Wrappable;
+
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 /**
  * Created by User on 26.01.2017.
  */
-public class Question extends Entity<Integer> {
+public class Question extends Entity<Integer> implements Wrappable {
 
     private Integer userId;
     private Timestamp dateAndTime;

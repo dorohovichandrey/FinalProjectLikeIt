@@ -7,8 +7,10 @@ import by.dorohovich.site.exception.ServiceException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import by.dorohovich.site.service.UserService;
+import by.dorohovich.site.exception.ValidationException;
+import by.dorohovich.site.service.serviceimpl.UserService;
 import by.dorohovich.site.utility.MappingManager;
+import by.dorohovich.site.validator.Validator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,7 +27,6 @@ public class RegistrationCommand extends AbstractGuestCommand {
 
     private static final String LOGIN_ATTR = "login";
     private static final String PASSWORD_ATTR = "password";
-    private static final String PASSWORD_CONFIRMATION_ATTR = "passwordConfirmation";
     private static final String EMAIL_ADDR_ATTR = "emailAddr";
     private static final String IS_LOGIN_FREE_ATTR = "isLoginFree";
 
@@ -38,15 +39,19 @@ public class RegistrationCommand extends AbstractGuestCommand {
         try {
             return tryDoLogic(request);
         } catch (ServiceException e) {
-            LOGGER.error("Problem with userService, while trying to register", e);
-            throw new CommandException(e);
+            throw new CommandException("Problem with userService, while trying to register", e);
+        } catch (ValidationException e) {
+            throw new CommandException("Data is not valid", e);
         }
     }
 
-    private String tryDoLogic(HttpServletRequest request) throws ServiceException {
+    private String tryDoLogic(HttpServletRequest request) throws ServiceException, ValidationException {
         String login = request.getParameter(LOGIN_PARAM);
         String password = request.getParameter(PASSWORD_PARAM);
+        String passwordConfirm = request.getParameter(PASSWORD_CONFIRMATION_PARAM);
         String email = request.getParameter(EMAIL_ADDR_PARAM);
+        Validator validator = new Validator();
+        validate(login, password, passwordConfirm, email, validator);
         UserService userService = new UserService();
         boolean isLoginFree = userService.checkIsLoginFree(login);
         if (isLoginFree) {
@@ -55,6 +60,13 @@ public class RegistrationCommand extends AbstractGuestCommand {
         packAttributes(login, password, email, isLoginFree, request);
         String page = choosePage(isLoginFree);
         return page;
+    }
+
+    private void validate(String login, String password, String passwordConfirm, String email, Validator validator) throws ValidationException {
+        validator.validateLogin(login);
+        validator.validatePassword(password);
+        validator.validatePassConfirm(password, passwordConfirm);
+        validator.validateEmail(email);
     }
 
     private void packAttributes(String login, String password, String email, boolean isLoginFree, HttpServletRequest request) {

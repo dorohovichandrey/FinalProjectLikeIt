@@ -61,7 +61,7 @@
           </c:when>
           <c:otherwise>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> ${user.login}<span class="caret">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i> ${user.login} <i class="glyphicon glyphicon-star"></i> <c:out value="${ user.rating }" /><span class="caret">
           </span></a>
               <ul class="dropdown-menu">
                 <li><a href="${pageContext.request.contextPath}/controller?command=prepare_for_creating_question"><i class="glyphicon glyphicon-question-sign"></i> Задать вопрос</a></li>

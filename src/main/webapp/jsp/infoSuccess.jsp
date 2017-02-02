@@ -20,7 +20,7 @@
     <body>
 
         <%--session.setAttribute("page","page.users");--%>
-    <c:set var="page"  value="page.createQuestion" scope="session" />
+    <c:set var="page"  value="page.infoSuccess" scope="session" />
 
 
     <jsp:include page="/jsp/include/navbar.jsp" />

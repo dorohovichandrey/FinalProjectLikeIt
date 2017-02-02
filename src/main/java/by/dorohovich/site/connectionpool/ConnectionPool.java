@@ -31,17 +31,21 @@ public class ConnectionPool {
     private static ConnectionPool instance = null;
 
     public static ConnectionPool getInstance() {
-        if (isInitialized.compareAndSet(false, true)) {
-            initializationLock.lock();
-            try {
-                if (instance == null) {
-                    instance = new ConnectionPool();
+        if (instance == null) {
+            if (isInitialized.compareAndSet(false, true)) {
+                initializationLock.lock();
+                try {
+                    if (instance == null) {
+                        instance = new ConnectionPool();
+                    }
+                } finally {
+                    initializationLock.unlock();
                 }
-            } finally {
-                initializationLock.unlock();
             }
         }
+
         return instance;
+
     }
 
     private ConnectionPool() {

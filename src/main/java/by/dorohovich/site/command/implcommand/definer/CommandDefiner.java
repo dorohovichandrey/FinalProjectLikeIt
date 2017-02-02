@@ -15,12 +15,10 @@ public class CommandDefiner {
     private static final String COMMAND_PARAM = "command";
 
     public AbstractCommand define(HttpServletRequest request) {
-        AbstractCommand curCommand = null;
         String command = request.getParameter(COMMAND_PARAM);
         LOGGER.info("Command: " + command);
         CommandEnum currentEnum = CommandEnum.valueOf(command.toUpperCase());
-        curCommand = currentEnum.getCommand();
-
+        AbstractCommand curCommand = currentEnum.getCommand();
         return curCommand;
     }
 }

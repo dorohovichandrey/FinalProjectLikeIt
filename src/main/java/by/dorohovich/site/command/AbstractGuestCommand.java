@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 public abstract class AbstractGuestCommand extends AbstractCommand {
 
     @Override
-    protected void checkAccessRights(HttpServletRequest request) throws CommandException {}
+    protected String checkAccessRights(HttpServletRequest request) throws CommandException {
+        return null;
+    }
 
 }

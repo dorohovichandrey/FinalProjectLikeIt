@@ -4,7 +4,7 @@ import by.dorohovich.site.command.AbstractGuestCommand;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.service.UserService;
+import by.dorohovich.site.service.serviceimpl.UserService;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,8 +17,6 @@ import java.util.List;
  * Created by User on 14.01.2017.
  */
 public class ShowUsersTopCommand extends AbstractGuestCommand {
-
-    private static final Logger LOGGER = LogManager.getLogger();
 
     private static final String USERS_ATTR = "users";
     private static final String KEY_FOR_TABLE_HEADER_ATTR = "keyForTableHeader";

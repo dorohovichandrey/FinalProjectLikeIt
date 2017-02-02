@@ -4,8 +4,10 @@ import by.dorohovich.site.command.AbstractAuthenticatedUserCommand;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.service.QuestionService;
+import by.dorohovich.site.exception.ValidationException;
+import by.dorohovich.site.service.serviceimpl.QuestionService;
 import by.dorohovich.site.utility.MappingManager;
+import by.dorohovich.site.validator.Validator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -34,15 +36,17 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
         try {
             return tryDoLogic(request);
         } catch (ServiceException e) {
-            LOGGER.error("Problem with QuestionService, while trying to ask question", e);
-            throw new CommandException(e);
+            throw new CommandException("Problem with QuestionService, while trying to ask question", e);
+        } catch (ValidationException e) {
+            throw new CommandException("Data is not valid", e);
         }
     }
 
-    private String tryDoLogic(HttpServletRequest request) throws ServiceException {
+    private String tryDoLogic(HttpServletRequest request) throws ServiceException, ValidationException {
         String header = request.getParameter(HEADER_PARAM);
         String themeName = request.getParameter(THEME_NAME_PARAM);
         String text = request.getParameter(TEXT_PARAM);
+        validate(header, text);
         HttpSession session = request.getSession(true);
         User owner = (User)session.getAttribute(USER_ATTR);
         Integer ownerId = owner.getId();
@@ -50,6 +54,12 @@ public class AskQuestionCommand extends AbstractAuthenticatedUserCommand {
         questionService.askQuestion(ownerId, text, themeName, header);
         String page = MappingManager.getProperty(KEY_FOR_PAGE);
         return page;
+    }
+
+    private void validate(String header, String text) throws ValidationException {
+        Validator validator = new Validator();
+        validator.validateQuestionHeader(header);
+        validator.validateQuestionText(text);
     }
 
 

@@ -2,6 +2,7 @@ package by.dorohovich.site.command.implcommand.definer;
 
 import by.dorohovich.site.command.AbstractCommand;
 import by.dorohovich.site.command.implcommand.authusercommand.*;
+import by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingAnswerCommand;
 import by.dorohovich.site.command.implcommand.controllercommand.PrepareForCreatingQuestionCommand;
 import by.dorohovich.site.command.implcommand.guestcommand.*;
 
@@ -9,11 +10,6 @@ import by.dorohovich.site.command.implcommand.guestcommand.*;
  * Created by User on 26.11.2016.
  */
 public enum CommandEnum {
-    PARSING{
-        {
-            command = new ParsingCommand();
-        }
-    },
 
     LANGUAGE{
         {
@@ -102,6 +98,30 @@ public enum CommandEnum {
     PREPARE_FOR_CREATING_QUESTION{
         {
             command = new PrepareForCreatingQuestionCommand();
+        }
+    },
+
+    SHOW_QUESTION_PLUS_ANSWERS{
+        {
+           command = new ShowQuestionPlusAnswersCommand();
+        }
+    },
+
+    CREATE_ANSWER_COMMAND{
+        {
+            command = new CreateAnswerCommand();
+        }
+    },
+
+    PREPARE_FOR_CREATING_ANSWER{
+        {
+            command = new PrepareForCreatingAnswerCommand();
+        }
+    },
+
+    CREATE_ANSWER{
+        {
+            command = new CreateAnswerCommand();
         }
     };
 

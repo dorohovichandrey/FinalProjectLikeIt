@@ -10,6 +10,12 @@
     <listener-class>by.dorohovich.site.listener.LikeItSessionListener</listener-class>
   </listener>
 
+  <listener>
+    <listener-class>
+       by.dorohovich.site.listener.ControllerContextListener
+    </listener-class>
+  </listener>
+
   <session-config>
     <session-timeout>30</session-timeout>
   </session-config>

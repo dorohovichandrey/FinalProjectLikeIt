@@ -1,8 +1,8 @@
 package by.dorohovich.site.command.showquestionslogic;
 
-import by.dorohovich.site.entity.wrapper.QuestionWrapper;
+import by.dorohovich.site.service.wrapper.entitywrapperimpl.QuestionWrapper;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.service.QuestionService;
+import by.dorohovich.site.service.serviceimpl.QuestionService;
 
 
 import java.util.List;

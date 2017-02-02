@@ -4,7 +4,7 @@ import by.dorohovich.site.command.AbstractGuestCommand;
 import by.dorohovich.site.entity.User;
 import by.dorohovich.site.exception.CommandException;
 import by.dorohovich.site.exception.ServiceException;
-import by.dorohovich.site.service.UserService;
+import by.dorohovich.site.service.serviceimpl.UserService;
 import by.dorohovich.site.utility.MappingManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,8 +36,7 @@ public class LogInCommand extends AbstractGuestCommand {
         try {
             return tryDoLogic(request);
         } catch (ServiceException e) {
-            LOGGER.error("Problem with UserService, while trying to logIn", e);
-            throw new CommandException(e);
+            throw new CommandException("Problem with UserService, while trying to logIn", e);
         }
     }
 

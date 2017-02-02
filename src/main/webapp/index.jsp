@@ -11,6 +11,9 @@
 </head>
 <body>
 
+<jsp:forward page="/controller" >
+    <jsp:param name="command" value="show_freshest_questions" />
+</jsp:forward>
 <h5>Choose parsing type:</h5>
 <form name="parserChooserForm" action="controller" method="POST">
     <input type="hidden" name="command" value="parsing" />
