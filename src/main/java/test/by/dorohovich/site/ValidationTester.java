@@ -1,4 +1,4 @@
-package test.bu.dorohovich.site;
+package test.by.dorohovich.site;
 
 import by.dorohovich.site.exception.ValidationException;
 import by.dorohovich.site.validator.Validator;
@@ -12,7 +12,7 @@ public class ValidationTester {
     @Test
     public void testValidateLogin1() throws ValidationException{
         Validator validator = new Validator();
-        validator.validateLogin("gotse");
+        validator.validateLogin(null);
     }
 
     @Test
